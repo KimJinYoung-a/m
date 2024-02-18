@@ -1,0 +1,224 @@
+/* GNB summary */
+.GNB_summary.biz_summary{position:relative;text-align:center;padding-bottom:16rem;}/* 비즈서머리 메인롤링 간격 축소 */
+.GNB_summary .biz_popup{position:absolute;top:25.5rem;width:90%;margin-left:5%;z-index:9;filter:drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.2));-webkit-filter:drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.2));}
+.GNB_summary .biz_popup .biz_noti{display:block;background:var(--white);padding:2rem 3rem;border-radius: 1rem 1rem 0 0;}
+.GNB_summary .biz_popup .biz_noti .main_noti{font-size:1.3rem;font-family:var(--sb);margin-bottom:1rem;color:#444;}
+.GNB_summary .biz_popup .biz_noti .sub_noti{font-size:1.03rem;line-height:1.4rem;color:var(--c_666)}
+.GNB_summary .biz_popup .go_biz{display:block;background:var(--black);color:var(--white);padding:1rem 2rem;border-radius: 0 0 1rem 1rem;font-size:1.3rem;font-family:var(--sb);}
+.GNB_summary .biz_popup .go_biz .i_go_biz{width:1.5rem;height:1.5rem;line-height: 2;margin-left:1rem;}
+
+
+/* ------------------ 2017 renewal --------------------- */
+.default-font, .default-font button, .default-font input,.default-font textarea, .default-font select {font-family:'CoreSansCLight', 'AppleSDGothicNeo-Regular', 'NotoSansKRRegular', sans-serif;}
+.default-font,
+.default-font .headline {color:#0d0d0d;}
+.default-font a {-webkit-tap-highlight-color:transparent;}
+.default-font button {outline:none;}s
+
+/* loading image */
+.default-font .thumbnail {position:relative; background-color:#f4f4f4;}
+.default-font .thumbnail img {position:relative; z-index:2;}
+.default-font .thumbnail:before {content:' '; position:absolute; top:50%; left:50%; width:4.27rem; height:4.27rem; margin:-2.22rem 0 0 -2.22rem; background:url(http://fiximage.10x10.co.kr/m/2017/common/bg_img_loading.png) 50% 0 no-repeat; background-size:100% auto;}
+
+
+/* banner type text */
+.text-bnr {position:relative; padding-bottom:5.8rem;}
+.text-bnr .desc {position:absolute; bottom:4rem; left:0; z-index:10; width:100%; padding:0 2.05rem;}
+.main-bnr.GNB_main .desc {position:absolute; bottom:4rem; left:0; z-index:10; width:100%; padding:0 2.731rem;}/* 2021.07.06 손지수 수정 */
+.text-bnr .headline,
+.text-bnr .subcopy {display:block;}
+.text-bnr .headline {margin-top:1.11rem; padding-right:4.27rem; font:2.39rem/3.07rem 'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold'; font-family:var(--bd); }
+.text-bnr .subcopy {overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; height:3.24rem; margin-top:1.19rem; color:#4a4a4a; font-size:1.19rem; line-height:1.71rem; word-break:break-all; font-family:var(--md);}
+.text-bnr .thumbnail img {min-height:32rem;}
+
+/* main banner */
+.main-bnr {padding-bottom:0;height:36.5rem;}/* 2021.07.09 손지수 수정 */
+.main-bnr.GNB_main {padding-bottom:0;top:0rem;height:32rem;margin-bottom:8.5rem;}
+.main-bnr a {display:block; position:relative; padding-bottom:5.8rem;}
+.main-bnr .pagination-dot {bottom:7.42rem; left:auto; right:1.79rem;}
+.main-bnr .thumbnail img {height:32rem;}/* 2021.07.09 손지수 수정 */
+.main-bnr.GNB_main .thumbnail img {width:29.27rem;height:29.27rem;min-height:20rem;margin:0 1.365rem;border-radius: 1rem;}/* 2021.07.06 손지수 수정 */
+.main-bnr .pagingNo.swiper-pagination-fraction{position:absolute ; z-index:999; bottom:7rem; left:auto; right:0; width:4rem; height:1.95rem;color:var(--c_999); background-color:rgba(255,255,255,0.6); border-radius:1rem 0 0 1rem; }
+.main-bnr.GNB_main .pagingNo.swiper-pagination-fraction{position:absolute ; z-index:999; bottom:7rem; left:auto; right:0; width:6rem; height:1.95rem;color:var(--c_999); background-color:rgba(255,255,255,0.6); border-radius:1rem 0 0 1rem; }/* 2021.07.06 손지수 수정 */
+.main-bnr .pagingNo span {padding-left:.2rem; font-size:1rem; font-family:'CoreSansCRegular'; font-weight:normal; color:#000; text-align:center;}/* 2021.07.06 손지수 수정 */
+.main-bnr .pagingNo span {line-height:2.1rem;margin-left:0.5rem;margin-right:0.1rem;}
+.main-bnr.GNB_main .pagingNo span {line-height:2.1rem;margin-left:1rem;margin-right:0.1rem;}
+.main-bnr .pagingNo span:last-child {margin-left:0.1rem;color:var(--c_999);}/* 2021.07.06 손지수 수정 */
+.main-bnr .pagingNo .page strong {margin-right:0.2rem;}
+.main-bnr .pagingNo .page span {margin-left:0.2rem; font-weight:normal;}
+.main-bnr .spc-weekend .discount {position:absolute; display:block; left:0; top:50%; width:100%; margin-top:7.7rem; text-align:center; font:bold 2.69rem georgia; letter-spacing:-.1rem; color:#2d2d2d;  z-index:2;}
+.main-bnr .spc-weekend.btype .discount {top:50%; margin-top:-3.7rem; color:#e71010; font-size:3.63rem;}
+@media screen and (min-width:768px){
+	.main-bnr .spc-weekend .discount {margin-top:15.5rem; font-size:4rem;}
+	.main-bnr .spc-weekend.btype .discount {margin-top:-3.8rem; font-size:6rem;}
+}
+@media screen and (min-width:1024px){
+	.main-bnr .spc-weekend .discount {margin-top:21.5rem; font-size:5.5rem;}
+	.main-bnr .spc-weekend.btype .discount {margin-top:-4rem; font-size:7rem;}
+}
+.main-bnr .spc-weekendV19 .discount {position:absolute; right:12%; top:33.5%; z-index:3; font-size:3.84rem; font-family:'Roboto'; font-weight:900; color:#4affff;}
+@media screen and (min-width:768px){
+	.main-bnr .spc-weekendV19 .discount {top:36%; font-size:6rem;}
+}
+@media screen and (min-width:1024px){
+	.main-bnr .spc-weekendV19 .discount {top:36%; font-size:8rem;}
+}
+@media screen and (orientation:landscape){
+	.main-bnr .spc-weekendV19 .discount {top:37%; font-size:8rem;}
+}
+.main-bnr .spc-weekendV21 .discount {position:absolute; right:.5%; top:66%; z-index:3; width:3em; transform:rotate(15deg); transform-origin:center; text-align:center; font-family:'CoreSansCBold'; font-size:10.7vw; letter-spacing:-2px; color:#fff;}
+.main-bnr .spc-weekendV21 .discount i,
+.main-bnr .spc-weekendV21 .discount span {font-size:7.3vw;}
+
+/* biz_float *//* 2021.07.09 손지수 수정 */
+a.biz_float{margin:0 auto;margin-bottom:6.8rem;display:block;z-index:9;font-size:1.05rem;background:url(//fiximage.10x10.co.kr/web2021/biz/biz_float.png) no-repeat 0 0;background-size:100%;width:90%;height:7rem;}/* 2021.07.09 손지수 수정 */
+a.biz_float .f_noti{padding-top:2rem;margin-left:2rem;font-size:1.2rem;color:var(--c_111);}
+a.biz_float .f_noti span{font-family:var(--sb);}
+a.biz_float .f_link{margin-left:2rem;margin-top:.5rem;position:relative;}
+a.biz_float .f_link::after{font-family:'tencon' !important;content:"\e905";position:absolute;top:.02rem;}
+
+/* category_icon */
+.category_icon{margin-bottom:2.5rem;}/* 2021.07.09 손지수 수정 */
+.category_icon .icon_wrap{display:flex;width:100%;padding:0 5%;text-align:center;margin-bottom:2rem;} 
+.category_icon .icon_wrap div{width:25%;}
+.category_icon .icon_wrap div a{color:var(--c_666);}
+.category_icon .icon_wrap div.on{font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold'; font-family:var(--bd);}
+.category_icon .icon_wrap div img{width:70%;display:block;margin-left:15%;margin-bottom:1.5rem;filter:drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.08));-webkit-filter:drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.08));}
+.category_icon .icon_wrap div.soon img{filter:none;}
+
+/* b2b 메인 상품상세 */
+.tab_view_type_biz {display:flex;margin-left:11.2vw;margin-bottom:2.5rem;}
+.btn_view_type_biz {width:36.8vw; font-family:var(--bd) !important; font-size:1.3rem;line-height:1.2rem; color:var(--c_999);background:var(--grey);padding:.8rem 0;border-radius: 5rem;letter-spacing:-0.03rem;}/* 2021.07.09 손지수 수정 */
+.btn_view_type_biz:first-child{margin-right:4vw;}
+.btn_view_type_biz.active {color:var(--white);background:var(--black);filter:drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.2));-webkit-filter:drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.2));}
+.btn_view_type_biz [class^="i_list"] {margin:0 .34rem 0 0; font-size:inherit;}
+
+/* b2b 메인 오늘의 추천 */  
+.today_prd{width:100%;margin-bottom:6.8rem;}
+.today_prd .today_pick{display:flex;justify-content:center;margin-bottom:2.5rem;}
+.today_prd .today_pick button{width:34.7vw;margin-right:0;filter:drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.2));-webkit-filter:drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.2));}/* 2021.07.09 손지수 수정 */
+.today_prd .prd_item{position:relative;display:flex;width:90%;margin-left:5%;align-items:center;margin-bottom:2rem;}
+.today_prd .prd_item .not_biz, .prd_list .prd_item .not_biz{font-size:1.19rem;color:var(--ten);vertical-align:1px;font-family:var(--sb);}
+.today_prd .prd_item .not_biz span, .prd_list .prd_item .not_biz span{font-family:var(--bd);}
+.today_prd .prd_item .prd_img{width:78.45%;padding-top:35.56%;}/* 2021.07.06 손지수 수정 *//* 2021.07.09 손지수 수정 확인 필요 */
+.today_prd .prd_item .prd_info{padding-left:4vw;}
+.today_prd .prd_item .prd_info div{margin-bottom:.5rem;}
+
+/* 2021.07.06 손지수 추가 */
+.biz_more{text-align:center;}
+.biz_more a{font-size:1.2rem;color:var(--c_666);width:82.9vw;margin:0 8.55vw;background:var(--grey);padding:1.2rem 0;display:block;border-radius:5rem;}
+
+/* b2b 메인 가입승인대기팝업 */
+.join_loading{position:absolute;top:1.5rem;width:90%;margin-left:5%;background:var(--white);z-index:9;padding:1.5rem 3rem;border-radius: 1rem;text-align:center;filter:drop-shadow(4px 12px 12px rgba(0, 0, 0, 0.06));-webkit-filter:drop-shadow(4px 12px 12px rgba(0, 0, 0, 0.06));}
+.join_loading .load_wrap{display: flex;	flex-direction: column;	margin: auto;}
+.join_loading .load_wrap .loader{width:20%;height: 3rem;padding-top:1.5rem;margin: auto;display: flex; }
+.join_loading .load_wrap .loader .circle{background:url(//fiximage.10x10.co.kr/web2021/biz/oval.png) no-repeat 0 0;background-size:100%;width:25%;animation: jump 1s linear infinite;margin:0 .35rem;}
+.join_loading .load_wrap .loader #b {animation-delay: 0.2s;}
+.join_loading .load_wrap .loader #c {animation-delay: 0.4s;}
+.join_loading .load_wrap .loader #d {animation-delay: 0.6s;}
+@keyframes jump {
+0% {
+	margin-top: 0; opacity:0;
+}
+25% {
+	margin-top: -.5rem;
+}
+50% {
+	margin-top: -1rem; opacity:1;
+}
+75% {
+	margin-top: -.5rem; 
+}
+100% {
+	margin-top: 0; opacity:0;
+}
+}
+.join_loading .main_noti{font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold'; font-family:var(--bd);font-size:1.3rem;margin-bottom:.5rem;}
+.join_loading .sub_noti{color:var(--c_999);font-size:1.1rem;}
+.join_loading .btn_close{width:2rem;height:2rem;position:absolute;top:1.5rem;right:1rem;}
+.join_loading .btn_close::before{font-family:'tencon' !important;content:"\e90c";}
+
+/* b2b 카테고리 탭메뉴 */
+.cate_swiper {padding:1.71rem 0; padding-left:1.7rem;}
+.cate_swiper div{width:18vw;font-size:.9rem;text-align:center;margin-right:1rem;}
+.cate_swiper div.on{font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold'; font-family:var(--bd);}
+.cate_swiper div img{width:80%;display:block;margin:0 auto 1rem;filter:drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.08));-webkit-filter:drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.08));}
+/* // b2b 카테고리 탭메뉴 */
+
+/* 비즈 헤더 로고 변경 */
+.header_logo.biz_header_logo {width:12rem; height:2rem; margin-right:auto;}/* 2021.07.09 손지수 수정 */
+.header_logo.biz_header_logo a {display:block; width:100%; height:100%; background:url(//fiximage.10x10.co.kr/web2021/biz/logo_biz.png) no-repeat 0 0 / 12rem auto;}/* 2021.07.09 손지수 수정 */
+
+.aside_nav {padding:1.8rem 0 0 2.05rem;}/* 비즈로 바로가기 버튼이 생겨서 공백 수정 */
+
+/* 비즈 웹 네비게이션 */
+.aside_biz .aside_inner{background:var(--white);}
+.aside_biz .go_10x10 {display:flex;align-items: center;margin:1.4rem 0 1.4rem 6rem;color:rgba(0,0,0,0.6);}
+.aside_biz .go_10x10::after{font-family:'tencon' !important;content:"\e905";margin-left:.3rem;}
+.aside_biz .go_10x10 img{width:18.3vw;margin-right:.2rem;}
+
+.aside_biz .biz_aside{border-bottom:1px solid rgba(0,0,0,.04);margin:.5rem 2.05rem;}
+.aside_biz .biz_aside a{position:relative;width:100%;display:block;padding:1rem 0;font-size:1.2rem;padding-left:1rem;padding-left:2rem;}
+.aside_biz .biz_aside a.biz_home::before{position:absolute;left:0;top:.7rem;content:' ';width:1.5rem;height:1.5rem;background:url(//fiximage.10x10.co.kr/web2021/biz/icon_home.png?v=2) no-repeat 0 0;background-size:100%;}
+.aside_biz .biz_aside a.my_ten::before{position:absolute;left:0;top:.7rem;content:' ';width:1.5rem;height:1.5rem;background:url(//fiximage.10x10.co.kr/web2021/biz/icon_myten.png?v=2) no-repeat 0 0;background-size:100%;}
+
+.aside_biz .aside_nav{padding-top:2rem;}
+
+.aside_biz .aside_notice{margin-top:auto;margin-bottom:1.54rem;}
+
+.aside_biz .aside_footer{margin-top:0;background-color: rgba(0, 0, 0, 0.04);}
+.aside_biz .aside_footer.no_notice{margin-top:auto;}
+.aside_biz .aside_footer .aside_user{align-items: center;padding:2.177rem;}
+.aside_biz .aside_footer .aside_user li{position:relative;width:50%;text-align:center;letter-spacing:-0.01rem;}
+.aside_biz .aside_footer .aside_user li + li{padding-left:0;}
+.aside_biz .aside_footer .aside_user li::after{position:absolute;content:' ';right:.1rem;background:rgba(0, 0, 0, 0.04); width:2px;height:1rem;}
+.aside_biz .aside_footer .aside_user li + li::after{content:none;}
+.aside_biz .aside_footer .biz_logout{width:100%;display:block;text-align:center;padding:2.177rem 0;font-size:1.19rem;color:var(--c_999);}
+
+
+/* 마이텐바이텐 비즈 */
+.my-profile .my-info{display:flex;align-items: center;}
+.my-profile .desc{padding-top:0;}
+
+/* search top */
+.search_entrance,
+.search_main,
+.search_detail {padding-top:4.1rem;}
+.srchbar_wrap {position:fixed; top:4.1rem; left:0; z-index:100; width:100%; padding:.68rem 1.37rem; background-color:var(--white);}
+.srchbar_wrap .input_txt { display: flex; align-items: center; height: 3.41rem; padding-top: .8rem; padding-right: 1.37rem; background-color: var(--grey); border-radius: 1.71rem; }
+.srchbar_wrap .srchbar {padding-top:.68rem; padding-bottom:.68rem; font-size:0;}
+.srchbar_wrap .srchbar::before {display:none;}
+.srchbar_wrap .srchbar .kwd_list {flex:1; position:relative; width:13.04rem; height:100%;}
+.srchbar_wrap .srchbar .kwd_list::after {position:absolute; top:0; right:0; width:1.36rem; height:100%; background-image:linear-gradient(to right, rgba(245,246,247,0) 0%, var(--grey) 69%); content:'';}
+.srchbar_wrap .srchbar .kwd_list .kwd_inner {overflow-y:hidden; overflow-x:auto; width:100%; height:100%; white-space:nowrap; -ms-overflow-style:none; scrollbar-width:none;}
+.srchbar_wrap .srchbar .kwd_list .kwd_inner::-webkit-scrollbar {display:none;}
+.srchbar_wrap .srchbar .kwd_list span {display:inline-block; height:100%; margin-right:.5rem;}
+.srchbar_wrap .srchbar .kwd_list span em {display:inline-block; height:100%; padding-top:.45rem; font-family:var(--bd); font-size:1.54rem; line-height:1; color:var(--c_111);}
+.srchbar_wrap .srchbar .btn_del {height:100%; }
+.srchbar_wrap .srchbar .btn_del .i_close {position:relative; padding:.34rem; background-color:var(--c_ccc); font-size:.68rem; color:var(--white); border-radius:50%;}
+.srchbar_wrap .srchbar .btn_add_kwd {flex-shrink:0; margin-left:auto; padding-top:.25rem; font-size:1.19rem; line-height:1; font-family:var(--rg); color:var(--c_999);}
+
+/* 비즈 마이텐바이텐 검색창 */
+.biz_srchbar .input_txt {display:flex; align-items:center; height:3.41rem; padding-top:.8rem; padding-bottom:.75rem; padding-left:1.37rem; padding-right:1.37rem; background-color:var(--grey); border-radius:1.71rem;}
+.biz_srchbar .input_txt input {flex:1; width:14.04rem; height:100%; padding-top:.15rem; font-family:var(--bd); font-size:1.54rem; line-height:1; color:var(--c_111); caret-color:var(--ten);
+	background-color: var(--grey);}
+.biz_srchbar .input_txt input::-webkit-input-placeholder {padding-top:.15rem; font-family:var(--rg); line-height:1; color:var(--c_ccc);}
+.biz_srchbar .input_txt input::-moz-placeholder {padding-top:.15rem; font-family:var(--rg); line-height:1; color:var(--c_ccc);}
+.biz_srchbar .input_txt input::-ms-input-placeholder {padding-top:.15rem; font-family:var(--rg); line-height:1; color:var(--c_ccc);}
+.biz_srchbar .input_txt input::-moz-placeholder {padding-top:.15rem; font-family:var(--rg); line-height:1; color:var(--c_ccc);}
+.biz_srchbar .btn-cancle {background-color:var(--white);}
+
+.biz_srchbar .input_txt input::-ms-clear,
+.biz_srchbar .input_txt input::-ms-reveal{display:none;width:0;height:0;}
+.biz_srchbar .input_txt input::-webkit-search-decoration,
+.biz_srchbar .input_txt input::-webkit-search-cancel-button,
+.biz_srchbar .input_txt input::-webkit-search-results-button,
+.biz_srchbar .input_txt input::-webkit-search-results-decoration{display:none;}
+
+/* 2021.06.29 BIZ 검색바 , sortbar 클래스 추가 */
+.search_detail .biz_sortbar {margin-top:0;}
+
+/* 비즈 연관 검색어  */
+#biz_slider2.ctgr_nav_type2 a{font-size:1.18rem;}
+#biz_slider2.ctgr_nav_type2 .active::after{content:none;}
+

@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* 2020 renewal (필요한 css만 선별적으로 가져옴) */
+:root {
+	--ten:#ff214f;
+	--aqua:#00c4be;
+	--lime:#d1ff59;
+	--pink:#ffa6b8;
+	--white:#fff;
+	--grey:#f5f6f7;
+	--c_111:#111;
+	--c_666:#666;
+	--c_999:#999;
+	--c_ccc:#ccc;
+	--c_eee:#eee;
+	--dim90:rgba(0,0,0,.9);
+	--dim80:rgba(0,0,0,.8);
+	--dim20:rgba(0,0,0,.2);
+	--rg:'csL', 'AppleSDGothicNeo-Regular', 'nsL', sans-serif;
+	--md:'csR', 'AppleSDGothicNeo-Medium', 'nsR';
+	--sb:'csM', 'AppleSDGothicNeo-SemiBold', 'nsM';
+	--bd:'csM', 'AppleSDGothicNeo-Bold', 'nsB';
+}
+/* Font */
+@font-face {
+	font-family:'csL';
+	font-style:normal;
+	src:local('Core Sans C 35 Light'), url('//fiximage.10x10.co.kr/webfont/CoreSansC35Light.woff') format('woff'),url('//fiximage.10x10.co.kr/webfont/CoreSansC35Light.ttf') format('truetype');
+}
+@font-face {
+	font-family:'csR';
+	font-style:normal;
+	src:local('Core Sans C 45 Regular'), url('//fiximage.10x10.co.kr/webfont/CoreSansC45Regular.woff') format('woff'),url('//fiximage.10x10.co.kr/webfont/CoreSansC45Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family:'csM';
+	font-style:normal;
+	src:local('Core Sans C 55 Medium'), url('//fiximage.10x10.co.kr/webfont/CoreSansC55Medium.woff') format('woff'),url('//fiximage.10x10.co.kr/webfont/CoreSansC55Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family:'csB';
+	font-style:normal;
+	src:local('Core Sans C 65 Bold'), url('//fiximage.10x10.co.kr/webfont/CoreSansC65Bold.woff') format('woff'),url('//fiximage.10x10.co.kr/webfont/CoreSansC65Bold.ttf') format('truetype');
+}
+@font-face{
+	font-family:'nsL';
+	font-style:normal;
+	src:local('Noto Sans Light'), local('NotoSans-Light'), url("//fiximage.10x10.co.kr/webfont/NotoSansKR-Light.woff") format('woff'), url('//fiximage.10x10.co.kr/webfont/NotoSansKR-Light.ttf') format('truetype');
+}
+@font-face{
+	font-family:'nsR';
+	font-style:normal;
+	src:local('Noto Sans Regular'), local('NotoSans-Regular'), url("//fiximage.10x10.co.kr/webfont/NotoSansKR-Regular.woff") format('woff'), url('//fiximage.10x10.co.kr/webfont/NotoSansKR-Regular.ttf') format('truetype');
+}
+@font-face{
+	font-family:'nsM';
+	font-style:normal;
+	src:local('Noto Sans Medium'), local('NotoSans-Medium'), url("//fiximage.10x10.co.kr/webfont/NotoSansKR-Medium.woff") format('woff'), url('//fiximage.10x10.co.kr/webfont/NotoSansKR-Medium.ttf') format('truetype');
+}
+@font-face{
+	font-family:'nsB';
+	font-style:normal;
+	src:local('Noto Sans Bold'), local('NotoSans-Bold'), url("//fiximage.10x10.co.kr/webfont/NotoSansKR-Bold.woff") format('woff'), url('//fiximage.10x10.co.kr/webfont/NotoSansKR-Bold.ttf') format('truetype');
+}
+.ellipsis2 {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient: vertical; word-wrap:break-word;}
+.blind {overflow:hidden; position:absolute; width:0; height:0; font:0; color:transparent;}
+.user_eval {display:inline-block; position:relative;}
+.user_eval::before,
+.user_eval i {position:absolute; top:0; left:0; height:100%; background-position:left center; background-repeat:repeat-x; background-size:auto 100%;}
+.user_eval::before {width:100%; content:' '; background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3e%3cpath fill='none' stroke='%23FF214F' stroke-width='2' d='M24.006 5c.026 0 .052.008.074.024h0l6.442 12.24 13.856 1.943c.221.042.4.109.52.22.062.06.097.133.101.212.009.152-.056.308-.153.457-.154.235-.398.446-.712.613h0l-9.46 8.752 1.965 11.632c.133.594.187 1.082.14 1.466-.02.155-.035.3-.134.377-.11.087-.272.072-.449.058-.396-.03-.87-.175-1.422-.41h0L23.97 37.007l-10.71 5.58c-.551.233-1.025.377-1.42.408-.177.014-.34.03-.45-.058-.098-.077-.113-.222-.132-.377-.048-.384.005-.872.139-1.466h0L13.36 29.46l-9.459-8.75a2.02 2.02 0 01-.74-.635c-.1-.15-.169-.305-.16-.457a.266.266 0 01.093-.185c.128-.114.32-.181.558-.224h0l13.865-1.945 6.209-12.045a.533.533 0 01.162-.179.227.227 0 01.118-.039z'/%3e%3c/svg%3e");}
+.user_eval i {font-size:0; color:transparent; background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3e%3cpath fill='%23FF214F' fill-rule='evenodd' d='M25.093 4.737l6.077 11.608 13.369 1.875c1.963.357 1.87 2.322.187 3.304l-8.975 8.304 1.87 11.073c.654 2.946-.561 3.75-3.273 2.59l-10.377-5.359-10.284 5.358c-2.712 1.16-3.927.357-3.273-2.59l1.87-11.072-8.975-8.304c-1.683-.982-1.87-2.947.187-3.304l13.37-1.875 5.983-11.608c.56-.983 1.776-.983 2.244 0z'/%3e%3c/svg%3e");}
+
+.prd_item {position:relative;}
+.prd_item dfn {overflow:hidden; position:absolute; width:0; height:0; font-size:0; color:transparent;}
+.prd_item .set_price {font-family:'csB'; font-size:1.71rem; color:var(--c_111); letter-spacing:-0.025em;}
+.prd_item .discount {font-family:'csB'; font-size:1.37rem; color:var(--ten);}
+.prd_item .discount em {font-family:var(--bd); font-size:1.11rem; vertical-align:.1em;}
+.prd_item .prd_info {text-align:left;}
+.prd_item .prd_name {font-family:var(--md); font-size:1.37rem; color:var(--c_111); line-height:1.3; word-break:break-all;}
+.prd_item .prd_brand {overflow:hidden; font-family:var(--md); font-size:1.11rem; color:var(--c_999); white-space:nowrap; text-overflow:ellipsis;}
+.prd_item .prd_badge {display:flex; flex-wrap:wrap;}
+.prd_item .prd_badge [class^="badge_type"] {display:inline-block; height:1.45em; padding:.04em .36em 0; line-height:1.45em; font-family:var(--bd); font-size:.94rem; border:1px solid;}
+.prd_item .prd_badge .badge_type1 {color:var(--c_111); border-color:var(--c_666);}
+.prd_item .prd_badge .badge_type2 {color:var(--white); background:var(--c_111); border-color:transparent;}
+.prd_item .user_eval {width:calc(.85rem * 5); height:.85rem;}
+.prd_item .user_comment {font-size:1rem; color:var(--c_666);}
+.prd_item .prd_link {position:absolute; top:0; right:0; bottom:0; left:0;}
+.prd_item .btn_more {display:block; position:relative; width:97.6%; height:2.73rem; padding:.2em 0 0; margin:1.45rem auto .68rem; text-align:center; font-family:var(--bd); font-size:1.2rem; color:var(--c_999); background:var(--grey); border-radius:1.37rem; word-break:keep-all;}
+
+.prd_slider_type4 .swiper-container {padding:0 .68rem;}
+.prd_slider_type4 .swiper-slide {width:11.95rem; margin:0 .68rem;}
+.prd_slider_type4 .prd_item .prd_info {padding:1.02rem 0 0;}
+.prd_slider_type4 .prd_item .prd_name {min-height:2.6em; margin-top:.6rem;}
+
+.sortbar {position:relative; display:flex; justify-content:space-between; width:100%; padding:1.37rem; background-color:var(--white);}
+.sortbar .sort_l,.sortbar .sort_r {display:flex; align-items:center;}
+.sortbar .sort_r {margin-left:auto;}
+
+.prd_list.type_basic {display:flex; flex-wrap:wrap; padding:0 .73rem;}
+.prd_list.type_basic .prd_item {width:50%; float:left; padding:0 .64rem 2.73rem;}
+.prd_list.type_basic .prd_item .prd_info {margin-top:1.5rem;}
+.prd_list.type_basic .prd_item .prd_name {margin-top:1rem;}
+.prd_list.type_basic .prd_item .prd_link {right:.64rem; left:.64rem;}
+
+/* xmas2020 */
+.xmas2020 .user_side {margin-top:1.28rem;}
+.xmas2020 .prd_slider_type4 {padding-bottom:4.01rem;}
+.xmas2020 .prd_slider_type4 .swiper-container {overflow:visible;}
+.xmas2020 .prd_slider_type4 .prd_img img {border-radius:.6rem;}
+.xmas2020 .prd_slider_type4 .label_best,
+.xmas2020 .prd_slider_type4 .label_lowest {position:absolute; top:.43rem; right:.43rem; z-index:5; height:1.88rem; padding:0 .68rem 0; font-family:var(--md); font-size:1.19rem; line-height:2.2rem; color:var(--white); border-radius:.85rem;}
+.xmas2020 .prd_slider_type4 .label_best {background-color:#285b42;}
+.xmas2020 .prd_slider_type4 .label_lowest {background-color:var(--ten);}
+
+.xmas-item .type ul {display:flex; flex-wrap:wrap; justify-content:space-between; padding:0 1.71rem;}
+.xmas-item .type li input[type="radio"] {visibility:hidden; position:absolute; left:0; top:0; width:0; height:0;}
+.xmas-item .type li label {display:inline-block; height:2.82rem; padding:0 1.4rem; margin:.43rem 0; background-color:#f0f0f0; font-size:1.28rem; line-height:3.02rem; font-family:var(--sb); color:#3d3d3d; border-radius:1.28rem; letter-spacing:-.06rem;}
+.xmas-item .type li:nth-child(5) label,
+.xmas-item .type li:nth-child(6) label,
+.xmas-item .type li:nth-child(7) label {padding:0 1.15rem;}
+.xmas-item .type li input[type="radio"]:checked + label {background-color:#2f5a3b; color:#fff;}
+
+.xmas2020 .sortbar {width:auto; margin:2.56rem 1.28rem 0; padding:0 0 1.02rem 0; border-bottom:solid .09rem #dfdfdf;}
+.xmas2020 .sort_r button {display:inline-block; padding:0 .86rem; font-size:1.19rem; line-height:1.1; font-family:var(--rg); color:#232323; background-color:transparent;}
+.xmas2020 .sort_r button.on {font-family:var(--bd);}
+.xmas2020 .sort_r button:first-child {border-right:solid .09rem #dfdfdf;}
+
+.xmas2020 .prd_list {margin-top:1.37rem;}
+
+.topic {position:relative;}
+.topic h2 span {position:absolute; top:25.27vw; left:0; opacity:0; transition:all 1s;}
+.topic h2 .t2 {top:44.95vw;}
+.topic h2 .t1 {transform:translate3d(0,-3rem,0); transition-delay:-.4s;}
+.topic h2 .t2 {transform:translate3d(-2rem,0,0);}
+.topic.on h2 span {transform:translate3d(0,0,0); opacity:1;}
+.topic .deco i {display:inline-block; position:absolute; top:6.19rem; width:1.71rem; height:1.71rem; background-image:url(//webimage.10x10.co.kr/fixevent/event/2020/xmas/m/img_gold.png); background-repeat:no-repeat; background-position:50% 50%; background-size:contain; animation:bounce 1s 200 both;}
+.topic .deco .dc1 {right:3.58rem;}
+.topic .deco .dc2 {top:7.47rem; right:-1.28rem; width:4.48rem; height:4.48rem; animation-delay:.2s;}
+.topic .deco .dc3 {top:35.11rem; left:2.47rem; width:1.02rem; height:1.02rem; animation-delay:.4s;}
+.topic .deco .dc4 {top:36.27rem; left:3.41rem; width:2.35rem; height:2.35rem; animation-delay:.3s;}
+@keyframes bounce {
+	from, to {transform:translate3d(0,5px,0); animation-timing-function:ease-out;}
+	50% {transform:translate3d(0,-5px,0); animation-timing-function:ease-in;}
+}
+
+.bnr_mkt {display:block; margin-bottom:3.33rem; background-color:#fff;}
+
+.btn_cate {display:inline-block; position:fixed; bottom:6rem; right:0; width:20.4%;}

@@ -1,0 +1,101 @@
+<%@ codepage="65001" language="VBScript" %>
+<% option Explicit %>
+<% response.Charset="UTF-8" %>
+<%
+'####################################################
+' Description : 월페이퍼 12월 5주차
+' History : 2018-11-16 최종원
+'####################################################
+%>
+<!-- #include Virtual="/lib/util/commlib.asp" -->
+<!-- #include virtual="/lib/inc_const.asp" -->
+<!-- #INCLUDE Virtual="/lib/chkDevice.asp" -->
+<!-- #include virtual="/lib/db/dbopen.asp" -->
+<!-- #include virtual="/lib/util/md5.asp" -->
+<!-- #include virtual="/event/lib/event_etc_function.asp" -->
+<%
+dim eCode, vUserID
+
+IF application("Svr_Info") = "Dev" THEN
+	eCode = "68520"
+Else
+	eCode = "91549"
+End If
+
+vUserID = getEncLoginUserID
+%>
+<script type="text/javascript">
+$(function(){
+	var itemSwiper = new Swiper(".wallpaper-swiper .swiper-container", {
+			loop:true,
+			speed:1000,
+			autoplay:2000,
+			pagination:".wallpaper-swiper .pagination-dot",
+			paginationClickable:true
+	});	
+});
+function loginCheckDownLoad() {	
+	if ("<%=IsUserLoginOK%>"=="False") {		
+		<% If isApp="1" or isApp="2" Then %>
+			alert('로그인을 하셔야 다운받으실 수 있습니다.');
+			calllogin();
+			return false;
+		<% else %>
+			jsChklogin_mobile('','<%=Server.URLencode(appUrlPath &"/event/eventmain.asp?eventid="&eCode&"")%>');
+			return false;
+		<% end if %>	
+	}else{
+		var viewval = 21
+		var str = $.ajax({
+			type: "GET",
+			url:"/event/etc/doeventsubscript/doEventSubscript_wallpaper.asp",
+			data: "viewval="+viewval+"&mode=down",
+			dataType: "text",
+			async: false,
+			success: function(message) {
+				fileDownload(4551);
+			}			
+		}).responseText;				
+	}
+}
+</script>
+<div class="weekly-wallpaper">
+	<div class="wallpaper-swiper">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="http://webimage.10x10.co.kr/fixevent/event/2018/91549/m/img_detail_wallpaper1.jpg" alt="" /></div>
+				<div class="swiper-slide"><img src="http://webimage.10x10.co.kr/fixevent/event/2018/91549/m/img_detail_wallpaper2.jpg" alt="" /></div>
+			</div>
+			<div class="pagination-dot wallpaper-dot"></div>
+		</div>
+		<div class="wallpaper-info">
+			<div>
+				<strong>happy new year</strong>
+				<a href="javascript:loginCheckDownLoad();" class="btn-download">다운로드 받기</a>
+			</div>
+		</div>
+	</div>
+	<div class="wallpaper-story">
+		<p>매일 만나는 해님이지만<br>새해에 뜨는 해님은 특별하게 느껴져요.<br>아마도 한 해의 희망과 안녕을 담고<br>떠오르기 때문일까요?<br>2019년도 반짝반짝 빛나는<br>한 해가 되기를 바랍니다.</p>
+	</div>
+	<div class="wallpaper-related">
+		<h2><span>바탕화면과</span> 관련된 상품</h2>
+		<ul>
+			<li>
+				<a href="/category/category_itemPrd.asp?itemid=2182637&pEtr=91549" onclick="TnGotoProduct('2182637');return false;"><img src="http://webimage.10x10.co.kr/image/basic/218/B002182637.jpg" alt="해피뉴이어 키링 HAPPY NEW YEAR KEY RING" /></a>
+			</li>
+			<li>
+				<a href="/category/category_itemPrd.asp?itemid=1764462&pEtr=91549" onclick="TnGotoProduct('1764462');return false;"><img src="http://webimage.10x10.co.kr/image/basic/176/B001764462.jpg" alt="Sunrise / Sun" /></a>
+			</li>
+			<li>
+				<a href="/category/category_itemPrd.asp?itemid=111898&pEtr=91549" onclick="TnGotoProduct('111898');return false;"><img src="http://webimage.10x10.co.kr/image/basic/11/B000111898-3.jpg" alt="스마일 아동벽등(해)" /></a>
+			</li>
+			<li>
+				<a href="/category/category_itemPrd.asp?itemid=1877961&pEtr=91549" onclick="TnGotoProduct('1877961');return false;"><img src="http://webimage.10x10.co.kr/image/basic/187/B001877961.jpg" alt="HAPPY NEW YEAR riso card" /></a>
+			</li>
+		</ul>
+		<a href="" onclick="fnAPPRCVpopSNS(); return false;" class="btn-share mApp">공유하기</a>
+		<a href="" onclick="popSNSShareNew(); return false;" class="btn-share mWeb">공유하기</a>
+	</div>
+</div>
+<!-- #include virtual="/lib/db/dbclose.asp" -->

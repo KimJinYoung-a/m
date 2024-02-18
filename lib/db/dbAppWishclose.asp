@@ -1,0 +1,5 @@
+<%
+
+dbAppWishget.Close
+
+%>

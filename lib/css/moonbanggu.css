@@ -1,0 +1,157 @@
+/* common */
+.moonbanggu {background-color: #f4f2e8; z-index:1;}
+.moonbanggu,
+.moonbanggu section,
+.moonbanggu article {position: relative;}
+.moonbanggu dl:after {content: ''; display: block; clear: both;}
+.moonbanggu dt,dd {float: left;}
+.moonbanggu .blind {display: none; height: 0; width: 0; opacity: 0; font-size: 0; line-height: 0; }
+.moonbanggu .inner {width: 29.44rem; margin:0 auto;}
+.moonbanggu .bg-red {background-color: #ff6242;}
+.moonbanggu .bg-green {background-color: #00da5c;}
+.moonbanggu .color-red {color: #fe4924;}
+.moonbanggu .color-green {color: #00d55a;}
+.moonbanggu h3 {position: relative; margin-bottom: 1.28rem; color: #000; font-size: 1.28rem; font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold';	 line-height: 2.8rem; }
+.moonbanggu h3:after {content: ''; position: absolute; top: 2.8rem; left: 0; display: block; width: 100%; height: .085rem; background-color: #000;}
+.moonbanggu .logo {position: absolute; top: 0; left: 0; width: 100%; min-height: 4.7rem; background-color: rgba(244, 242, 232, .65); z-index: 99;}
+.moonbanggu .logo span {display: block; width: 7.7rem; margin: 0 auto; padding: 1.7rem 0;}
+.moonbanggu button.btn.btn-more {width: 100%; margin-bottom: 3.3rem; background-color: #e9e4cc; border: none; font-size: 1.15rem; line-height: 2.7; }
+.moonbanggu button.btn.btn-more:after {content: ''; display: inline-block; width: .55rem; height: .55rem; margin-left: .7rem; border-bottom: 1px solid #000;border-left: 1px solid #000; transform: rotate(-45deg); transform-origin: 50% 50%; transition:.4s; vertical-align: .3rem}
+.moonbanggu button.btn.btn-more.on:after {vertical-align: 0; transform: rotate(135deg);}
+
+/* layout */
+
+.main-bnr {position: relative;}
+.main-bnr .swiper-slide {width: 100%;}
+.main-bnr .desc {position: absolute; left: 1.91rem; bottom: 4.7rem; width: calc(100% - 3.82rem); z-index: 99;}
+.main-bnr .desc .headline {margin-bottom: .5rem; font: bold 2rem/1.2 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold';}
+.main-bnr .desc .headline span {overflow: hidden; display: inline-block; width: 22rem; vertical-align: middle;}
+.main-bnr .desc .subcopy {width: 23rem; font-size: 1.1rem; line-height: 1.3}
+.main-bnr .desc .discount {display: inline-block; padding: .2rem .3rem 0; margin-top: .9rem; margin-right: .3rem; color: #000; font-size: 1.11rem; line-height: 1.4; font-family:'CoreSansCMedium'; vertical-align: middle ;}
+.main-bnr .pagingNo {display: none; position: absolute; left: 1.91rem; bottom: 1.7rem; z-index: 2; font-family:'CoreSansCRegular';}
+.main-bnr .pagingNo strong {font-weight: normal;}
+
+.main-prd {position: relative; padding: 2.99rem 0;}
+.main-prd .img-cont {position: relative;}
+.main-prd .img-cont .thumbnail {position: relative; overflow: hidden; height: 17.8rem; width: 17.8rem; background: none; z-index: 11;}
+.main-prd .img-cont.verNew .thumbnail {position: relative; overflow: hidden; height: 17.8rem; width: 17.8rem; background: none; border-radius: 50%; z-index: 11;}
+.main-prd .img-cont .oneday-chart {display:none;}
+.main-prd .img-cont .badge {position: absolute; display:block; top: .8rem; left: 0;  width: 4.18rem; height:4.8rem; background-repeat:no-repeat; background-size:auto 4.16rem; z-index: 12;}
+.main-prd .oneday .img-cont .badge {background-image:url(//fiximage.10x10.co.kr/m/2019/moonbanggu/img_badge_1dayVn.png);}
+.main-prd .oneday .img-cont .badge.day-01 {background-position:0 0;}
+.main-prd .oneday .img-cont .badge.day-02 {background-position:-4.26rem 0;}
+.main-prd .oneday .img-cont .badge.day-03 {background-position:-8.5rem 0;}
+.main-prd .oneday .img-cont .badge.day-04 {background-position:-12.7rem 0;}
+.main-prd .oneday .img-cont .badge.day-05 {background-position:-16.98rem 0;}
+.main-prd .oneday .img-cont .badge.day-06 {background-position:-21.23rem 0;}
+.main-prd .oneday .img-cont .badge.day-07 {background-position:-25.45rem 0;}
+.main-prd .oneday .img-cont .badge.day-08 {background-position:-29.7rem 0;}
+.main-prd .oneplus .img-cont .badge {background-image:url(//fiximage.10x10.co.kr/m/2019/moonbanggu/img_badge_1plus.png);}
+.main-prd .gift .img-cont .badge {background-image:url(//fiximage.10x10.co.kr/m/2019/moonbanggu/img_badge_gift.png);}
+.main-prd .oneday .img-cont .oneday-chart {display:block;}
+.main-prd .oneday .img-cont .chart {position:absolute; width:19.2rem; height:19.2rem; top: -.9rem; left: .2rem; z-index:10; transform: rotate(-60deg); }
+.main-prd .oneday .img-cont .chart:before {content: ''; display: block; position:absolute; width:18.95rem; height:18.95rem; top: -.57rem; left: -.57rem; border-radius: 50%; border: .17rem solid #e9e6d7; box-sizing: border-box;}	
+.main-prd .oneday .img-cont .chart .percent {display:block; position:absolute; top:-.85rem; left:-.85rem; z-index:10; width:102%; height:102%; background:url(//fiximage.10x10.co.kr/m/2019/moonbanggu/bg_chart_point.png) 50% 0 no-repeat; background-size:cover;}
+.main-prd .oneday .img-cont .chart canvas {position:absolute; top:-.7rem; left:-.7rem; width: 100% !important; height: 100% !important;}
+.main-prd .oneday .img-cont .time {position: absolute; top: -.7rem; left: 0; letter-spacing: .05rem; font-size: 1.02rem; font-family:'CoreSansCRegular';}
+.main-prd .desc {position: absolute; left: 50%; top: 5.46rem; width: 14.72rem;z-index: 99;}
+.main-prd .desc .name {display: block; display: -webkit-box; width: 14.85rem; max-height: 7.6rem; background-color: #fff; font-size: 1.5rem; font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold';	 line-height: 1.33; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break : break-all; overflow: hidden; border:1rem solid #fff; box-shadow: 0.5rem 0.5rem 0 0 #dfdac4;}
+.main-prd .desc .price {padding-left: 4.1rem; margin-top: 1.5rem; font-size: 1.4rem; font-family:'CoreSansCMedium';}
+.main-prd .desc .price s {display: block;margin-bottom: .3rem; font-size: 0.98rem; font-family:'CoreSansCLight', 'AppleSDGothicNeo-Regular', 'NotoSansKRRegular', sans-serif; vertical-align: .16rem; }
+.main-prd .desc .price span {height: 1.6rem; padding: .2rem .3rem .1rem; margin-left:.5rem; background-color: #000; color: #fff; font-family:'CoreSansCMedium'; font-size: 1.02rem; line-height: 1.6rem; vertical-align: .15rem;}
+
+.items-wrap article {overflow: hidden;}
+.items-wrap .nav ul:after {content: ''; display: block; clear: both;}
+.items-wrap .nav li {position: relative; float: left; display: block; margin-right: 1.5rem;}
+.items-wrap .nav li:after {content: ''; position: absolute; top:.9rem; right: -1.3rem; display: block; height: .95rem; width: .085rem; margin: 0 .5rem -.1rem; background-color: #7a786e;} 
+.items-wrap .nav li:last-child:after {content: none;}
+.items-wrap .nav li a {display: block; height: 2.8rem; line-height: 2.8rem; color: #7a786e; font-size: .99rem; font-weight: normal; }
+.items-wrap .nav li.on a {color:inherit; font-size: inherit; font-weight: inherit}
+.items-wrap .nav li.on a:after {content: ''; display: block; position: absolute; top: 2.4rem; left: 0; width: 100%; height: 1.11rem; background-image: url(//fiximage.10x10.co.kr/m/2019/moonbanggu/btn_on.png?v=1.02); background-size: 10rem; background-position-x: 50%; }
+.items-wrap .nav li.nav2.on a:after {background-position-y: 40%;}
+.items-wrap .nav li.nav3.on a:after {background-position-y: 80%;}
+.items-wrap .items {background-color: unset;}
+.items-wrap .items ul {content: ''; display: block; clear: both;}
+.items-wrap .items li {float: left; width: 14.08rem; margin-right: 1.28rem; margin-bottom: 2.54rem;}
+.items-wrap .items li:nth-child(2n) {margin-right: 0;}
+.items-wrap .items li .thumbnail { width: 100%; height: 14.08rem; }
+.items-wrap .items li .thumbnail em {position: absolute; top: 0; right: 0; width: 2.13rem; height: 2.09rem; line-height: 2.3rem; text-align: center; background-color: #ffd83c; z-index: 17; font-size: 1.06rem; font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold';	}
+.items-wrap article.cart-best .items .thumbnail em {width: 4rem; background-color: #ffa13d; font-size: 0.98rem; font-family:'CoreSansCRegular', 'AppleSDGothicNeo-Medium', 'NotoSansKRMedium';	}
+.items-wrap article.tenten-pic .items .thumbnail em {background-color: #4cbeff;}
+.items-wrap .items li .desc .name {height: auto; max-height: 2.82rem; font-size: .98rem;}
+.items-wrap .items li .desc .price {margin-top: .75rem;}
+.items-wrap .items li .desc .price b {margin-right: .5rem; font-size: 1.07rem; font-family:'CoreSansCRegular', 'AppleSDGothicNeo-Medium', 'NotoSansKRMedium';	}
+
+.story svg {position: absolute; top: 6rem; left: -6rem;  z-index: 4;}
+.story svg circle {fill:#00ee6a; cx:2.7rem; cy:2.7rem; r: 2.7rem; }
+.story .inner {position: relative; z-index: 5;}
+.story dt {width: 17.07rem; height: 21.33rem; }
+.story dd {width:calc(100% - 18.07rem); padding-top: 1rem;}
+.story dd .label {padding: .2rem .5rem .1rem; font-size: .98rem; line-height: 1.4; background-color: #00f06b;}
+.story dd .tit {display: -webkit-box; width: 100%; max-height: 4.5rem; margin: .8rem 0 .9rem; font-size: 1.7rem; line-height: 1.3; font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold';	 -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; overflow: hidden; }
+.story dd .subtxt {display: -webkit-box; width: 100%; max-height: 5rem; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; overflow: hidden; margin-bottom: 1.3rem; font-size: 1.07rem; line-height: 1.5; overflow: hidden;}
+.story dd .btn-detail {width: 10.41rem; height: 3.29rem; border: none; font-size: .98rem; font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold';	 background: url(//fiximage.10x10.co.kr/m/2019/moonbanggu/btn_story.png) no-repeat; background-size: contain; text-align: center;}
+
+.evt-list .thumbnail {position: relative;}
+.evt-list .ico-gift {position: absolute; z-index: 8; top: 1rem; right: 1rem; display: block; width: 3.84rem; height: 3.84rem; background: url(//fiximage.10x10.co.kr/m/2019/moonbanggu/ico_gift.png) no-repeat; background-size: contain; text-indent: -999rem;}
+.evt-list .tit {margin: .8rem 0 2.3rem; font-size: 1.28rem; line-height: 1.4; }
+.evt-list .discount {display: inline-block; padding: .2rem .3rem 0; margin-left: .5rem; font-size: 1.07rem; font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold';	 line-height: 1.5rem; vertical-align: top;}
+
+.issue-vod {width: 100%; padding: 2.8rem 0; margin-top: 1.4rem; background-image: url(//fiximage.10x10.co.kr/m/2019/moonbanggu/bg_vod.jpg);}
+.issue-vod .tit {margin-bottom: 1.28rem;}
+.issue-vod .tit span {font-size: 1.28rem; font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold';	 line-height: 1.28rem; color: #ffd83c; }
+.issue-vod .tit span b {display: inline-block; width: 1.1rem; font-size: 2.8rem; line-height: 1.28rem; vertical-align: -.4rem; color: inherit; }
+.issue-vod .tit span:after {content: ''; display: inline-block; width: .08rem; height: 1.28rem; margin: 0 .8rem; vertical-align: -.2rem; background-color: #aaa; opacity: .6}
+.issue-vod .tit .timer {color: #aaa; font-size: 1.07rem; line-height: 1.28rem; letter-spacing: .1rem; background-color: transparent; vertical-align: .1rem;}
+.issue-vod dt {position: relative; width: 17.07rem; margin-right: .85rem;}
+.issue-vod dt:before {content: ''; position: absolute; top: 5.33rem; left: 5.33rem; display: block; width: 6.61rem; height: 6.61rem; background-image: url(//fiximage.10x10.co.kr/m/2019/moonbanggu/ico_vod_play.png); background-repeat: no-repeat; background-size: contain;}
+.issue-vod dt.new:after {content: '';  position: absolute; top: 5rem; right: 4rem; display: block; width: 3.58rem; height: 3.58rem; background-image: url(//fiximage.10x10.co.kr/m/2019/moonbanggu/ico_vod_new.png);  background-repeat: no-repeat; background-size: contain;}
+.issue-vod dd {width: calc(100% - 17.92rem); margin-top: 4rem;}
+.issue-vod dd .label {padding: .2rem .5rem .1rem; font-size: .98rem; font-family:'CoreSansCMedium', 'AppleSDGothicNeo-SemiBold', 'NotoSansKRMedium';	 line-height: 1.4; background-color: #ffd83c;}
+.issue-vod dd .subtxt {overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; height: 5.9rem; margin: 1rem 0 1.3rem; font-size: 1.42rem; line-height: 1.5; color: #fff; text-overflow: ellipsis;}
+
+.brand-story {padding-top: 3.64rem; background-color: #ebe3bd; padding-bottom: 4.9rem;}
+.brand-story .list-wrap {position: relative;}
+.brand-story ul {position: absolute; top: 0; left: 0; width: 100%;}
+.brand-story ul:after {content: ''; display: block; clear: both;}
+.brand-story li {position: absolute; display: block; width: 50%;}
+.brand-story li.brand1 {top:0; left: 0; width: 100%; height: 17rem;}
+.brand-story li.brand2 {top: 18rem; height: 17rem;}
+.brand-story li.brand3 {right: 0; top: 22rem; height: 19rem;}
+.brand-story li.brand4 {top: 37rem; height: 17rem;}
+.brand-story li.brand5 {top: 44rem; right: 0; height: 20rem;}
+.brand-story li.brand6 {top: 55rem; height: 15rem;}
+.brand-story li.brand7 {top: 71rem; left: 0; width: 100%; height: 18rem;}
+
+.brand-story li a {position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; z-index: 5;}
+.brand-story li .ani {position: relative; z-index: 4;}
+.brand-story li .ani span {position: absolute; display: block; width: 14em;}
+.brand-story li.brand1 .ani {margin-left: 11rem;}
+.brand-story li.brand3 .ani {margin-top: 1.5rem;}
+.brand-story li.brand4 .ani {margin-left: .5rem;}
+.brand-story li.brand4 .ani span {transform-origin: 50% 50%}
+.brand-story li.brand7 .ani {margin: 4.5rem 0 0 12.8rem;}
+
+.cate-area {padding-top: 3.67rem; margin-bottom: 2.3rem; background-color: #ffd83c;}
+.cateList {height:9.3rem; padding: 0 .78rem;}
+.cateList li {display: inline-block; width: 6.85rem; font-size: .98rem; text-align: center; letter-spacing: -.05rem; }
+.cateList li input {visibility:hidden; position:absolute; left:0; top:0; width:0; height:0;}
+.cateList li span{display:block; position:relative; width: 5.76rem; margin: 0 auto; padding-top:6.4rem; ;cursor:pointer; text-align:center; background: url(http://fiximage.10x10.co.kr/m/2019/moonbanggu/btn_cate.png) no-repeat 0 0 / 57.6rem auto;}
+.cateList li.tape span {background-position: -6.4rem 0;}
+.cateList li.keyring span {background-position: -12.8rem 0;}
+.cateList li.pen span {background-position: -19.2rem 0;}
+.cateList li.case span {background-position: -25.6rem 0;}
+.cateList li.memo span {background-position: -32rem 0;}
+.cateList li.binder span {background-position: -38.4rem 0;}
+.cateList li.desc span {background-position: -44.8rem 0;}
+.cateList li input:checked + label span:after {content: ''; position: absolute; display: block; top: 0; left: 0; width: 5.76rem; height: 100%; background-image: url(http://fiximage.10x10.co.kr/m/2019/moonbanggu/btn_cate_on.png); background-repeat:no-repeat; background-size:5.76rem }
+.cateList li.all label span,
+.cateList li.all input:checked + label span:after {background: url(http://fiximage.10x10.co.kr/m/2019/moonbanggu/btn_cate_0.png) no-repeat 0 -6.81rem /5.76rem;}
+.cateList li.all input:checked + label span:after {background-position-y: 0;}
+.cate-area .sort {margin-bottom:1.5rem; border-bottom: .09rem solid #000;}
+.cate-area .sort li {position:relative; display:inline-block; padding-right:1rem; margin-right:1rem;}
+.cate-area .sort li:after {content:''; position:absolute; right:0; top:0.5rem; display:inline-block; width:1px; height:1rem; background-color:#d0b137;}
+.cate-area .sort li a {display:block; font-size:1.02rem; line-height:2rem; color:#61473b; }
+.cate-area .sort li:last-child:after {content:unset;}
+.cate-area .sort li.on a {font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold';	 color:#000; border-bottom:.2rem solid #000;}
+.cate-area button.btn.btn-more {margin-bottom: 4.6rem; background:none; border:.09rem solid #000;}

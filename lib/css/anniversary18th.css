@@ -1,0 +1,191 @@
+.icon-chev {display:inline-block; position:relative; width:.77rem; height:.77rem; border-color:#000; border-style:solid; border-width:0 .17rem .17rem 0; transform:rotate(-45deg);}
+.icon-cross {display:inline-block; position:relative; width:4.27rem; height:4.27rem;}
+.icon-cross:before,
+.icon-cross:after {display:inline-block; position:absolute; top:50%; left:0; width:100%; height:.17rem; margin-top:-.09rem; background-color:#aaa; content:'';}
+.icon-cross:after {transform:rotate(90deg);}
+.btn-wish {position:absolute; top:.47rem; right:.47rem; z-index:20; width:2.86rem; height:2.47rem; background:url(//webimage.10x10.co.kr/fixevent/event/2019/18th/m/ico_heart.png) 0 0 no-repeat; background-size:200% 100%;}
+.btn-wish.on {background-position:100% 100%;}
+
+.bg-random {background-color:#fff; background-repeat:no-repeat; background-position:50% 0; background-size:100% auto;}
+.anniversary18th .inner {padding:0 8%;}
+.intro {padding-top:7.25rem; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.intro h2 {font-size:2.73rem; line-height:1.54; letter-spacing:-.15rem;}
+.intro .anniversary {font-size:1.37rem;}
+.intro .intro-sub {color:#888; font-size:1.45rem; line-height:1.47;}
+.intro .evt-list {padding-top:7.98rem; padding-left:42.86%;}
+.intro .evt-list li {margin-bottom:1.02rem; border-bottom:solid .26rem #000; font:1.54rem/1.5 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.intro .evt-list li a {display:flex; align-items:center;}
+.intro .evt-list li .icon-chev {top:-.2rem; margin-left:auto; margin-right:.15rem;}
+
+/* 취향 */
+.taste .top {font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.taste h3 {padding-top:7.13rem; font-size:3.07rem; line-height:1.41;}
+.taste h3 .icon-chev {top:-1rem; margin-left:1.28rem; transform:rotate(45deg);}
+.taste .taste-sub {margin-top:1rem; font-size:1.28rem; line-height:1.5;}
+.taste .taste-date {margin-top:1.41rem; font-size:1.28rem; color:#888; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold; letter-spacing:-.05rem;}
+.taste .bnfit {margin-top:3.41rem; border-bottom:solid .17rem #000;}
+.taste .bnfit-item {display:flex; padding:1.49rem 0; border-top:solid .17rem #000;}
+.taste .bnfit-date {width:20.6%; font-size:1rem; line-height:1.6;}
+.taste .bnfit-conts {width:75.4%;}
+/*.taste .bnfit-conts em {display:inline-block; width:100%; font-size:2.03rem; line-height:1.2;}*/
+.taste .bnfit-conts span {font-size:1.28rem; line-height:1.38; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold';}
+.taste .bnfit-conts p {margin-top:.3rem; color:#888; font-size:1.28rem; line-height:1.46; font-family:'AvenirNext-Regular', 'AppleSDGothicNeo-Regular', 'RobotoRegular', 'Noto Sans', sans-serif; font-weight:normal; word-break:keep-all;}
+.taste .conts {padding-top:4.8rem;}
+.taste .day-nav {position:relative; z-index:10; background-color:#fce768;}
+.taste .day-nav .month {position:absolute; top:-1.3rem; left:2.56rem; font-size:3.07rem;}
+.taste .day-nav .swiper-slide {color:#cab953; font-size:1.4rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.taste .day-nav .swiper-slide a {display:inline-block;}
+.taste .day-nav .swiper-slide.open,
+.taste .day-nav .swiper-slide.current,
+.taste .day-nav .swiper-slide.not {color:#000;}
+.taste .day-nav .swiper-slide:nth-child(1) {padding-left:2.56rem;}
+.taste .day-nav .swiper-slide span {overflow:visible; display:inline-block; position:relative; padding:3.07rem 2.13rem 1.71rem 0;}
+.taste .day-nav .swiper-slide.open span:after,
+.taste .day-nav .swiper-slide.current span:after {display:inline-block; position:absolute; bottom:.73rem; left:50%; width:.43rem; height:.43rem; margin-left:-1.3rem; border-radius:50%; background-color:#000; content:' ';}
+.taste .day-nav .swiper-slide.current span:after {width:2.13rem; left:0; bottom:0; margin-left:0; border-radius:0;}
+
+.not-selcted .thumbnail {display:inline-block; height:100%; width:100%; background:url(//webimage.10x10.co.kr/fixevent/event/2019/18th/m/img_dashed2.png) no-repeat center / 100%; margin-top:0;}
+.not-selcted .thumbnail:before {display:none;}
+.not-selcted .btn-selct {position:absolute; top:0; left:0; z-index:10; width:100%; height:100%; background-color:transparent;}
+.not-selcted .btn-selct span {display:inline-block; width:100%; margin-top:2.23rem; font-size:1.37rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.not-selcted .btn-selct .icon-cross {margin-top:.43rem;}
+.selcted-taste {position:relative; border:none;}
+.selcted-taste .thumbnail {display:inline-block; width:100%; height:100%;}
+
+.my-taste {position:relative; padding:3.41rem 0;}
+.main .my-taste:before,
+.main .my-taste:after {display:inline-block; position:absolute; top:-1.71rem; left:-1.02rem; z-index:0; width:17.92rem; height:17.92rem; border-radius:50%; background-color:#7cff9b; content:' ';}
+.main .my-taste:after {top:0; left:0;width:8.96rem; height:8.96rem; border-radius:0;}
+.my-taste .inner {position:relative; z-index:5;}
+.my-taste .series {padding-left:1.71rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.my-taste .series-num {font-size:1rem;}
+.my-taste .series-item {font-size:2.26rem; margin:1.07rem 0;}
+.my-taste .series-sub {font-size:1.11rem; color:#428853;}
+.my-taste .selcted-taste,
+.my-taste .not-selcted {position:relative; width:22.61rem; height:22.61rem; margin-top:2.56rem; margin-left:calc(100% - 22.61rem); background-color:#fff;}
+.my-taste .btn-remove {position:absolute; top:0; right:0; z-index:30; width:3.41rem; height:3.41rem; text-indent:-999em; background-color:#000;}
+.my-taste .btn-remove:before,
+.my-taste .btn-remove:after {display:inline-block; position:absolute; top:50%; left:50%; width:1.79rem; height:.17rem; margin-top:-.1rem; margin-left:-.9rem; background-color:#fff; content:''; transform:rotate(45deg);}
+.my-taste .btn-remove:after {transform:rotate(-45deg);}
+.my-taste .btn-cmp {width:100%; height:5.12rem; margin-top:2.56rem; background-color:#ccc; color:#ebebeb; font-size:1.28rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.my-taste .btn-cmp.on {background-color:#ff5ca1;}
+.my-taste .btn-cmp .icon-chev {top:-.1rem; margin-left:.35rem; border-color:#ebebeb;}
+.my-taste .taste-history {margin-top:2.13rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.my-taste .taste-history a {display:inline-block;}
+.my-taste .taste-history span {font-size:1.62rem;}
+.my-taste .taste-history span:after {display:inline-block; width:1.58rem; height:1.49rem; margin-left:.42rem; background:url(//webimage.10x10.co.kr/fixevent/event/2019/18th/m/ico_arrow.png) 50% 0; background-repeat:no-repeat; background-size:100%; content:'';}
+.my-taste .taste-history .sub {margin-top:.85rem; font-size:1.19rem; line-height:1.2; color:#888;}
+.my-taste .taste-history .sub em {text-decoration:underline;}
+@media (min-width:768px) {
+.my-taste .series {padding-left:0;}
+.my-taste .selcted-taste,
+.my-taste .not-selcted {width:35.61rem; height:35.61rem; margin-left:calc(100% - 35.61rem);}
+}
+
+.othr-taste {width:32rem; margin:0 auto; padding-bottom:5rem;}
+.othr-top {position:relative; height:24.46rem; margin-right:8%; background-color:#ca96ff; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.othr-top .thumbnail,
+.othr-top .total-num,
+.othr-top .othr-sub,
+.othr-top h4 {display:inline-block; position:absolute; top:0; left:8%; z-index:10;}
+.othr-top .thumbnail {display:inline-block; width:65.21%; left:unset; right:0; border-left:solid 1.28rem #fff; border-bottom:solid 1.28rem #fff;}
+.othr-top .total-num {top:16.81rem; left:unset; right:-3.41rem; width:11.1rem; height:11.1rem; padding:4.19rem 0 0 2.13rem; background-color:#ffe87b; border-radius:50%; text-align:left; font-size:1.28rem; line-height:1.3;}
+.othr-top .total-num i {overflow:hidden; display:inline-block; max-width:5rem; white-space: nowrap; text-overflow:ellipsis; letter-spacing:.05rem; vertical-align:top;}
+.othr-top h4 {top:23.18rem; font-size:2.26rem; line-height:1.25;}
+.othr-top h4 span {background-color:#fff; padding:0 .85rem;}
+.othr-top h4 span.t1 {padding-top:.5rem;}
+.othr-top .othr-sub {top:28.95rem; width:13rem; padding:0 .85rem; color:#888888; line-height:1.54; font-size:1.1rem; letter-spacing:-.05rem;}
+.othr-top .othr-sub em {text-decoration:underline;}
+
+.othr-list-wrap {padding-top:13.74rem;}
+.othr-list {display:flex; flex-wrap:wrap; padding:0 8%; margin-top:1.2rem; justify-content:space-between;}
+.othr-list .figure {background-image:url(//webimage.10x10.co.kr/fixevent/event/2019/18th/m/img_fg1.png); background-repeat:no-repeat; background-size:96.77% auto; background-position:0 0;}
+.othr-list .figure .thumbnail img,
+.othr-list .figure .thumbnail:before {display:none;}
+.othr-list .othr-item {position:relative; flex-basis:49.21%; margin:.85rem 0;}
+.othr-list .othr-item:nth-child(2n) {position:relative; top:-11rem; background-position:100% 0;}
+.othr-list .othr-item:nth-child(8n-7) .thumbnail,
+.othr-list .othr-item:nth-child(8n-4) .thumbnail,
+.othr-list .othr-item:nth-child(8n-2) .thumbnail,
+.othr-list .othr-item:nth-child(8n-1) .thumbnail {overflow:hidden;  border-radius:50%;}
+.othr-list .othr-item:nth-child(8n-6) .thumbnail,
+.othr-list .othr-item:nth-child(8n-3) .thumbnail {width:96.77%; margin-left:3.23%;}
+
+@media (min-width:768px) {
+.othr-top:before {position:absolute; top:0; left:50%; width:100vw; height:100%; margin-left:-50vw; background-color:#ca96ff; content:' ';}
+}
+.lyr-taste {display:flex; justify-content:center; align-items:center; position:fixed; top:0; left:0; z-index:9999; width:100vw; height:100vh; background-color:rgba(0,0,0,.8); font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.lyr-taste .inner {position:relative; width:23.89rem; margin:0 auto; padding:0; text-align:center;}
+.lyr-taste .coupon-info {position:absolute; top:31.06%; left:50%; width:100%; margin-left:-50%;}
+.lyr-taste .coupon-info > .sale {display:flex; justify-content:center; align-items:center; margin-right:.56rem; font-size:4.28rem; font-weight:bold;}
+.lyr-taste .coupon-info .sale i {display:inline-block; margin-right:.56rem; font-size:1.11rem; font-weight:normal;}
+.lyr-taste .coupon-info .gift {width:85%; padding-top:4.43rem; margin:0 auto; color:#777; font-size:1.4rem; line-height:1.61; letter-spacing:-.05rem; word-break:keep-all;}
+.lyr-taste .coupon-info .gift .sale {color:#25a563; font-size:1.4rem; font-weight:bold;}
+.lyr-taste .coupon-info .check {padding-top:4.47rem; color:#ff4c4c; font-size:1rem; line-height:1.54;}
+.lyr-taste .btn-close {position:absolute; top:.8rem; right:.8rem; width:1.5rem; height:1.5rem; font-size:0; background:url(//fiximage.10x10.co.kr/web2019/common/ico_x.png) no-repeat 50% / 100%;}
+.lyr-taste .btn-coupon {display:flex; justify-content:center; align-items:center; width:100%; height:5.12rem; background-color:#ff5ca1; color:#ebebeb; font-size:1.28rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.lyr-taste .btn-coupon .icon-chev {display:inline-block; margin-left:.5rem; border-color:#ebebeb;}
+
+/* mw 노출 */
+.only-app {display:inline-block; margin-left:.8rem; font-size:1.28rem;}
+.btn-app {width:100%; margin:2.56rem 0 3.41rem; background-color:#7cff9b; font-size:1.28rem; line-height:5.12rem; font-weight:bold;}
+.btn-app .icon-chev {top:-.1rem; margin-left:.6rem;}
+
+.pop-taste .inner {padding:0 5.3%;}
+.pop-taste .headline {position:fixed; top:0; left:0; z-index:30; width:100%; padding-bottom:1.58rem; background-color:#fff; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold; text-align:center;}
+.pop-taste .headline .series-num {display:inline-block; padding-top:2.53rem; font-size:1.1rem;}
+.pop-taste .headline h2 {margin:.85rem 0; font-size:2.35rem;}
+.pop-taste .headline .sub {font-size:1.25rem; color:#888; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.pop-taste .item-list {display:flex; flex-wrap:wrap; justify-content:space-between; width:28.59rem; margin:0 auto; padding-top:12rem;}
+.pop-taste .item-list li {width:9.39rem; height:9.39rem; margin:.11rem 0;}
+
+.pop-taste-history .inner {padding:0 5.3%;}
+.pop-taste-history .headline {padding-top:1.28rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold; text-align:left;}
+.pop-taste-history .headline h2 {margin:.85rem 0; font-size:2.35rem;}
+.pop-taste-history .headline .sub {color:#888; font-size:1.25rem; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold; line-height:1.6;}
+.pop-taste-history .gift {position:relative; padding:1.67rem 1.67rem 1.5rem; margin:1.41rem 0 3.41rem; background-color:#fce768; font-size:1.2rem; word-break:keep-all;}
+.pop-taste-history .gift:after {display:inline-block; position:absolute; bottom:-1.54rem; right:0; width:1.54rem; height:1.54rem; background:url(//webimage.10x10.co.kr/fixevent/event/2019/18th/m/bg_gift.png) 0 0; background-repeat:no-repeat; background-size:100%; content:'';}
+.pop-taste-history .gift > div {margin-top:.51rem; color:#766c31; font-size:1.28rem; line-height:1.54; letter-spacing:-.04rem;}
+.my-history {display:flex; flex-wrap:wrap; justify-content:space-between; width:28.59rem; margin:0 auto;}
+.my-history li {width:13.65rem; margin-bottom:2.56rem;}
+.my-history li:last-child {margin-bottom:5rem;}
+.my-history .thumbnail {display:inline-block; width:100%; height:13.65rem;}
+.my-history .not-selcted .thumbnail,
+.my-history .coming-selct .thumbnail {background:url(//webimage.10x10.co.kr/fixevent/event/2019/18th/m/img_dashed1.png) no-repeat center / 100%;}
+.my-history .not-selcted .btn-selct {position:absolute; top:0; left:0; z-index:10; width:100%; height:100%;}
+.my-history .not-selcted .btn-selct span {margin-top:1.42rem; color:#909090; font-size:1rem;}
+.my-history .series {display:flex; align-items:center; margin-top:1.28rem; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.my-history .series-num {font-size:2.73rem; font-weight:normal;}
+.my-history .series-item {display:inline-block; margin-left:.85rem; font-size:1.1rem; line-height:1.2;}
+.my-history .coming-selct .series {color:#cccccc;}
+.evt-toast3 {bottom:1.7rem; z-index:10020; margin:0 6.12rem 0 1.71rem; padding:0 2.39rem; color:#fff; font-size:1.28rem; line-height:3.5rem; border-radius:1.71rem;}
+.evt-toast3 a {display:inline-block; width:100%; height:100%;}
+.evt-toast3 .icon-chev {position:absolute; top:50%; right:1.71rem; margin-top:-.3rem; border-color:#ebebeb;}
+
+/* 댓글이벤트 */
+.cmtEvt {font-size: 1.28rem; line-height: 1.4; background-color: #fff;}
+.cmtEvt .pos {position: relative;}
+.cmtEvt .pos .inner {position: absolute; top: 0; left: 0;}
+.cmtEvt .topic {padding: 7.5rem  2.56rem 5rem;}
+.cmtEvt .topic .hello {margin-bottom:3rem;}
+.cmtEvt .topic .hello span {display: block; margin-bottom: .8rem; font-size: 3.07rem; font-weight: bold; letter-spacing: -.1rem;}
+.cmtEvt .topic .hello p {color: #777; font-weight: bold;}
+.cmtEvt .topic .guide {padding: 1rem 0; border: solid #000; border-width: .15rem 0; font-weight: 600; line-height: 1.7;}
+.cmtEvt .topic .guide dl dt {display: inline-block; width: 7.5rem;}
+.cmtEvt .topic .guide dl dd {display: inline-block;}
+.cmtEvt .cmt-area {position: relative; font-size: 2.3rem; font-weight: bold;}
+.cmtEvt .cmt-area .inner {width: 100%; padding: 11.1rem 2.56rem;}
+.cmtEvt .cmt-area .cmt-input span {display: block; margin-bottom: .8rem;}
+.cmtEvt .cmt-area .cmt-input input {width: 20.48rem; margin-bottom: 3rem; padding: 0; vertical-align: .3rem; border: none; border-bottom: .34rem solid #000; border-radius: 0; background: none; font-size: 1.8rem; font-weight: bold; color: #000;}
+.cmtEvt .cmt-area .cmt-input .btn-submit {position: absolute; right: 1.92rem; bottom: 7.25rem; width: 8.1rem; height: 8.1rem; font-size: 1.19rem; background-color: #000; color: #fff; font-weight: bold; border-radius: 50%}
+.cmtEvt .cmt-area p {font-size: 1.02rem; color: #888;}
+.cmtEvt .cmt-list {padding: 3.3rem 2.56rem;}
+.cmtEvt .cmt-list h3 {margin-bottom: 1.5rem; font-size: 1.37rem; font-weight: bold;}
+.cmtEvt .cmt-list ul {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.cmtEvt .cmt-list li {position: relative; display: flex; justify-content: center; align-items: center; width: 12.8rem; height: 12.8rem; padding: 1.28rem; margin-bottom: 1.5rem; font-weight: bold; text-align: center; word-break: keep-all; background-size: contain;}
+.cmtEvt .cmt-list li span{display: -webkit-box; width: 9.5rem; max-height: 6rem; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; overflow: hidden;}
+.cmtEvt .cmt-list li a.btn-del {position: absolute; top: 0; right: 0; width: 3.41rem;}
+.cmtEvt .pagingV15a {padding-bottom:3.22rem;}
+.cmtEvt .pagingV15a .current a {font-weight: bold; color:#000;}
+.cmtEvt .pagingV15a .arrow a:after {width:.8rem; height:.8rem; margin-top: -.55rem; background:none; border: solid #000; border-width: .1rem .1rem 0 0; transform: rotate(45deg)}
+.cmtEvt .pagingV15a .prevBtn a:after {transform:rotate(225deg); -webkit-transform:rotate(225deg);}

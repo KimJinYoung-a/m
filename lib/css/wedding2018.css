@@ -1,0 +1,138 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+.body-sub .content.wedding2018 {position:relative; padding-bottom:0;}
+
+.wed-head {position:relative;}
+.wd-day {position:absolute; bottom:-5.63rem; right:1.87rem; z-index:5; width:7.85rem; padding-top:.7rem; height:7.85rem; background-color:#fff; box-shadow:.59rem .34rem .94rem 0 rgba(0, 0, 0, .2); border-radius:50%; color:rgba(32, 49, 53, .8); font-size:1.11rem; opacity:0;}
+.wd-day:after {content:' '; position:absolute; top:-.23rem; left:-.22rem; width:8.19rem; height:8.19rem; border:solid #fff .08rem; border-radius:50%;}
+.wd-day em{display:inline-block; line-height:1.8; color:#203135; font-family:'CoreSansCMedium', 'AppleSDGothicNeo-SemiBold', 'NotoSansKRMedium'; font-weight:500;}
+.wd-day em:after {content:' '; display:inline-block; position:relative; top:-.09rem; left:.1rem; width:.38rem; height:.38rem; transform:rotate(45deg); border-top:solid .1rem #203135; border-right:solid .1rem #203135; vertical-align:middle;}
+.wd-day s {display:inline-block; position:absolute; bottom:-1rem; left:50%; z-index:20; width:6.3rem; height:2rem; margin-left:-3.15rem; background-color:#2c2c2c; box-shadow: 0 .36rem .34rem 0 rgba(98, 107, 109, 0.39); color:#cee2e8; font: 1em/1.8rem 'Georgia', serif; font-style:italic; font-weight: bold; border-radius:.93rem; text-decoration:none;}
+.wd-day s:before {content:' '; position:absolute; top:-.7rem; left:50%; margin-left:-.15rem; border-top: .3rem solid transparent; border-right: .31rem solid transparent; border-left: .31rem solid transparent; border-bottom: .43rem solid #2c2c2c; border-radius:0;}
+.my-wd-day {padding-top:2.76rem; text-align:center;}
+.my-wd-day span {display:block; padding-top:.2rem; font-size:1.62rem; font-family:Georgia, serif; font-weight:bold;}
+
+.shp-list {background:#cee2e8;}
+.shp-list .d-day-wrap {position:relative; padding:2.9rem 0 2.06rem 5.1rem; color:#2c2c2c;}
+.shp-list .d-day-wrap span{display:inline-block; margin-left:.51rem; font:1.28rem/1.8 'Nanum Myeongjo', serif;}
+.shp-list .d-day-wrap .d-day{margin-left:.51rem; font:2.81rem/1 'Georgia', serif; font-weight:bold;}
+.shp-list .d-day-wrap s {display:inline-block; position:absolute; bottom:-.09rem; left:5.1rem; z-index:100; width:9.28rem; border-bottom:solid .095rem #000;}
+.shp-list .d-day-wrap s:after{display:inline-block; content:' '; position:absolute; right:-.41rem; bottom:0.12rem; width:.77rem; height:.77rem; transform:rotate(135deg); border-right:solid .095rem #000;}
+.shp-list .d-day-wrap s.reverse:after{left:-.42rem; transform:rotate(45deg); border-right:solid .095rem #000;}
+
+.shp-list .swiper {position:relative; margin:0 auto; padding-top:2.65rem; padding-bottom:4.69rem; border-top:solid .085rem #fff}
+.shp-list .swiper .swiper-slide {overflow:hidden; width:73.1%; padding:0 2.65%;}
+.shp-list .swiper .swiper-slide .tumb {border:solid .85rem #fff;}
+.shp-list .swiper .swiper-slide .info {height:12.58rem; padding:.59rem 1.96rem 1.71rem 1.96rem; background-color:#fff; color:#2c2c2c; font:1.19rem/1.5 'CoreSansCLight', 'AppleSDGothicNeo-Light', 'NotoSansKRLight'; word-break:keep-all;}
+.shp-list .swiper .swiper-slide .info .step {padding-bottom:.77rem; font:1.54rem/1.5 'Nanum Myeongjo', serif; font-weight:bold;}
+.shp-list .swiper .swiper-slide .more {margin-top:0; padding:1.28rem 2.4rem 1.28rem 0; background-color:#f7f7f7; font-family:'CoreSansCMedium', 'AppleSDGothicNeo-SemiBold', 'NotoSansKRMedium'; text-align:right;}
+.shp-list .swiper .swiper-slide .more a:after {top:-.35rem; left:.68rem; width:.58rem; height:.58rem; transform:rotate(135deg); border-top:solid .1rem #ff5b92; border-right:solid .1rem #ff5b92;}
+.shp-list .swiper .btnNav {position:absolute; top:50%; z-index:30; width:4.01rem; height:5.71rem; margin-top:-3.54rem; background-color:rgba(49, 54, 56, .75); color:transparent;}
+.shp-list .swiper .btnPrev {left:0; border-radius: 0 3.8rem 3.8rem 0;}
+.shp-list .swiper .btnNext {right:0; border-radius: 3.8rem 0 0 3.8rem;}
+.shp-list .swiper .btnNav:after {content:' '; display:inline-block; position:absolute; top:50%; left:50%; width:.9rem; height:.9rem; margin-top:-.45rem; margin-left:-.45rem; transform:rotate(45deg); border-top:solid .1rem #f7f7f7; border-right:solid .1rem #f7f7f7;}
+.shp-list .swiper .btnPrev:after {transform:rotate(-135deg);}
+
+.btn-chck-list {position:relative; width:100%; height:5.64rem; background-color:#e3f6fb;}
+.btn-chck-list span {display:inline-block; width:100%; padding-left:3.16rem; color:#313131; font:1.8rem/5.64rem 'Georgia', serif; font-weight:bold; font-style:italic; text-align:left;}
+.btn-chck-list span i {display:inline-block; width:1.28rem; height:1.36rem; background:url(http://fiximage.10x10.co.kr/m/2018/wedding2018/img_check_box_2_x2.png) no-repeat; background-size:100%;}
+.btn-chck-list s {display:inline-block; position:absolute; top:1.79rem; right:3.07rem; width:5.29rem; height:1.88rem; border:solid .09rem rgba(32, 49, 53, .85); border-radius:.94rem; color:rgba(32, 49, 53, .85); font:1.02rem/1.88rem 'CoreSansCRegular', 'AppleSDGothicNeo-Medium', 'NotoSansKRMedium'; text-decoration:none;}
+
+.wed-evt {padding:.85rem 1.28rem 3.62rem;}
+.wed-evt ul li {margin-top:2.56rem;}
+.wed-evt ul li p {overflow:hidden; padding:0 1.19rem; color:#838383; font:1.19rem/1 'CoreSansCLight', 'AppleSDGothicNeo-Light', 'NotoSansKRLight'; text-overflow:ellipsis; white-space:nowrap;}
+.wed-evt ul li .evt-tit{display:table; color:#2c2c2c; padding-top:1.71rem; padding-bottom:.85rem; font:1.54rem/1.3 'Nanum Myeongjo', serif; font-weight:bold;}
+.wed-evt ul li .evt-tit em {display:table-cell; overflow:hidden; display:inline-block; margin-right:.4rem; max-width:18.9rem; line-height:1.3; text-overflow:ellipsis; white-space:nowrap;}
+.wed-evt ul li .evt-tit em.sale {color:#ff3131;}
+.wed-evt ul li .evt-tit em.coupon {color:#00a061;}
+.more {margin-top:3.92rem; color:rgba(32, 49, 53, .8); font-size:1.19rem; text-align:center;}
+.more a {position:relative;}
+.more a:after {content:' '; display:inline-block; position:relative; top:-.2rem; left:.25rem; width:.48rem; height:.48rem; transform:rotate(45deg); border-top:solid .1rem rgba(32, 49, 53, .8); border-right:solid .1rem rgba(32, 49, 53, .8);}
+
+.kit {position:relative; padding-top:5.12rem; padding-bottom:6.01rem; background-color:#ffbec1;}
+.kit .kit-head {color:#2c2c2c; text-align:center;}
+.kit h3 {padding-bottom:.34rem; font:2.82rem/1.21 'Georgia', serif; font-weight:bold; font-style:italic;}
+.kit .kit-head > p {font:1.28rem/1.8 'Nanum Myeongjo', serif;}
+.kit i {display:inline-block; position:absolute; top:-1.71rem; left:0; width:10.92rem; height:8.7rem; background:url(http://fiximage.10x10.co.kr/m/2018/wedding2018/img_rose_1.png); background-size:100%;}
+.kit ul {padding:0 1.28rem;}
+.kit ul li {margin-top:2.56rem; background-color:#fff;}
+.kit ul li .info {padding:0 2.22rem;}
+.kit ul li .info .tag{overflow:hidden; max-width:95%; padding-top:1.88rem; color:#767676; font:1.07rem/1.92 'CoreSansCLight', 'AppleSDGothicNeo-Light', 'NotoSansKRLight'; text-overflow:ellipsis; white-space:nowrap;}
+.kit ul li .info .name{color:#2c2c2c; font:1.62rem/1.21 'Georgia', serif; font-weight:bold;}
+.kit ul li .info .price {color:#282727; font-size:1.02rem; line-height:2.08; font-family:Verdana,Geneva, sans-serif; text-align:right;}
+.kit ul li .info .price s {display:none;}
+.kit ul li .info .price span {margin-left:.42rem; color:#ff3131;}
+.kit ul li .tumb {height:18.1rem; margin-top:.34rem; border:solid .85rem #fff;}
+.kit ul li .tumb img {height:100%;}
+.kit .more {margin-top:2.56rem}
+
+.wed-nav-more ul {width:100%; margin:0 auto; height:7.17rem; background-color:rgba(250, 173, 176, 95); text-align:center;}
+.wed-nav-more ul li {position:relative; float:left; width:18.15%; height:100%; border-left:solid .043rem #ffbec1; color:#e37d81; font:1.54rem/7.17rem Georgia, sefri; font-weight:bold; background-color:rgba(250, 173, 176, 95);}
+.wed-nav-more ul li:after {clear:both;}
+.wed-nav-more ul li:nth-child {padding:0 1.32rem;}
+.wed-nav-more ul li.on {width:27.4%; z-index:10; background-color:#fff; color:#2c2c2c; font-size:1.92rem; box-shadow:.17rem 0 .2rem 0 rgba(0, 0, 0, .18); }
+.wed-nav-more ul li.on:before {position:absolute; top:-1.28rem;left:2.7rem; content:' '; width:3.84rem; height:3.07rem; background:url(http://fiximage.10x10.co.kr/m/2018/wedding2018/img_leaf.png); background-size:100%;}
+.wed-nav-more ul li a {display:inline-block; width:100%; height:100%;}
+
+.enroll-day {background-color:#fff; text-align:center;}
+.enroll-day .enroll-head {padding-top:3.93rem; background:url(http://fiximage.10x10.co.kr/m/2018/wedding2018/bg_top.png) no-repeat 0 .85rem; background-size:100% auto;}
+.enroll-day .enroll-head h2 {font:2.98rem/1.17 'Georgia', serif; font-style:italic; font-weight:bold;}
+.enroll-day .enroll-head p {margin-top:.94rem; color:rgba(0,0,0,.8); font:1.28rem/1.66 'CoreSansCLight', 'AppleSDGothicNeo-Light', 'NotoSansKRLight'; font-weight:300;}
+.enroll-day .enroll-head {margin-bottom:2.56rem;}
+.enroll-day .enroll-conts {margin:0 3.07rem; color:#6a6a6a; font-family: 'CoreSansCLight', 'AppleSDGothicNeo-Regular', 'NotoSansKRRegular', sans-serif;}
+.enroll-day .enroll-conts th {width:10.21rem; height:3.33rem; padding:.68rem 0; color:#6a6a6a; font:1.28rem/3.33rem 'Nanum Myeongjo', serif; text-align:left;}
+.enroll-day .enroll-conts td {height:3.33rem; padding:.68rem 0; text-align:left; vertical-align:middle;}
+.enroll-day .enroll-conts td input[type='text'] {width:11.95rem; height:2.98rem; border:0; border-bottom:solid 1px #dbdbdb; color:#3a3a3a; font-size:1.19rem; font-family: 'CoreSansCLight', 'AppleSDGothicNeo-Regular', 'NotoSansKRRegular', sans-serif; letter-spacing:.06rem; border-radius:0;}
+.enroll-day .enroll-conts td input:-ms-input-placeholder {color:rgba(0,0,0,.3); font-family: 'CoreSansCLight', 'AppleSDGothicNeo-Regular', 'NotoSansKRRegular', sans-serif; letter-spacing: 0.1px;}
+.enroll-day .enroll-conts td input::-webkit-input-placeholder {color:rgba(0,0,0,.3); font-family: 'CoreSansCLight', 'AppleSDGothicNeo-Regular', 'NotoSansKRRegular', sans-serif; letter-spacing: 0.1px;}
+.enroll-day .enroll-conts td input::-moz-placeholder {color:rgba(0,0,0,.3); font-family: 'CoreSansCLight', 'AppleSDGothicNeo-Regular', 'NotoSansKRRegular', sans-serif; letter-spacing: 0.1px;}
+.enroll-day .enroll-conts td input::-moz-placeholder {color:rgba(0,0,0,.3); font-family: 'CoreSansCLight', 'AppleSDGothicNeo-Regular', 'NotoSansKRRegular', sans-serif; letter-spacing: 0.1px;}
+.enroll-day .enroll-conts .select-sex {overflow:hidden; font-family:'CoreSansCLight', 'AppleSDGothicNeo-Light', 'NotoSansKRLight';}
+.enroll-day .enroll-conts .select-sex p {position:relative; display:inline-block; float:left; color:rgba(35, 35, 35, .7); font-size:1.19rem; line-height:1.71;}
+.enroll-day .enroll-conts .select-sex p input[type='radio'] {display:none;}
+.enroll-day .enroll-conts .select-sex p input[type='radio'] + label {display:inline-block; height:1.45rem; margin-right:2.42rem; padding-left:1.96rem; line-height:1.45rem; background:url(http://fiximage.10x10.co.kr/m/2018/wedding2018/img_radio_x2.png?v=1.0) no-repeat 0 0; background-size:1.53rem 3.02rem;}
+.enroll-day .enroll-conts .select-sex p input[type='radio']:checked + label {background-position:0 100%;}
+.enroll-day .enroll-conts .select-date {position:relative; width:4.35rem; height:3.16rem; background-color:#f8f8f8; color:1.11rem;}
+.enroll-day .enroll-conts .select-date:after {display:inline-block; content:' '; position:absolute; top:1.38rem; right:.85rem; z-index:10; width:0; height:0; border-top:.48rem solid rgba(0,0,0,.2); border-right:.4rem solid transparent; border-bottom:.48rem solid transparent; border-left:.4rem solid transparent;}
+.enroll-day .enroll-conts .select-date.select-year{width:5.7rem;;}
+.enroll-day .enroll-conts .select-date.select-month{margin:0 .28rem;}
+.enroll-day .enroll-conts .select-date select {width:100%; height:100%; padding-right:2.21rem; background-image:none; color:#3a3a3a; font-size:1.11rem; line-height:3.16rem; font-family:'HelveticaNeue', arial; font-weight:300; text-align:center; border-radius:0;}
+.enroll-day .enroll-conts .agree-info {color:#858585; font-size:1.02rem; line-height:1.54; font-weight:300;}
+.enroll-day .enroll-conts .agree-info .agree-box {color:rgba(58, 58, 58,.70); font:1.19rem/1.71 'HelveticaNeue', arial;}
+.enroll-day .enroll-conts .agree-info .agree-box p {display:inline-block; position:relative; margin-top:1.11rem;}
+.enroll-day .enroll-conts .agree-info .agree-box p:first-child {margin-right:1.62rem;}
+.enroll-day p input[type="checkbox"] {display:none;}
+.enroll-day p input[type="checkbox"] + label {display:inline-block; height:1.62rem; padding-left:2.22rem; margin-right:1.62rem; color:#6a6a6a; font:1.11rem/1.62rem 'HelveticaNeue', arial; font-weight:300; background:url(http://fiximage.10x10.co.kr/m/2018/wedding2018/img_checkbox_x2.png)no-repeat 0 0; background-size:1.62rem 3.24rem;}
+.enroll-day p input[type="checkbox"]:checked + label {background-position:0 100%;}
+.enroll-day .agree-privacy {margin:2.31rem 1.28rem 0; padding:0 1.62rem; background:rgba(162, 162, 162, 0.08);}
+.enroll-day .agree-privacy .policy .txt{overflow-y:scroll; height:10.15rem; padding:1.87rem 0 1.87rem; padding-right:.3rem; text-align:left; color:rgba(58, 58, 58, .7); font:1.02rem/1.5 'CoreSansCLight', 'AppleSDGothicNeo-Light', 'NotoSansKRLight'; word-break:keep-all;}
+.enroll-day .agree-privacy .policy .txt h4 {color:rgba(58, 58, 58, .7); font:1.02rem/1.54rem 'CoreSansCLight', 'AppleSDGothicNeo-Light', 'NotoSansKRLight';}
+.enroll-day .agree-wrap .agree-box {width:100%; padding:1.53rem 2.9rem 4.84rem; background-color:#fff;}
+.enroll-day .agree-wrap .agree-box p input[type="checkbox"] + label {color:#6a6a6a; font:1.11rem/1.62rem 'CoreSansCLight', 'AppleSDGothicNeo-Light', 'NotoSansKRLight'; letter-spacing:-.4px;}
+.enroll-day .agree-wrap .btn-enroll {overflow:hidden; position:fixed; bottom:0; left:0; z-index:30; width:100%; height:5.2rem; font:1.45rem/5.2rem 'Nanum Myeongjo', serif; background-color:#ffe7ea;}
+.enroll-day .agree-wrap .btn-enroll.modify li {float:left; position:relative; width:50%; font-size:1.28rem;}
+.enroll-day .agree-wrap .btn-enroll.modify li:nth-child(1):after {content:' '; display:inline-block; position:absolute; top:1.54rem; right:0; width:.085rem; height:2.22rem; background-color:#fff;}
+.enroll-day .agree-wrap .btn-enroll li a {display:inline-block; width:100%; height:100%;}
+.enroll-day .btn-top {opacity:0;}
+
+.slideUp {animation:slideUp .8s 1 forwards;}
+@keyframes slideUp {
+	from {transform:translateY(.85rem);animation-timing-function:ease-out; opacity:0;}
+	to {transform:translateY(0); animation-timing-function:ease-in; opacity:1;}
+}
+.slideDown {animation:slideDown .8s 1 forwards;}
+@keyframes slideDown {
+	from {transform:translateY(-.85rem);animation-timing-function:ease-out; opacity:0;}
+	to {transform:translateY(0); animation-timing-function:ease-in; opacity:1;}
+}
+.slideDown2 {animation:slideDown2 .8s 1 forwards;}
+@keyframes slideDown2 {
+	from {transform:translateY(0);animation-timing-function:ease-out; opacity:1;}
+	to {transform:translateY(-.85rem); animation-timing-function:ease-in; opacity:0;}
+}
+.slideLeft2 {animation:slideLeft .5s .8s 2 forwards;}
+.slideLeft {animation:slideLeft .5s .1s 1 forwards;}
+@keyframes slideLeft {
+	from {transform:translateX(.5rem);animation-timing-function:ease-out;}
+	50% {transform:translateX(-1.5rem);animation-timing-function:ease-out;}
+	to {transform:translateX(0); animation-timing-function:ease-in;}
+}

@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+.family2021 {position:relative; overflow:hidden; background:#fff;}
+.family2021 button {background:none;}
+
+.family2021 .section {position:relative;}
+.family2021 .section .topic {position:relative;}
+.family2021 .section .topic h3 {position:relative;}
+.family2021 .section.s4 .topic h3::before,
+.family2021 .section .topic h3::after {content:' '; position:absolute; z-index:5; background-repeat:no-repeat;}
+.family2021 .section.s1 .topic h3::after {top:25vw; right:9%; width:30vw; height:34.3vw; background-image:url(//webimage.10x10.co.kr/fixevent/event/2021/family/m/ico_s01.png); background-position:center; background-size:contain;}
+.family2021 .section.s2 .topic h3::after {top:22vw; right:8%; width:23.2vw; height:35vw; background-image:url(//webimage.10x10.co.kr/fixevent/event/2021/family/m/ico_s02.png); background-position:center; background-size:contain;}
+.family2021 .section.s3 .topic h3::after {top:25vw; right:9%; width:26.7vw; height:32vw; background-image:url(//webimage.10x10.co.kr/fixevent/event/2021/family/m/ico_s03.png); background-position:0 100%; background-size:100% auto;}
+.family2021 .section.s4 .topic h3::before,
+.family2021 .section.s4 .topic h3::after {width:26.7vw; height:26.7vw; background-image:url(//webimage.10x10.co.kr/fixevent/event/2021/family/m/ico_s04.png); background-size:auto 100%;}
+.family2021 .section.s4 .topic h3::before {top:28vw; right:17%; background-position:100% 0;}
+.family2021 .section.s4 .topic h3::after {top:30vw; right:5%; background-position:0 0;}
+.family2021 .section .topic .num {position:absolute; top:53vw; right:8%; z-index:10; width:20%;}
+
+.family2021 .slider {position:relative; overflow:hidden;}
+.family2021 .slider .swiper-slide {width:100%;}
+.family2021 .slider .swiper-slide a {position:absolute; left:0; top:0; width:100%; height:100%;}
+.family2021 .pagination-progressbar {position:relative; width:100%; height:0.85rem; left:0; bottom:0; background:#ededed;}
+.family2021 .pagination-progressbar-fill {position:absolute; left:0; top:0; width:100%; height:100%; transform:scaleX(0) scaleY(1); transform-origin:left top; transition-duration:300ms;}
+.family2021 .section.s1 .pagination-progressbar-fill {background:#f0867e;}
+.family2021 .section.s2 .pagination-progressbar-fill {background:#b8dafb;}
+.family2021 .section.s3 .pagination-progressbar-fill {background:#f4b4c9;}
+.family2021 .section.s4 .pagination-progressbar-fill {background:#fceb7c;}
+
+.family2021 .type-list {padding:10% 6.7% 15%;}
+.family2021 .type-list li {padding:1.28rem 0;}
+.family2021 .type-list li:last-child:after,
+.family2021 .type-list li:first-child > a:after {display:none;}
+.family2021 .type-list .thumbnail {width:10.8rem; height:10.8rem;}
+.family2021 .type-list .desc {margin-left:10.8rem; padding:1rem 2rem;}
+.family2021 .type-list .name {height:3.6rem; margin-top:0; font-family:var(--md); font-size:1.3rem; line-height:1.8rem; word-break:keep-all;}
+.family2021 .type-list .price {font-family:var(--sb); font-size:1.3rem;}
+.family2021 .type-list .price s {display:none;}
+.family2021 .type-list .price span {margin-left:.3em; color:#eb3323;}
+.family2021 .type-list .etc {bottom:3rem; left:12.8rem;}
+
+.family2021 .tab-wrap {position:relative;}
+.family2021 .tab-wrap h3 {position:relative; background:#ffc3b5 url(//webimage.10x10.co.kr/fixevent/event/2021/family/m/bg_tab.jpg) no-repeat center / 100%;}
+.family2021 .tab-wrap h3 img {opacity:0; transform:translate3d(0,15%,0); transition:1s;}
+.family2021 .tab-wrap h3.on img {opacity:1; transform:none;}
+.family2021 .tab-nav {position:relative; height:5.12rem; }
+.family2021 .tab-nav .tab-list {position:absolute; top:0; left:0; z-index:10; display:flex; justify-content:center; width:100%; height:5.12rem; background:#9fe6c9 url(//webimage.10x10.co.kr/fixevent/event/2021/family/m/txt_tab.jpg) no-repeat center top / auto 100%;}
+.family2021 .tab-nav .tab-list li {width:5.5rem;}
+.family2021 .tab-nav .tab-list li a {display:block; height:100%; font-size:0; color:transparent;}
+.family2021 .tab-cont {padding-bottom:15%;}
+.family2021 .tab01 {background:#ffd6cd;}
+.family2021 .tab02 {background:#e0fbfc;}
+.family2021 .tab03 {background:#e4ffe8;}
+.family2021 .tab04 {background:#ffe0ea;}
+.family2021 .tab05 {background:#ffe0af;}
+
+.family2021 .tab-wrap .items {background:none; border-top:none;}
+.family2021 .tab-wrap .items .sum {margin-right:.5rem;}
+.family2021 .type-grid ul {padding:0 1.58rem;}
+.family2021 .type-grid li {padding:0 .55rem;}
+.family2021 .type-grid .thumbnail {width:13.3rem; height:13.3rem;}
+.family2021 .type-grid .desc {height:10rem; padding:.8rem 0 0 .5rem;}
+.family2021 .type-grid .name {margin-top:0;}
+.family2021 .type-grid .price {margin-top:.6rem;}
+.family2021 .type-grid .etc {bottom:2.8rem;}
+
+.family2021 .evt-list {width:32rem; margin:0 auto; padding-bottom:15%;}
+.family2021 .evt-list li {position:relative;}
+.family2021 .evt-list li .link {position:absolute; top:0; left:0; width:100%; height:100%;}

@@ -1,0 +1,258 @@
+/*COMMON*/
+.diary2019 h2 {width:44%; margin:2.65rem 0 1.79rem 1.62rem;}
+.diary2019 section {padding:4.27rem 5%; border-top:0.94rem solid #f0f0f0;}
+.diary2019 .diary-nav {position:relative; overflow:hidden;}
+.diary2019 .diary-nav:after {position:absolute; bottom:0; right:0; width:100%; height:.17rem; background-color:#f3f3f3; content:' ';}
+.diary2019 .diary-nav li {float:left; padding-bottom:.94rem; margin-right:1.28rem; color:#999; font:1.19rem/1 'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.diary2019 .diary-nav li.on {position:relative;  color:#000; font:1.45rem/1 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.diary2019 .diary-nav li.on:after {display:inline-block; position:absolute; bottom:0; left:0; z-index:5;  width:100%; height:.17rem; background-color:#3fe7d3; content:' ';}
+.diary2019 .btn-more {position:relative; top:-.26rem; color:#e463fb; border:solid 1px #e463fb; border-radius:1.70rem; font-size:1.1rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.diary2019 .btn-more span {display:inline-block; width:.55rem; height:.81rem; padding:0; margin-left:.38rem; background:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/ico_bottom_arrow.png) no-repeat 0 0; background-size:100%;}
+
+.diary2019 .type-grid {overflow:visible; border-top:0;}
+.diary2019 .type-grid ul {width:28.75rem; padding:0;}
+.diary2019 .type-grid li {padding:0; text-align:center;}
+.diary2019 .type-grid li:nth-child(2n-1) {padding-right:.56rem;}
+.diary2019 .type-grid li:nth-child(2n) {padding-left:.56rem;}
+.diary2019 .type-grid li a {overflow:visible;}
+.diary2019 .type-grid li .thumbnail {overflow:visible; width:13.82rem; height:13.82rem;}
+.diary2019 .list-card li .thumbnail em,
+.diary2019 .type-grid li .thumbnail em {position:absolute; top:-.17rem; right:.68rem; z-index:6; padding:0 .77rem; background-color:#e463fb; border-radius:.17rem .17rem .85rem .85rem; color:#fff; font-size:.9rem; line-height:2.22rem;}
+.diary2019 .type-grid li .thumbnail em i {font-weight:600;}
+.diary2019 .type-grid li .desc {height:8.40rem;}
+.diary2019 .type-grid li .brand {margin-bottom:.34rem;}
+.diary2019 .type-grid li .name {padding:0 .43rem; margin-top:0; word-break:keep-all;}
+.diary2019 .type-grid li .price {display:inline-block; margin-top:.43rem;}
+.diary2019 .type-grid li .discount {margin-left:.43rem;}
+.diary2019 .type-grid li .discount.color-red { color:#ff4800;}
+.diary2019 .type-grid li .discount.color-green { color:#14be98;}
+
+.diary2019 .list-card li {margin-top:2.35rem;}
+.diary2019 .list-card li .thumbnail {overflow:visible;}
+.diary2019 .list-card li .thumbnail img {min-height:15.57rem;}
+.diary2019 .list-card li .thumbnail em {font-size:1.03rem; font-weight:bold;}
+.diary2019 .list-card li .desc {padding:0 .55rem 0 0.85rem;}
+.diary2019 .list-card li .tit {display:table; margin:1.28rem 0 .93rem;  font:bold 1.4rem/1 'AvenirNext-DemiBold', 'AppleSDGothicNeo-Bold';}
+.diary2019 .list-card li .tit  span {overflow:hidden; display:table-cell; max-width:19rem; white-space:nowrap; text-overflow:ellipsis;}
+.diary2019 .list-card li .tit em { display:table-cell; padding-left:.33rem; font-size:1.3 rem; font-family:'roboto';}
+.diary2019 .list-card li .tit .color-red {color:#ff4800;}
+.diary2019 .list-card li .tit .color-green {color:#14be98;}
+.diary2019 .list-card li .subcopy {color:#494949; font-size:1.11rem; line-height:1.31;}
+
+.diary-main {position:relative;}
+.btn-go-daccu {position:absolute; top:1.62rem; right:5.6%; width:11.2%;}
+.btn-go-daccu-ranking {position:absolute; top:2.3rem; right:20.53%; width:10.4%;}
+
+/* MAINROLLING */
+.diary-rolling {padding:0 0 1.75rem 1.62rem;}
+.diary-rolling .swiper-slide {position:relative; width:93.39%; padding-right:3.5%;}
+.diary-rolling .pagination {padding-top:.85rem; padding-right:3.93rem; text-align:right;}
+.diary-rolling .pagination .swiper-pagination-switch {background-color:#f0f0f0; border-radius:.17rem;}
+.diary-rolling .pagination .swiper-active-switch {background-color:#e367fa;}
+.diary-rolling .swiper-slide .label {position:absolute; bottom:.94rem; right:2rem; z-index:10;}
+.diary-rolling .swiper-slide .label span {float:left; display:inline-block; width:3.75rem; height:3.75rem; margin-left:.26rem; background-color:#fff; border-radius:50%; background-size:100%;}
+.diary-rolling .swiper-slide .label span.count {height:3.75rem; padding-top:1rem; font:1rem/1.14 'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold; text-align:center;}
+.diary-rolling .swiper-slide .label span.plus {background-image:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/txt_one_plus_one.png); background-color:#fff557;}
+.diary-rolling .swiper-slide .label span.gift {background-image:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/txt_gift.png); background-color:#333;}
+.diary-rolling .slide-vod {position:relative; width:100%; height:0; padding-top:75%;}
+.diary-rolling .slide-vod iframe {position:absolute; top:0; left:0; width:100%; height:100%;}
+.diary-rolling .slide-vod .prev-thumb {position:absolute; top:0; left:0; width:100%; height:100%; cursor:pointer;}
+
+/* GIFT */
+.diary-gift {position:relative; margin-top:1.75rem; padding-bottom:3.2rem; background-color:#fff;}
+.diary-gift h3 {padding:0 8.5% .3rem; font:bold 1.45rem/1 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold';}
+.diary-gift .more {display:inline-block; position:absolute; top:-.3rem; left:21.87%; height:1.96rem; padding:0 .68rem; background-color:#ffd4ee; font-weight:500; font-size:1.02rem; line-height:1.97rem; border-radius:.85rem;}
+.diary-gift a {position:absolute; top:-.5rem; left:0; z-index:10; width:100%; height:100%;}
+.gift-layer .noti {padding:2.56rem 1.71rem 3.41rem 2.56rem; background-color:#ffd4ef; color:#8f336b; font-size:1.11rem; line-height:1.54; word-break:keep-all; text-indent:-.85rem;}
+
+/* RECOMMEND */
+.diary-rcmd .diary-list > p {position:relative; padding-left:.94rem; margin:3rem 0 1.28rem; color:#e367fa; font-size:1.28rem; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.diary-rcmd .diary-list > p:before {display:inline-block; position:absolute; left:0; top:50%; width:.51rem; height:.51rem; margin-top:-.35rem; border-radius:50%; background-color:#e367fa; content:' ';}
+.diary-rcmd .diary-list li {position:relative;}
+.diary-rcmd .diary-list.best li .thumbnail em {top:-.7em; right:0; width:3.41rem; height:3.8rem; padding:1.35rem 0; color:#010101; font-size:1.1rem; line-height:1.1; font-weight:600; border-radius:0; background:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/img_silver_medal.png) no-repeat .2rem 0; background-size:100%; vertical-align:middle;}
+.diary-rcmd .diary-list.best li:nth-child(1) .thumbnail em,
+.diary-rcmd .diary-list.best li:nth-child(2) .thumbnail em,
+.diary-rcmd .diary-list.best li:nth-child(3) .thumbnail em {background-image:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/img_gold_medal.png);}
+.diary-rcmd .diary-list.best li:nth-child(1) .thumbnail em:before,
+.diary-rcmd .diary-list.best li:nth-child(2) .thumbnail em:before,
+.diary-rcmd .diary-list.best li:nth-child(3) .thumbnail em:before {display:inline-block; width:4.74rem; height:2.47rem; position:absolute; top:-.75rem; left:-.5rem; background:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/img_medal_deco.png) no-repeat 0 0; background-size:100%; content:' '; animation:fadeIn 200 1.6s forwards; opacity:0;}
+.diary-rcmd .diary-list.best li:nth-child(2) .thumbnail em:before {animation-delay:.7s;}
+.diary-rcmd .diary-list.best li:nth-child(3) .thumbnail em:before {animation-delay:.5s;}
+.diary-rcmd .diary-list.now .thumbnail em {padding:0 .47rem;} 
+.diary-evt .btn-more {margin-top:2.56rem;}
+
+/* SEARCH */
+.diary-finder .btn,
+.filter-list .btn {height:4.26rem; background-color:#ff89d1; border:0; color:#fff; font-size:1.36rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold; border-radius:2.13rem;}
+.filter-list {padding:2.56rem 5%; background:#f0f0f0 url(http://fiximage.10x10.co.kr/web2018/diary2019/m/bg_grey.png) 0 0 no-repeat; background-size:100%;}
+.filter-list .inner {padding:2.9rem 0 4.56rem; background-color:#fff; border-radius:1.71rem;}
+.filter-list p {padding-left:1.92rem;}
+.filter-list p.tit {color:#111; font-size:1.54rem; font-weight:bold;}
+.filter-list p.sub {margin-top:.85rem; color:#494949; font-size:1.1rem;}
+.filter-list .btn {margin-top:1.28rem; background-color:#d45aea;}
+.filter p {position:relative; margin-top:2.82rem; color:#d635f3; font-size:1.37rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.filter p:before {position:absolute; bottom:-1.3rem; left:0; z-index:6; width:100%; height:1px; background-color:#e686f8; content:' ';}
+.filter ul {position:relative; overflow:hidden; margin-top:1.28rem;}
+.filter ul:after {display:block; position:absolute; top:0; left:50%; z-index:5; width:1px; height:100%; background-color:#e7e7e7; content:' ';}
+.filter ul li {position:relative; float:left; width:50%; height:3.84rem; border-bottom:solid 1px #e7e7e7;}
+.filter6 input,
+.filter ul li input[type=checkbox] {display:none;}
+.filter ul li label {display:block; width:100%; height:100%; padding:1.5rem 0 1.5rem 1.92rem; color:#888;  font-size:1.1rem;}
+.filter ul li label.on {position:relative; padding-left:2.99rem; background-color:#fcecff; color:#d635f3; font-weight:bold;}
+.filter ul li.lightgrey label.on {font-size:1rem;}
+.filter ul li label.on:after {display:inline-block; position:absolute; top:50%; left:1.7rem; z-index:5; width:.81rem; height:1.02rem; margin-top:-.6rem; background-image:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/ico_check.png); background-size:100%; background-repeat:no-repeat; content:' ';}
+.filter1 p {margin-top:2.4rem;}
+.filter6 ul {padding:.34rem 2rem 0; margin-bottom:-3rem;}
+.filter6 ul:after {display:none;}
+.filter6 ul li {width:20%; height:5.72rem; margin-top:.76rem; border-bottom:0;}
+.filter6 ul li label {padding:3.84rem 0 0 0; color:#888;  text-align:center; font-family:'roboto';}
+.filter6 ul li label.on{border-right:solid 1px #fff; border-left:solid 1px #fff;}
+.filter6 ul li label:before {display:inline-block; position:absolute; top:.85rem; left:50%; width:2.56rem; height:2.56rem; margin-left:-1.28rem; border-radius:50%; content:' ';}
+.filter6 ul li.wine label:before {background-color:#bb193e;}
+.filter6 ul li.red label:before {background-color:#d50b0d;}
+.filter6 ul li.orange label:before {background-color:#f66802;}
+.filter6 ul li.brown label:before {background-color:#9e4b0f;}
+.filter6 ul li.camel label:before {background-color:#c47b27;}
+.filter6 ul li.green label:before {background-color:#22ba21;}
+.filter6 ul li.khaki label:before {background-color:#6c7400;}
+.filter6 ul li.ivory label:before {background-color:#fbfcdf;}
+.filter6 ul li.beige label:before {background-color:#f5ecc2;}
+.filter6 ul li.yellow label:before {background-color:#f3e21b;}
+.filter6 ul li.mint label:before {background-color:#5bd89f;}
+.filter6 ul li.skyblue label:before {background-color:#47bbdc;}
+.filter6 ul li.blue label:before {background-color:#3585c2;}
+.filter6 ul li.navy label:before {background-color:#0d4184;}
+.filter6 ul li.violet label:before {background-color:#84007e;}
+.filter6 ul li.lightgrey label:before {background-color:#d9d9d9;}
+.filter6 ul li.white label:before {background-color:#fff; border:solid 1px #d9d9d9;}
+.filter6 ul li.pink label:before {background-color:#ec3591;}
+.filter6 ul li.babypink label:before {background-color:#ea8cbb;}
+.filter6 ul li.lilac label:before {background-color:#b062af;}
+.filter6 ul li.charcoal label:before {background-color:#6b6b6b;}
+.filter6 ul li.black label:before {background-color:#000;}
+.filter6 ul li.silver label:before {background:linear-gradient(to bottom, lightgray 1%, whitesmoke 50%, lightgray 100%);}
+.filter6 ul li.gold label:before {background:linear-gradient(to bottom, #f6da5a 1%, #fbf0bd 50%, #f6da5a 100%);}
+.filter6 ul li.hologram label:before {background:url(http://fiximage.10x10.co.kr/web2017/diary2018/m/ico_hologram.png) 0 0 no-repeat; background-size:100%;}
+.filter6 ul li label.on {padding-left:0; border-radius:.38rem; letter-spacing:-.03rem;}
+.filter6 ul li label.on:after {top:1.71rem; margin-top:0; left:50%; margin-left:-.43rem; background-image:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/ico_check_2.png);}
+
+/* MAIN_SEARCH */
+.diary-main .filter p:before {background-color:#f7d7fd;}
+.diary-main .filter p:after {display:inline-block; position:absolute; top:50%; right:1.79rem; width:.85rem; height:.51rem; margin-top:-.25rem; background:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/ico_check_7.png)no-repeat 50% 50%; background-size:100%; content:''; transition:all .3s;}
+.filter p.selected:before {background-color:#e686f8;}
+.filter p.selected + ul:before {display:none;}
+.filter p.selected:after {transform:rotate(180deg);}
+
+/* SEARCH_RESULT */
+.diary-search .icon:before {display:inline-block; position:absolute; top:50%; left:50%; background-repeat:no-repeat; background-position:0,0; background-size:100%; content:' ';}
+.diary-search button {background-color:transparent;}
+.diary-search .search-head {position:relative; padding:2.56rem 5%; border-top:0; background-color:#f0f0f0;}
+.diary-search .search-head h2 {padding:0 0 2.56rem .43rem; margin:0; font:1.45rem/1 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.diary-search .search-head .btn-all {position:absolute; top:2.57rem; right:5%; color:#d635f3; font:1rem/1 'AvenirNext-Medium', 'AppleSDGothicNeo-Medium';}
+.diary-search .search-head .btn-all span {display:inline-block; position:relative; top:.18rem; width:1.11rem; height:1.11rem; margin-right:.34rem; border:solid 1px #d635f3; border-radius:50%;}
+.diary-search .search-head .btn-all span:before {width:.47rem; height:.56rem; margin:-.28rem 0 0 -.24rem; background-image:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/ico_check_3.png);}
+.diary-search .search-head .btn-finder {position:relative; height:5.12rem; padding:0 1.84rem; background-color:#fff; border-radius:2.35rem; border:0; font:1.28rem/5.5rem'AvenirNext-Medium', 'AppleSDGothicNeo-Medium';text-align:left;}
+.diary-search .filter-list .icon,
+.diary-search .search-head .btn-finder span {display:inline-block; position:absolute; top:50%; right:1.83rem; width:2.47rem; height:2.47rem; margin-top:-1.24rem;background-color:#f6c7ff; border-radius:50%;}
+.diary-search .search-head .btn-finder span:before,
+.diary-search .filter-list .icon:before {right:1.79rem; width:.9rem; height:.55rem; margin:-.28rem 0 0 -.45rem; background-image:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/ico_check_4.png);}
+.diary-search .search-head.on {padding-bottom:0;}
+.diary-search .search-head.on h2 {padding-bottom:0;}
+.diary-search .search-head .btn-all.checked {color:#a4a4a4;}
+.diary-search .search-head .btn-all.checked span {border-color:#c4c4c4;}
+.diary-search .search-head .btn-all.checked span:before {display:none;}
+.diary-search .diary-list {padding:2.56rem 0;}
+.diary-search .filter-list {position:relative; background-image:none;}
+.diary-search .filter-list .icon {position:absolute; top:4.7rem; right:3.41rem; margin-top:0;}
+.diary-search .filter-list .icon:before {margin-top:-.45rem; transform:rotate(180deg);}
+.diary-search .type-grid li .desc {height:9.38rem;}
+.diary-search .diary-list ul {display:block;}
+.diary-search .diary-list.no-data ul {display:none;}
+.diary-search .no-diary {margin-top:2.5rem; text-align:center;}
+.diary-search .no-diary > div {width:47.46%; margin:0 auto;}
+.diary-search .no-diary button {display:inline-block; margin-top:1rem;}
+.diary-search .no-diary .btn {height:4.26rem; margin-top:2.05rem; padding:0 6rem; background-color:#d45aea; border:0; color:#fff; font-size:1.36rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold; border-radius:2.13rem;}
+.diary-search .diary-list ul li .thumbnail {position:relative;}
+.diary-search .diary-list ul li .thumbnail span {position:absolute; top:.35rem; right:-.45rem; z-index:10; width:4.22rem; height:2.43rem; border-radius:0; border:0; background:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/img_label_new.png) no-repeat 0 0; background-size:100%; text-indent:-999em;}
+.diary-search .diary-list ul li .thumbnail span.best {background-image:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/img_label_best.png);}
+.diary-search .diary-list ul li .thumbnail span.best:before {display:inline-block; position:absolute; top:-.9rem; left:0; width:4.61rem; height:.94rem; background:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/img_best_deco.png) no-repeat 0 0; background-size:100%; content:' '; animation:fadeIn 200 1.6s forwards; opacity:0;}
+
+/* 관련기획전 - br20180912 */
+.related-evt {position:relative;}
+.related-evt ul {overflow:hidden; position:absolute; top:0; left:0; width:100%; height:100%;}
+.related-evt ul li {position:absolute;}
+.related-evt ul li a {display:block; width:100%; height:100%; text-indent:-999em;}
+.related-evt .bnr1 {left:0; top:4%; width:100%; height:17%;}
+.related-evt .bnr2 {left:0; top:22%; width:50%; height:16%;}
+.related-evt .bnr3 {left:50%; top:22%; width:50%; height:16%;}
+.related-evt .bnr4 {left:0; top:38%; width:64%; height:28%;}
+.related-evt .bnr5 {left:65%; top:38%; width:35%; height:14%;}
+.related-evt .bnr6 {left:65%; top:53%; width:35%; height:13%;}
+.related-evt .bnr7 {left:0; top:67%; width:36%; height:14%;}
+.related-evt .bnr8 {left:0; top:81%; width:36%; height:14%;}
+.related-evt .bnr9 {left:36%; top:67%; width:64%; height:28%;}
+ 
+/* daccu */
+.daccu h2 {display:none;}
+.daccu section {position:relative; padding:0 0 4.27rem; border:0; background-position:50% 0; background-size:100% auto; background-repeat:no-repeat;}
+.daccu section .inner {width:32rem; padding:0 3.41rem; margin:0 auto;}
+.daccu h3 {padding:5.97rem 0 .68rem; font:2.73rem/1.25 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.daccu .sub {font:2.05rem/1.25 'AvenirNext-Medium', 'AppleSDGothicNeo-Medium';}
+.daccu .vod {position:relative; height:29.35rem;}
+.daccu .vod .vod-thumb {position:absolute; top:2.56rem; left:-1.75rem; width:28.59rem; height:20.48rem; background:url(http://webimage.10x10.co.kr/fixevent/event/2018/89817/m/img_vod.png) no-repeat 0 0; background-size:contain;}
+.daccu .vod .vod-thumb a {display:block; width:100%; height:100%; z-index:10;}
+.daccu .vod .vod-thumb img {display:inline-block; width:88.2%; position:absolute; top:0; left:5.9%;}
+.daccu .vod .thumb {position:absolute; bottom:0; right:.68rem;}
+.daccu-rolling p {position:relative; margin-left:3.41rem; margin-bottom:1.71rem; font-size:1.28rem; line-height:1.33;}
+.daccu-rolling p:before {display:inline; position:absolute; top:-2.22rem; left:0; width:1.71rem; height:.51rem; background-color:#fff4a6; content:' ';}
+.daccu-rolling .swiper-slide {width:6.83rem; height:6.83rem; margin-right:.85rem; border-radius:50%;}
+.daccu-rolling .swiper-slide:nth-child(1) {margin-left:3.41rem;}
+.daccu-rolling .swiper-slide img {width:100%; height:100%; border-radius:50%;}
+.daccu .new h3 {position:relative; padding-top:9.39rem; letter-spacing:-.5px;}
+.daccu .new h3:before {display:inline-block; position:absolute; top:4.26rem; left:0; width:5.12rem; height:2.74rem; background:url(http://webimage.10x10.co.kr/fixevent/event/2018/90070/m/txt_new.png?v=1.01) no-repeat 0 0; background-size:contain; content:' ';}
+
+/* DACCU RANKING */
+.body-sub .daccu-ranking {padding-bottom:0;}
+.daccu-ranking .top-ranking {position:relative; background:#fac4f7 url(http://fiximage.10x10.co.kr/web2018/diary2019/m/bg_daccu_ranking_top.jpg); background-size:100%; padding-left:2.78rem; padding-bottom:7.94rem; }
+.daccu-ranking .top-ranking h2 {width:100%; margin:0; padding-top:2.99rem; font-size:2.13rem; line-height:1.41;}
+.daccu-ranking .top-ranking h2 em {font-weight:bold;}
+.daccu-ranking .top-ranking .date {position:absolute; bottom:3.75rem; left:2.78rem;}
+.daccu-ranking .top-ranking .date select {position:relative; height:3.07rem; padding:0 5.84rem 0 1rem; margin:0; background:#fff url(http://fiximage.10x10.co.kr/web2018/diary2019/m/ico_check_6.png) no-repeat 100% 100%; background-size:3.11rem 3.11rem; color:#000; font-size:1.15rem; line-height:3.18rem; border-radius:2px; border:0;}
+.daccu-ranking .nav-gnb {height:4.78em; border-bottom:solid .17rem #dcdcdc; background-color:rgba(255, 255, 255, 1);}
+.daccu-ranking .nav-gnb.fixed-nav {position:fixed; top:0; left:0; z-index:100; transition:top 0.2s ease-in-out; border-bottom:1px solid rgba(0, 0, 0, 0.1);}
+.daccu-ranking .nav-gnb .swiper-container {overflow:visible; padding:0 1.71rem;}
+.daccu-ranking .nav-gnb .swiper-slide {margin-left:2.8rem;}
+.daccu-ranking .nav-gnb .swiper-slide:first-child {margin-left:0;}
+.daccu-ranking .nav-gnb a {color:#999; line-height:4.78rem; font-family:'AvenirNext-Medium', 'AppleSDGothicNeo-Medium';}
+.daccu-ranking .nav-gnb .on {color:#000; font-size:1.52rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.daccu-ranking .nav-gnb .on:after {bottom:0; left:0; width:100%; height:.17rem; border-radius:1px; background-color:#3fe7d3;}
+.daccu-ranking .items-list {padding-top:.34rem; padding-bottom:4.1rem; background-color:#f0f0f0;}
+.daccu-ranking .items { background-color:#f0f0f0;}
+.daccu-ranking .type-grid ul {width:30.12rem;}
+.daccu-ranking .type-grid ul li {width:calc(50% - .29rem); margin-top:1.02rem; padding:.55rem 0 1.81rem; background-color:#fff;}
+.daccu-ranking .type-grid ul li:nth-child(2n-1) {margin-right:.29rem; padding-right:0;}
+.daccu-ranking .type-grid ul li:nth-child(2n) {margin-left:.29rem; padding-left:0;}
+.daccu-ranking .type-grid ul li .thumbnail {width:13.65rem; margin:0 auto;}
+.daccu-ranking .type-grid ul li .desc {width:13.125rem; height:6.4rem; margin:0 auto; padding-top:1rem;}
+.daccu-ranking .type-grid ul li .desc .name {height:3.33rem; margin-top:.5rem; color:#494949; font-size:1.18rem; line-height:1.35; font-weight:500;}
+.btn-shoppingbag {width:3rem; height:3rem; background:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/btn_shopping_bag.png) no-repeat 50% 50%; background-size:100%; text-indent:-999em;}
+.diary2019 .daccu-ranking li .thumbnail em {top:-.95em; left:-.7rem; right:auto; width:3.41rem; height:3.8rem; padding:1.35rem 0; color:#010101; font-size:1.1rem; line-height:1.1; font-weight:600; border-radius:0; background:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/img_silver_medal.png) no-repeat .2rem 0; background-size:100%; vertical-align:middle;}
+.diary2019 .daccu-ranking li:nth-child(1) .thumbnail em,
+.diary2019 .daccu-ranking li:nth-child(2) .thumbnail em,
+.diary2019 .daccu-ranking li:nth-child(3) .thumbnail em {background-image:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/img_gold_medal.png);}
+.diary2019 .daccu-ranking li:nth-child(1) .thumbnail em:before,
+.diary2019 .daccu-ranking li:nth-child(2) .thumbnail em:before,
+.diary2019 .daccu-ranking li:nth-child(3) .thumbnail em:before {display:inline-block; width:4.74rem; height:2.47rem; position:absolute; top:-.75rem; left:-.5rem; background:url(http://fiximage.10x10.co.kr/web2018/diary2019/m/img_medal_deco.png) no-repeat 0 0; background-size:100%; content:' '; animation:fadeIn 200 1.6s forwards; opacity:0;}
+.diary2019 .daccu-ranking li:nth-child(2) .thumbnail em:before {animation-delay:.7s;}
+.diary2019 .daccu-ranking li:nth-child(3) .thumbnail em:before {animation-delay:.5s;}
+.daccu-ranking .alertBoxV17a {width:27.73rem; height:9.3rem; margin-left:-13.87rem; border-radius:.17rem; background-color:rgba(0,0,0,.8);}
+.daccu-ranking .alertBoxV17a p {height:auto;}
+.daccu-ranking .alertBoxV17a p span {font-size:1.28rem; font-weight:500;}
+.daccu-ranking .alertBoxV17a button {width:10.07rem; font-weight:600;}
+.daccu-ranking .alertBoxV17a button .icon-arrow{margin-left:.4rem; background-position:-5.12rem -1.45rem;}
+.daccu-ranking .optionBoxV18 {height:10.92rem;}
+.daccu-ranking .optionBoxV18  p span {line-height:1.3;}
+.daccu-ranking .optionBoxV18 .btn-group {margin-top:1.05rem;}
+.daccu-ranking .optionBoxV18 .btn-group button {width:9.22rem; margin:0 .42rem;}
+.daccu-ranking .optionBoxV18 .btn-group .btn-red {border:solid 1px #ff3131;}
+@keyframes fadeIn {from, to {opacity:1;} 50% {opacity:0;}}

@@ -1,0 +1,82 @@
+.xmas2019 {position:relative;}
+.xmas2019 .topic {position:relative;}
+.xmas2019 .topic .tit-pick {position:absolute; top:9.5%; left:2.7%; width:100%;}
+.xmas2019 .topic h2 {position:relative;}
+.xmas2019 .bnr-floating {position:fixed; top:17.6vw; right:0; z-index:10; width:30%; transition:1s; animation:bounce 1.2s 3s infinite;}
+.xmas2019 button {background-color:transparent;}
+@keyframes bounce {
+	from, to {transform:translateY(0); animation-timing-function:ease-in;}
+	50% {transform:translateY(0.8rem); animation-timing-function:ease-out;}
+}
+
+.xmas2019 .keyword {padding-bottom:10%; text-align:center;}
+.xmas2019 .keyword .tag {width:28rem; margin:0 auto;}
+.xmas2019 .keyword .tag .row {display:flex; justify-content:space-between;}
+.xmas2019 .keyword .tag a {display:inline-block; flex:auto; height:2.8rem; margin:1.1rem 0.2rem 0; padding-top:0.7rem; font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold'; font-size:1.24rem; color:#222; border-radius:2rem;}
+.xmas2019 .keyword .tag .on {color:#fff;}
+.xmas2019 .keyword .tag .sch {border:2px solid #2f5a3b;}
+.xmas2019 .keyword .tag .sch.on {background-color:#2f5a3b;}
+.xmas2019 .keyword .tag .evt {border:2px solid #e3604a;}
+.xmas2019 .keyword .tag .evt.on {background-color:#e3604a;}
+
+.xmas2019 .take .txt-wrap {position:relative;}
+.xmas2019 .take .txt-wrap p {opacity:0; transform:translateY(1rem); transition:1s;}
+.xmas2019 .take .txt-wrap.que p {opacity:1; transform:translateY(0rem);}
+.xmas2019 .take .txt-wrap.que p:last-child {transition-delay:0.5s;}
+.xmas2019 .take .txt-wrap:after {content:' '; position:absolute; right:0; top:4vw; width:26.7vw; padding-top:26.7vw; background-position:100% 0; background-repeat:no-repeat; background-size:100%;}
+.xmas2019 .take1 .txt-wrap:after {background-image:url(//webimage.10x10.co.kr/fixevent/event/2019/xmas2019/m/img_deco_01.png);}
+.xmas2019 .take2 .txt-wrap:after {background-image:url(//webimage.10x10.co.kr/fixevent/event/2019/xmas2019/m/img_deco_02.png);}
+.xmas2019 .take3 .txt-wrap:after {top:-8vw; background-image:url(//webimage.10x10.co.kr/fixevent/event/2019/xmas2019/m/img_deco_03.png);}
+
+.xmas2019 .take .slider-wrap {position:relative; padding-bottom:20%;}
+.xmas2019 .take .swiper-slide {width:82%; margin:0 0.5%;}
+.xmas2019 .take .progressbar {position:absolute; bottom:13.5%; left:9%; width:82%; height:0.35rem; background-color:#f0e5cc;}
+.xmas2019 .take .progressbar-fill {position:absolute; top:0; left:0; width:0px; height:100%; background-color:#323f32; transition:width 1s; -ms-transition:width 1s;}
+.xmas2019 .take .pager {position:absolute; bottom:7.2%; left:0; width:100%; font-size:1.3rem; color:#393939; text-align:center;}
+.xmas2019 .take .pager b {font-family:'CoreSansCMedium';}
+.xmas2019 .take .pager i {display:inline-block; transform:scale(0.5); margin:0 0.1rem;}
+
+.xmas2019 .take .prd-wrap {position:relative; padding-bottom:12%;}
+.xmas2019 .take .prd-wrap ul {padding:6.7% 6.7% 4%;}
+.xmas2019 .take .prd-wrap ul li {padding:0.43rem 0;}
+.xmas2019 .take .prd-wrap ul li + li {border-top:1px solid #969696;}
+.xmas2019 .take .prd-wrap ul li a {overflow:hidden; display:table; table-layout:fixed; width:100%;}
+.xmas2019 .take .prd-wrap .thumbnail {display:table-cell; width:7.25rem; height:7.25rem;}
+.xmas2019 .take .prd-wrap .desc {display:table-cell; vertical-align:middle; padding:0 0.3rem 0 1.3rem; line-height:1.5; font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold';}
+.xmas2019 .take .prd-wrap .name {overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:1.24rem;}
+.xmas2019 .take .prd-wrap .price {margin-top:0.5rem; font-size:1.19rem; color:#616161;}
+.xmas2019 .take .prd-wrap .price s {display:none;}
+.xmas2019 .take .prd-wrap .price span {float:left; margin-right:0.5rem; color:#fe3122;}
+
+.xmas-item {background-color:#f8f3e9;}
+.xmas-item .items {background-color:transparent;}
+.xmas-item .type-grid {border-top:0;}
+.xmas-item .type-grid ul {padding:0;}
+.xmas-item .type-grid li:nth-child(odd) {padding:0 .13rem 0 0;}
+.xmas-item .type-grid li:nth-child(even) {padding:0 0 0 .13rem;}
+.xmas-item .type-grid .thumbnail {width:100%; height:15.87rem;}
+.xmas-item .type-grid .desc {height:9.39rem; padding-top:1.71rem;}
+.xmas-item .type-grid .name {margin-top:0; padding-left:1.96rem;}
+.xmas-item .type-grid .price {margin-top:0.85rem; padding-left:1.96rem;}
+.xmas-item .type-grid .discount {margin-left:.3rem;}
+.xmas-item .type-grid .color-red {color:#ff4800;}
+.xmas-item .type-grid .color-green {color:#14be98;}
+.xmas-item .category-item {padding:3.41rem 0; border-bottom:0.64rem solid #fff;}
+.xmas-item .category-item h4 {margin-bottom:2.13rem; font-family:'Noto Serif', serif; font-weight:700; font-size:1.92rem; text-align:center;}
+.xmas-item .category-item .btn-more {display:block; width:28.6rem; height:3.41rem; margin: 0 auto; font-size:1.11rem; color:#275f50; border:1px solid #275f50; border-radius:1.71rem; background-color:transparent;}
+.xmas-item .category-item .btn-more .btn-icon {position:relative; display:inline-block; top:-0.3rem; left:0.5rem; width:.68rem; height:.68rem; padding:0; border-width:0 0.1rem 0.1rem 0; border-style:solid; border-color:#203135; transform:rotate(45deg);}
+@media screen and (min-width:768px){
+	.xmas-item .category-item .btn-more {width:32rem;}
+}
+.xmas-item .evt-slider {width:27.73rem; margin:0 auto; padding-top:3.41rem;}
+.xmas-item .evt-slider h4 {margin-bottom:2.13rem; font-family:'Noto Serif', serif; font-weight:700; font-size:1.92rem; text-align:center;}
+.xmas-item .evt-slider .swiper-container {height:38rem;}
+.xmas-item .evt-slider .swiper-slide {width:100%;}
+.xmas-item .evt-slider .desc {padding:1.7rem 1.5rem 0;}
+.xmas-item .evt-slider .ellipsis {width:77%;}
+.xmas-item .evt-slider .discount {top:1.6rem; right:2rem; font-weight:normal; font-size:1.79rem; color:#fa3636;}
+.xmas-item .evt-slider .discount:after {display:none; content:none;}
+.xmas-item .evt-slider .subcopy {margin-top:0.5rem; color:#000; -webkit-line-clamp:1;}
+.xmas-item .evt-slider .pagination-dot {bottom:2rem; text-align:center;}
+.xmas-item .evt-slider .swiper-pagination-switch {border:1px solid #9e9e9e;}
+.xmas-item .evt-slider .swiper-active-switch {background-color:#9e9e9e;}

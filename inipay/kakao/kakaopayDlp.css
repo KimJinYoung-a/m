@@ -1,0 +1,4 @@
+@charset "utf-8";
+
+/* Layer Overlay */
+.kakaopay-overlay {background:#000; opacity:0.4; filter:alpha(opacity:40);}

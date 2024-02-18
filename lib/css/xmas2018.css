@@ -1,0 +1,84 @@
+/* 크리스마스 2018 */
+.xmas2018 {position:relative; background:url(http://fiximage.10x10.co.kr/web2018/xmas2018/m/bg_xmas.jpg) 50% 0 no-repeat; background-size:100% auto;}
+.xmas-tab {position:relative;}
+.xmas-tab ul {overflow:hidden; position: absolute; top:0; left:0; width:100%; height:100%;}
+.xmas-tab ul li {float:left; width:49.47%; height:100%;}
+.xmas-tab ul li.on {width:50.53%;}
+.xmas-tab ul li a {display:block; width:100%; height:100%; text-indent:-999em;}
+.xmas-tab .txt-pick {display:block; position:absolute; top:-0.34rem; right:17.33%; width:4.82rem; height:3.07rem; animation:bounce 1s 100 ease-in-out;}
+.xmas-pick .xmas-tab .txt-pick {top:-0.81rem;}
+.xmas-tab .txt-pick img {width:4.82rem; height:3.07rem;}
+@keyframes bounce {from, to {transform:translateY(0);} 50% {transform:translateY(-0.5rem);} }
+
+/* 탭 01 - 한 컷 크리스마스 */
+.xmas-insta .post .img {position:relative;}
+.xmas-insta .post .img a {display:block;}
+.xmas-insta .post .img a:after {content:' '; position:absolute; right:1.02rem; bottom:1.02rem; width:3.75rem; height:3.75rem; background:url(http://fiximage.10x10.co.kr/web2018/xmas2018/m/ico_plus.png) 50% 50% no-repeat; background-size:100%;}
+.xmas-insta .post .img .tag-new {position:absolute; top:6.27%; left:0; width:15.47%;}
+.xmas-insta .post .txt {padding:1.24rem 2.69rem 1.75rem;}
+.xmas-insta .post .txt .num {display:block;}
+.xmas-insta .post .txt .num img {width:inherit; height:2.22rem;}
+.xmas-insta .post .txt p {margin-top:0.98rem; font-size:1.19rem; line-height:1.71; color:#000; word-break:keep-all;}
+.xmas-insta .tag li:first-child {margin-left:1.66rem;}
+.xmas-insta .tag li + li {margin-left:0.73rem;}
+.xmas-insta .tag li:last-child {margin-right:1.66rem;}
+.xmas-insta .tag li a {display:inline-block; height:2.13rem; padding:0.1rem 0.94rem 0; font-size:1.19rem; line-height:2.13rem; color:#000; background-color:rgba(171, 171, 171, 0.3); border-radius:1.07rem;}
+.xmas-insta .tag li.go-evt a {position:relative; background-color:rgba(190, 153, 94, 0.3);}
+.xmas-insta .tag li.go-evt a:before {display:inline-block; content:'EVENT'; margin-right:0.34rem; font-family:'Verdana'; font-size:0.55rem; color:#684917; vertical-align:top;}
+.xmas-insta .item-list {overflow:hidden; margin-top:2.35rem;}
+.xmas-insta .item-list:after {content:' '; display:block; clear:both;}
+.xmas-insta .item-list ul {padding:0 1.71rem 3.29rem;}
+.xmas-insta .item-list li {padding:0.21rem 0;}
+.xmas-insta .item-list li + li {border-top:1px solid rgba(0, 0, 0, 0.2);}
+.xmas-insta .item-list li a {display:table; width:100%; overflow:hidden;}
+.xmas-insta .item-list .thumbnail {overflow:hidden; position:relative; display:table-cell; width:6.4rem; height:6.4rem; vertical-align:middle; background-color:#f4f4f4;}
+.xmas-insta .item-list .thumbnail img {position:relative; z-index:2;}
+.xmas-insta .item-list .thumbnail:before {content:' '; position:absolute; top:50%; left:50%; width:3rem; height:3rem; margin:-1.5rem 0 0 -1.5rem; background:url(http://fiximage.10x10.co.kr/m/2017/common/bg_img_loading.png) 50% 0 no-repeat; background-size:100% auto;}
+.xmas-insta .item-list .desc {display:table-cell; vertical-align:middle; padding-left:1.96rem; font-size:1.19rem; line-height:1.5; color:#000;}
+.xmas-insta .item-list .desc .name {display:inline-block; overflow:hidden; max-width:18.13rem; white-space:nowrap; text-overflow:ellipsis;}
+.xmas-insta .item-list .desc .price {margin-top:0.2rem; font-family:'Verdana';}
+.xmas-insta .item-list .desc .price s {display:none;}
+.xmas-insta .item-list .desc .price span {margin-left:0.3rem; color:#ff4800;}
+.xmas-insta .item-list .desc .price .red {color:#ff4800;}
+.xmas-insta .item-list .desc .price .green {color:#14be98;}
+.xmas-insta .bnr-mid {display:block;}
+.xmas-insta .bnr-mid + .post {margin-top:2.22rem;}
+
+/* 탭 02 - 추천 아이템 */
+.xmas-swiper {width:28.58rem; height:37.1rem; margin:1.7rem auto 2.3rem;}
+.xmas-swiper .swiper-container, .xmas-swiper .swiper-wrapper, .xmas-swiper .swiper-slide {height:37.1rem !important;}
+.xmas-swiper a {display:block; position:relative;}
+.xmas-swiper .thumbnail, .xmas-swiper .thumbnail img {width:28.58rem; height:28.58rem;}
+.xmas-swiper.list-card .desc {padding:2rem 1.88rem 0;}
+.xmas-swiper.list-card .subcopy {margin-top:.6rem; color:#000; -webkit-line-clamp:1;}
+.xmas-swiper.type-align-left .ellipsis {width:74.18%;}
+.xmas-swiper.type-align-left .discount {font-weight:normal; font-family:'Verdana'; font-size:1.79rem; color:#fa3636; vertical-align:0;}
+.xmas-swiper .label-color {margin-right:.3rem; font-family:'Verdana'; color:#269e5c;}
+.xmas-swiper .label-color:after {display:none;}
+.xmas-swiper .pagination-dot {bottom:0; left:auto; right:auto; text-align:center;}
+.xmas-swiper .pagination-dot span {border-color:#9e9e9e;}
+.xmas-swiper .pagination-dot span.swiper-active-switch {background-color:#9e9e9e;}
+
+.xmas-pick .type-grid {border-top:0;}
+.xmas-pick .type-grid ul {padding:0;}
+.xmas-pick .type-grid li:nth-child(2n-1) {padding:0 .13rem 0 0;}
+.xmas-pick .type-grid li:nth-child(2n) {padding:0 0 0 .13rem;}
+.xmas-pick .type-grid .desc {height:9.39rem; padding-top:1.71rem}
+.xmas-pick .type-grid .price {margin-top:.85rem; padding-left:1.96rem;}
+.xmas-pick .type-grid .name {margin-top:0; padding:0 1.96rem;}
+.xmas-pick .type-grid .thumbnail {width:100%; height:15.87rem;}
+.xmas-pick .type-grid .discount {margin-left:.3rem;}
+.xmas-pick .type-grid .color-red {color:#ff4800;}
+.xmas-pick .type-grid .color-green {color:#14be98;}
+
+.xmas-pick .xmas-best {padding-top:2.3rem; border-top:0.94rem solid #ededed;}
+.xmas-pick .xmas-best h3 {width:20.65rem; margin-bottom:2.99rem; padding-left:1.28rem;}
+.xmas-pick .xmas-best .items, .xmas-pick .xmas-best .items li > a, .xmas-pick .xmas-best .thumbnail {overflow:visible;}
+.xmas-pick .xmas-best .thumbnail em {overflow:hidden; position:absolute; top:-0.34rem; left:0rem; z-index:10; width:2.82rem; height:2.82rem; line-height:2.82rem; font-weight:bold; font-size:1.71rem; color:#fff; background-color:#22423b; text-align:center;}
+
+.xmas-pick .category-item {border-top:0.94rem solid #ededed;}
+.xmas-pick .category-item h3 {padding-top:3.84rem; margin-bottom:2.01rem; font-weight:bold; font-size:1.96rem; color:#6c4f17; letter-spacing:-0.02rem; text-align:center;}
+.xmas-pick .category-item h3 b {position:relative; display:inline-block;}
+.xmas-pick .category-item h3 b:after {content:' '; position:absolute; bottom:1.1rem; right:-1.9rem; width:2.52rem; height:2.65rem; margin:0; background:url(http://fiximage.10x10.co.kr/web2018/xmas2018/m/bg_category_tit.png) 0 0 no-repeat; background-size:100% auto;}
+.xmas-pick .category-item .btn {width:89.33%; margin:0 auto 3.2rem; border-color:#275f50; border-radius:1.71rem; color:#275f50; font-size:1.11rem;}
+.xmas-pick .category-item .btn .btn-icon {position:relative; display:inline-block; left:.5rem; top:-.31rem; width:.68rem; height:.68rem; padding:0; transform:rotate(135deg); border-top:0.1rem solid #203135; border-right:0.1rem solid #203135;}

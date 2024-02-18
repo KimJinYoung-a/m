@@ -1,0 +1,79 @@
+
+.diary-main h3 {width: 29.1rem; margin: 0 auto; padding-bottom: 1rem; font: 1.45rem/1 'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold';}
+.diary-main .list-card .ad-bnr {margin-bottom: 0; background: #ddd;}
+.diary-main .main-rolling {position: relative;}
+.diary-main .main-rolling .swiper-slide {text-align: center;}
+.diary-main .main-rolling .swiper-slide .label {position: absolute; left: 0; bottom: 19.8%; z-index: 10; width: 100%; height: 3.41rem; text-align: center;}
+.diary-main .main-rolling .swiper-slide .label span {display: inline-block; width: 3.41rem; height: 3.41rem; margin: 0 0.26rem; padding-top: 1.1rem; color: #fff; font: 600 1.2rem/1.1 'AvenirNext-Regular', 'AppleSDGothicNeo-Light'; vertical-align: middle; background-color: #2b2b2b; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%;}
+.diary-main .main-rolling .swiper-slide .label span.count {padding-top: 0.85rem; color: #b9b8b4; font-size: .8rem;}
+.diary-main .main-rolling .swiper-slide .label span.count em {display: inline-block; font-size: 1.1rem; letter-spacing: -0.05em; color: #fff;}
+.diary-main .main-rolling button {display: block; position: absolute; top: 44.5%; z-index: 20; width: 15.6%; background: transparent;}
+.diary-main .main-rolling button.btn-prev {left: 0;}
+.diary-main .main-rolling button.btn-next {right: 0;}
+.diary-main .main-rolling .pagination {position: absolute; right: 2.82rem; bottom: 2.3rem; z-index: 20; height: 1.96rem; padding-top: 0;}
+.diary-main .main-rolling .pagination .swiper-pagination-switch {float: left; width: auto; height: 1.96rem; margin: 0 0 0 1.2rem; font: 1.62rem/1 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; background-color: transparent !important; border-radius: 0;}
+.diary-main .main-rolling .pagination .swiper-active-switch {border-bottom: 0.25rem solid #000;}
+.diary-main .category-item-content .category-item-list {padding-bottom: 2.56rem;}
+.diary-main .category-item-content .btn-plus {margin-top: 1rem;}
+.diary-main .event-bnr {overflow: hidden; position: relative; padding: 4rem 0 5.5rem;}
+.diary-main .event-bnr ul {position:absolute; left:4%; top:4rem; width:92.5%; height:84%;}
+.diary-main .event-bnr ul li {position:absolute;}
+.diary-main .event-bnr ul li a {display:block; height:100%; text-indent:-999em;}
+.diary-main .event-bnr ul li.event1 {left:0; top:0; width:100%; height:19%;}
+.diary-main .event-bnr ul li.event2 {left:0; top:20.2%; width:65.5%; height:39.4%;}
+.diary-main .event-bnr ul li.event3 {right:0; top:20.2%; width:32%; height:19%;}
+.diary-main .event-bnr ul li.event4 {right:0; top:40.5%; width:32%; height:19%;}
+.diary-main .event-bnr ul li.event5 {left:0; top:60.7%; width:32%; height:19%;}
+.diary-main .event-bnr ul li.event6 {left:0; bottom:0; width:32%; height:19%;}
+.diary-main .event-bnr ul li.event7 {right:0; bottom:0; width:65.5%; height:39.4%;}
+.diary-main .finder {overflow: hidden; padding: 3.41rem 10.2%; background: #adabaf url(http://fiximage.10x10.co.kr/web2017/diary2018/m/bg_search.jpg) 0 0 no-repeat; background-size: 100% auto;}
+.diary-main .finder h3 {width:0; line-height:0;}
+.diary-main .finder ul {background-color: #fff;}
+.diary-main .finder ul li {position: relative; text-align: left; border-top: 0.1rem solid #e8e8e8;}
+.diary-main .finder ul li:first-child {border-top: 0;}
+.diary-main .finder ul li a {display: table; width: 100%;}
+.diary-main .finder ul li .thumbnail {display: table-cell; width: 26%; vertical-align: top;}
+.diary-main .finder ul li p {display: table-cell; width: 74%; padding-left: 2.13rem; font: 1.37rem/1 'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; vertical-align: middle;}
+.diary-main .finder ul li i {display: block; position: absolute; right: -1.77rem; top: 50%; width: 3.54rem; height: 3.54rem; margin-top: -1.77rem; background-color: #9c5dd1; box-shadow: 0 0.4rem 0.4rem 0 rgba(136, 93, 217, 0.33); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%;}
+.diary-main .finder ul li i:after {content: ''; display: inline-block; position: absolute; left: 50%; top: 50%; width: 1.71rem; height: 1.71rem; margin: -0.9rem 0 0 -0.9rem; background: url(http://fiximage.10x10.co.kr/m/2017/common/bg_sp.png?v=1.77) -2.6rem 0 no-repeat; background-size: 17.07rem auto;}
+.diary-main .best-diary {padding-bottom: 2.8rem;}
+.diary-main .best-diary h3 {padding-bottom: 2rem;}
+.diary-main .best-diary .tenten-best-default {padding-bottom: 0; border-top: 1px solid rgba(0, 0, 0, 0.07);}
+
+.diary-gift .rolling {position: relative;}
+.diary-gift .rolling .pagination {position: absolute; left: 0; bottom: 1.7rem; z-index: 20; width: 100%; height: 0.6rem; padding-top: 0;}
+.diary-gift .rolling .pagination .swiper-pagination-switch {width: 0.6rem; height: 0.6rem; margin: 0 0.4rem; border: 0.1rem solid #fff; background: transparent; transition: all .2s;}
+.diary-gift .rolling .pagination .swiper-pagination-switch.swiper-active-switch {width: 1.7rem; background-color: #fff; -webkit-border-radius: 0.5rem; -moz-border-radius: 0.5rem; -ms-border-radius: 0.5rem; border-radius: 0.5rem;}
+.diary-gift .rolling button {display: block; position: absolute; top: 50%; z-index: 20; width: 2.5rem; height: 2.5rem; margin-top: -1.25rem; border-left: 0.12rem solid #fff; border-bottom: 0.12rem solid #fff; background-color:transparent; text-indent: -999em;}
+.diary-gift .rolling button.btn-prev {left: 1.7rem; transform: rotate(45deg);}
+.diary-gift .rolling button.btn-next {right: 1.7rem; transform: rotate(-135deg);}
+.diary-gift .terms {padding: 4.1rem 0 3.41rem;}
+.diary-gift .terms .inner {padding: 0 6.4%; color: #898989; font-size: 1.1rem; line-height: 1.4;}
+.diary-gift .terms .inner h3 {padding-bottom: 1.7rem; font-size: 1.37rem; line-height: 1.2; font-weight: bold; color: #ff3131;}
+.diary-gift .terms .inner h3 em {display: block; padding-top: 0.6rem; font-size: 1.7rem; font-weight: 600; color: #000;}
+.diary-gift .terms .inner h4 {color: #000; font-size: 1.2rem; font-weight: bold;}
+.diary-gift .terms .inner ul {padding-bottom: 2.2rem;}
+.diary-gift .terms .inner li {text-indent: -0.55rem; padding: 0.8rem 0 0 0.55rem; letter-spacing: -0.03em;}
+.diary-gift .terms .ex {padding:3.5rem 0 2.8rem;}
+.diary-gift .noti {padding: 3.7rem 6%; background-color: #f4f7f7;}
+.diary-gift .noti h3 {padding-bottom: 1.1rem; font-size: 1.4rem; font-weight: bold;}
+.diary-gift .noti li {position: relative; padding: 0 0 0.4rem 1rem; font-size: 1.11rem; line-height: 1.3; color: #898989;}
+.diary-gift .noti li:after {content: ''; display: inline-block; position: absolute; left: 0; top: 0.35rem; width: 0.3rem; height: 0.3rem; border-right: 0.15rem solid #d60000; border-bottom: 0.15rem solid #d60000; transform: rotate(-45deg);}
+
+.search-filter .color .depth1 li a:after {border-radius: 50% !important;}
+.search-filter .color .depth1 li:nth-child(n+25) a:after {border-radius: 0 !important;}
+.search-filter .wine a:after {background-color: #bb193e;}
+.search-filter .brown a:after {background-color: #9d4b0f;}
+.search-filter .camel a:after {background-color: #c47c26;}
+.search-filter .beige a:after {background-color: #f5ecc3;}
+.search-filter .ivory a:after {background-color: #fbfcdf;}
+.search-filter .khaki a:after {background-color: #6d7400;}
+.search-filter .skyblue a:after {background-color: #47bbdc;}
+.search-filter .lilac a:after {background-color: #b163af;}
+.search-filter .babypink a:after {background-color: #ea8cbb;}
+.search-filter .charcoal a:after {background-color: #6b6b6b;}
+.search-filter .silver a:after {background: linear-gradient(to bottom, lightgray 1%, whitesmoke 50%, lightgray 100%); transform: rotate(45deg);}
+.search-filter .gold a:after {background: linear-gradient(to bottom, #f6da5a 1%, #fbf0bd 50%, #f6da5a 100%); transform: rotate(45deg);}
+.search-filter .hologram a:after {background: url(http://fiximage.10x10.co.kr/web2017/diary2018/m/ico_hologram.png) 0 0 no-repeat; background-size:100% auto;}
+
+/*# sourceMappingURL=diary2018.css.map */

@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+/* 상품상세 메인 이미지 height 값 조절(90% 비율로 줄이고 위아래 hidden 처리) - sm20180724 : 실섭에 적용(20181018)*/
+.item-detail-swiper {overflow:hidden; height:32rem;}/* 상품상세 이미지 잘림 */
+.item-detail-swiper .swiper-container {margin-top:0; margin-bottom:0;}/* 상품상세 이미지 잘림 */
+@media all and (min-width:600px){
+	.item-detail-swiper {height:23.4rem !important;}
+	.item-detail-swiper .swiper-container {margin-top:-1.3rem; margin-bottom:-1.3rem;}
+}
+
+/* 상품상세 내용 펼쳐보기(접기) 버튼(기존 버튼 폰트 조절, 우측 불릿 이미지 영역) - sm20180724 : 실섭에 적용(20180906)*/
+.pdtExplainV16a .btn-moreV18 .btnV16a {height:4.27rem; margin:1.02rem 0; font-size:1.37rem; font-weight:500;}
+.down-open {display:inline-block; width:1.37rem; height:1.37rem; margin:-3px 0 0 5px; vertical-align:middle; background:url(http://fiximage.10x10.co.kr/m/2018/common/ico_chevron_red.png) left top no-repeat; background-size:100% 100%;}
+.up-fold {display:inline-block; width:1.37rem; height:1.37rem; margin:-3px 0 0 5px; vertical-align:middle; background:url(http://fiximage.10x10.co.kr/m/2018/common/ico_chevron_red.png) left top no-repeat; background-size:100% 100%; transform:rotateX(180deg);
+ -webkit-transform:rotateX(180deg);}
+
+/* 상품상세 해피투게더 레이아웃 스와이프로 변경 - sy20180809 */
+.item-addV18 {margin-top:1rem;}
+.item-addV18 .bxLGy2V16a {padding-left:1.36rem; padding-right:1.36rem; background-color:#f5f6f8;}
+.item-addV18 .bxLGy2V16a h3 {font-size:1.45rem; font-weight:bold;}
+.item-addV18 .swiper-container {padding:0 2.13rem;}
+.item-addV18 .swiper-slide {width:9.73rem; margin:2.05rem 0 2.05rem 1.02rem;}
+.item-addV18 .swiper-slide:nth-child(1) {margin-left:0;}
+.item-addV18 .swiper-slide .thumbnail,
+.item-addV18 .swiper-slide .thumbnail img {width:9.73rem; height:9.73rem;}
+.item-addV18 .items .name {height:3.07rem; margin-top:1.02rem; color:#4a4a4a; font-size:1.19rem; line-height:1.29;}
+.item-addV18 .items .price {margin-top:.6rem; color:#838383; font-size:1.11rem;}
+.item-addV18 .items .price .discount {font-weight:normal; font-family:'AvenirNext-Medium', 'AppleSDGothicNeo-Medium';}
+.item-addV18 .items .price b {font-weight:normal; font-family:'AvenirNext-Regular', 'AppleSDGothicNeo-Regular', 'RobotoRegular', 'Noto Sans', sans-serif;}
+.item-addV18 .items .price .sum {color:#838383; font-size:1.11rem; line-height:1.38;}
+.item-addV18 .items .price .sum b {line-height:1.32rem;} 
+
+/* 상품상세 해피투게더 레이아웃 리스트로 레이아웃 변경 - sy20180821 */
+.item-list-addV18 .bxLGy2V16a {position:relative;}
+.item-list-addV18 .btnAreaV16a {padding:1.02rem 1.25rem;}
+.item-list-addV18 ul {margin:.63rem 0;}
+.item-list-addV18 ul li {padding:.63rem 0; margin:0 1.25rem;}
+.item-list-addV18 .type-list li > a:after,
+.item-list-addV18 .type-list li:last-child:after {display:none;}
+.down-open-gry,
+.up-fold-gry {display:inline-block; position:relative; top:-.3rem; width:.7rem; height:.7rem; margin-left:.5rem; border-right:1px solid #a9a9a9; border-top:1px solid #a9a9a9; transform:rotate(135deg);}
+.up-fold-gry {top:.1rem; transform:rotate(-45deg);}
+
+/* 상품상세 Just1Day 추가 - sy20180827*/
+.item-just1-addV18 .items.type-list li > a {display:table;}
+.item-just1-addV18 .items.type-list .thumbnail {float:none;}
+.item-just1-addV18 .items.type-list .thumbnail,
+.item-just1-addV18 .items.type-list .desc {display:table-cell; vertical-align:middle;}
+.item-just1-addV18 .items.type-list .desc {padding-right:0;}
+.item-just1-addV18 .items .discount {display:block; margin-top:1rem; font-size:1.8rem;}
+.item-just1-addV18 .items .name {margin-top:0; height:auto; max-height:2.82rem;}
+
+/* 상품상세 Just1Day 시간 추가 - sy20180831*/
+.item-just1-addV18 .bxLGy2V16a {position:relative;}
+.item-just1-addV18 .bxLGy2V16a h3 {width:12rem;}
+.item-just1-addV18 .multi-time-sale {display:table-cell; vertical-align:middle;}
+.item-just1-addV18 .multi-time-sale .time {position:relative; display:inline-block; height:1.53rem; padding-left:.9rem; font-style:italic; font-weight:bold; font-size:1.11rem; line-height:1.53rem;}
+.item-just1-addV18 .multi-time-sale .time s {color:#a9a9a9; text-decoration:none; font-style:normal;}
+.item-just1-addV18 .multi-time-sale .time:before {display:inline-block; position:absolute; top:50%; left:0rem; width:.084rem; height:.94rem; margin-top:-.47rem; background-color: #e1e1e1; content:' '; }
+
+/* 상품상세 위시 문구 추가 -sy20180810 */
+.item-detail-swiper .label-box2 {display:inline-block; top:1.11rem; left:50%; height:3.5rem; padding:0 2rem; margin-left:-11.86rem; background-color:rgba(255,255,255,.9); border-radius:.13rem; color:#0d0d0d; font:1.19rem/3.6rem 'AvenirNext-Medium', 'AppleSDGothicNeo-Medium'; font-weight:500; text-align:center; opacity:0; animation:toast-2 3s .8s cubic-bezier(0.1, 1, 0.2, 1) forwards; -webkit-animation:toast-2 3s .8s cubic-bezier(0.1, 1, 0.2, 1) forwards;}
+.item-detail-swiper .label-box2 em {margin-right:.21rem;}
+@keyframes toast-2 {
+	0% {top:3rem; opacity:0;}
+	30%, 80% {top:1.11rem; opacity:1;}
+	100% {top:3rem; opacity:0;}
+}
+@-webkit-keyframes toast-2 {
+	0% {top:3rem; opacity:0;}
+	30%, 80% {top:1.11rem; opacity:1;}
+	100% {top:3rem; opacity:0;}
+}
+
+/* 상품상세 앱구매유도 전면 배너 - sy20180831 */
+.front-bnr {display:table; position:fixed; top:0; left:0; z-index:100000; width:100vw; height:100vh; background-color:rgba(0,0,0,.7); color:#fff; text-align:center;}
+.front-bnr .inner {display:table-cell; padding-bottom:1.83rem; vertical-align:middle;}
+.front-bnr img {width:5.12rem;}
+.front-bnr .txt {margin-top:1.37rem; font:bold 2.04rem/1.33 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold';}
+.front-bnr button {height:4.09rem; margin-top:2.05rem; padding:0 3.02rem; font:bold 1.37rem/4.2rem 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; border-radius:2.048rem;}
+.front-bnr button .icon {display:inline-block; position:relative; top:-.15rem; width:.51rem; height:.85rem; margin-left:.2rem; background:url(http://fiximage.10x10.co.kr/m/2018/common/icon_arrow_white.png)0 0 no-repeat; background-size:100%;}
+.front-bnr p {margin-top:1.37rem; font-weight:500; font:500 1.11rem/1.23 'AvenirNext-Medium', 'AppleSDGothicNeo-Medium'; text-decoration:underline;}
+
+/* 상품후기 '도움이 돼요' '도움 안돼요' 버튼추가 - sy20180903 */
+.postListV16a .btn-group button {width:49%; border-color:#666; color:#666;}
+
+/* 연관상품 추천팝업 AB테스트 - br20181023 */
+.pop-plus-sale {display:none; position:fixed; top:0; left:0; z-index:100000; width:100vw; height:100vh; background-color:rgba(0,0,0,.7);}
+.pop-plus-sale .inner {overflow:hidden; position:fixed; top:50%; left:50%; z-index:99999; width:87.2%; height:51.88rem; max-height:80%; margin:0 0 0 -43.6%; padding-bottom:4.01rem; transform:translateY(-50%); background-color:#e8eced;}
+.pop-plus-sale .btn-close {position:absolute; top:0; right:0; width:3.93rem; height:3.93rem; padding:1.28rem; background-color:transparent; background-image:url(http://fiximage.10x10.co.kr/m/2018/temp/@btn_close.png); background-repeat:no-repeat; background-position:center; background-size:1.37rem auto; text-indent:-999em;}
+.pop-plus-sale .conts {height:100%; overflow-y:scroll; padding:2.99rem 2.56rem 2.7rem;}
+.pop-plus-sale .bot-floating {position:absolute; left:0; bottom:0; z-index:30; width:100%;}
+.pop-plus-sale .bot-floating button {width:100%; height:4.01rem; font-size:1.28rem;}
+.pop-plus-sale .txt-save {display:block; text-align:center; font-size:1.11rem; color:#ff3131; background:rgba(255,255,255,0.8); height:2.56rem; line-height:2.4rem; padding-top:0.16rem;}
+.pop-plus-sale h1 img {width:inherit; height:2.56rem;}
+.plus-sale-list li {padding:1.96rem 1.71rem 1.71rem; margin-top:1.71rem; background-color:#fff; border-radius:0.34rem; box-shadow:0.51rem 0.51rem 0.85rem rgba(0,0,0,0.1);}
+.plus-sale-list .thumbnail {overflow:hidden;}
+.plus-sale-list .thumbnail a {display:block;}
+.plus-sale-list .thumbnail .btn-zoom {position:absolute; top:0; left:0; right:inherit; bottom:inherit; width:3.07rem; height:3.07rem; border:0; background-color:rgba(255,255,255,0.6);}
+.plus-sale-list .thumbnail .fin {display:none; position:absolute; top:0; right:0; bottom:0; left:0; z-index:10; width:100%; height:100%; text-align:center; background-color:rgba(0,0,0,0.5);}
+.plus-sale-list li.added .thumbnail .fin {display:block;}
+.plus-sale-list .thumbnail .fin span {display:block; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:1.45rem; color:#fff; line-height:1.75rem;}
+.plus-sale-list .thumbnail .fin span:before {content:' '; display:block; width:7.68rem; height:7.17rem; margin:0 auto 1.28rem; background-image:url(http://fiximage.10x10.co.kr/m/2018/temp/@ico_cart.png); background-repeat:no-repeat; background-position:0 center; background-size:6.4rem auto;}
+.plus-sale-list .desc {padding:1.18rem 0 0;}
+.plus-sale-list .desc .name {font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold; font-size:1.37rem; line-height:1.8rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.plus-sale-list .desc-grp {display:table; width:100%; margin-top:0.7rem;}
+.plus-sale-list .desc-grp.add-cart {margin-top:1.2rem;}
+.plus-sale-list .desc-grp > * {display:table-cell; vertical-align:middle;}
+.plus-sale-list .desc .opt {font-size:1.02rem; color:#666;}
+.plus-sale-list .desc .review {text-align:right;}
+.plus-sale-list .icon-rating {position:relative; display:inline-block; width:4.27rem; height:0.92rem; vertical-align:top;}
+.plus-sale-list .icon-rating:before, .plus-sale-list .icon-rating i {position:absolute; top:0; left:0; background-image:url(http://fiximage.10x10.co.kr/m/2017/common/bg_sp.png?v=1.94); background-repeat:no-repeat; background-size:17.07rem auto;}
+.plus-sale-list .icon-rating:before {content:' '; width:4.27rem; height:0.92rem; background-position:-12.63rem -10.7rem;}
+.plus-sale-list .icon-rating i {height:0.92rem; background-position:-12.63rem -11.94rem; font-size:0; text-indent:-999em;}
+.plus-sale-list .unit {font-size:1.11rem;}
+.plus-sale-list .unit s {color:#7b7b7b;}
+.plus-sale-list .unit .sum {font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.plus-sale-list .unit .sum span {font-size:0.94rem;}
+.plus-sale-list .desc .percent {font-size:1.02rem; color:#ff3131; text-align:right;}
+.plus-sale-list .odr-num {display:table-cell; position:relative; width:8.28rem; height:2.47rem;}
+.plus-sale-list .odr-num button {overflow:hidden; position:absolute; top:0; bottom:0; width:2.47rem; height:2.47rem; text-indent:-999em; border:1px solid #ddd;}
+.plus-sale-list .odr-num .minus-qty {left:0; border-top-left-radius:0.17rem; border-bottom-left-radius:0.17rem; background:#f4f7f7 url(http://fiximage.10x10.co.kr/m/2018/temp/@btn_num_minus.png) 50% 50% no-repeat;background-size:0.94rem auto;}
+.plus-sale-list .odr-num .plus-qty {right:0; border-top-right-radius:0.17rem; border-bottom-right-radius:0.17rem; background:#f4f7f7 url(http://fiximage.10x10.co.kr/m/2018/temp/@btn_num_plus.png) 50% 50% no-repeat;background-size:0.94rem auto;}
+.plus-sale-list .odr-num input[type=text] {width:8.28rem; height:2.47rem; padding:0; font-size:1.37rem; color:#000; text-align:center; border-width:1px 0; border-style:solid; border-color:#ddd;}
+.plus-sale-list .desc .btn-area {text-align:right;}
+.plus-sale-list .desc .btn-area button {width:8.53rem; height:2.47rem; font-size:1.11rem; border-radius:0.17rem;}
+
+/* 상품상세 리뷰 별점 상단 노출 - sy20180725 : 실섭에 적용(20190308) */
+/* .item-detail .review {margin-top:.73rem; margin-bottom:-.66rem;}
+.item-detail .review .btn-arrow:after {content:' '; display:inline-block; width:0.85rem; height:0.85rem; background-position:-1.79rem -1.54rem; vertical-align:.1rem;}
+.item-detail .review .counting {padding-left:0; color:#000; font-size:1.54rem; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.item-detail .review .counting em {margin-left:0.17rem; color:#7b7b7b; font-size:1.19rem;}
+.item-detail .review .counting em {color:#0d0d0d; font-size:1.19rem; font-weight:500;}
+.icon-rating2 {display:inline-block; position:relative; width:7rem; height:1.45rem;}
+.icon-rating2:before, .icon-rating2 i {background-image:url(http://fiximage.10x10.co.kr/m/2018/common/ico_star_2.png); background-size:6.83rem auto; background-repeat:repeat;}
+.icon-rating2:before {display:inline-block; width:6.9rem; height:1.45rem; background-position:0 0; content:' ';}
+.icon-rating2 i {position:absolute; top:0; left:0; height:1.45rem; background-position:0 100%; text-indent:-999em;} */
+
+/* 상품상세후기고도화 - sy20181204 : 실섭에 적용(20190308) */
+/* .post-txtV18 .tit-review {position:relative; margin:0 auto; padding:1.62rem 1.37rem 0.98rem; font-size:1.37rem; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold; color:#000;}
+.post-txtV18 .tit-review:after {display:block; position:absolute; bottom:0; left:1.37rem; right:1.37rem; height:1px; background-color:#eee; content:' ';}
+.post-txtV18 .tit-review ~ .review-dashboard {position:relative; padding-bottom:1px;}
+.post-txtV18 .tit-review ~ .review-dashboard:after {display:block; position:absolute; bottom:0; left:1.37rem; right:1.37rem; height:1px; background-color:#f1f1f1; content:' ';}
+.review-dashboard .total-review .headline {margin-right:1.65rem; font-size:1.37rem; line-height:1.22; font-family:'AvenirNext-Medium', 'AppleSDGothicNeo-Medium'; font-weight:500;}
+.review-dashboard .total-review .headline strong {font-size:2.05rem; line-height:1.38; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.review-dashboard .total-review .icon-rating2 {position:relative;}
+.review-dashboard .total-review .icon-rating2:after {display:inline-block; position:absolute; top:50%; left:-.85rem; width:.085rem; height:1.37rem; margin-top:-.6rem; background-color:#f1f1f1; content:' ';}
+
+.rate-review {width:29.26rem; margin:0 auto; padding:1.92rem 0; font-family:'AvenirNext-Medium', 'AppleSDGothicNeo-Medium'; font-weight:500;}
+.rate-review .headline {width:27%; margin-top:.6rem; font-size:1.19rem; line-height:1.18; text-align:center;}
+.rate-review .headline strong {font-size:2.56rem; line-height:1.37; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.rate-review .headline span {font-size:.9rem; color:#888; font-family:'AvenirNext-Medium', 'AppleSDGothicNeo-Medium';}
+.rate-review ul {width:calc(29.26rem - 28%);}
+.rate-review ul li {margin-top:.98rem; color:#a1a1a1;}
+.rate-review ul li:nth-child(1) {margin-top:0;}
+.rate-review ul li:nth-child(1) span.bar i {background-color:#ff3131;}
+.rate-review ul li:nth-child(1) span.bar i b {color:#ff3131;}
+.rate-review ul li span {display:inline-block;}
+.rate-review ul li span:nth-child(1) {width:4rem;}
+.rate-review ul li span.bar {width:12.8rem; height:.68rem;}
+.rate-review ul li span.bar i {display:inline-block; position:relative; width:100%; height:100%; margin:-.7rem .43rem 0 .85rem; border-radius:.34rem; background-color:#d8d8d8;}
+.rate-review ul li span.bar i b {display:inline-block; position:absolute; right:-2.56rem; top:-.08rem; width:2.13rem; text-align:right;}
+
+.review-gallery {margin-bottom:1.88rem;}
+.review-gallery .swiper-slide {width:9.21rem; height:9.21rem; margin-left:.43rem;}
+.review-gallery .swiper-slide .thumbnail {display:inline-block; width:100%; height:100%;}
+.review-gallery .swiper-slide .thumbnail i {display:inline-block; position:relative; z-index:10; width:100%; height:100%; background-size:cover;}
+.review-gallery .swiper-slide:first-child {margin-left:1.37rem;}
+.review-gallery .swiper-slide:last-child {position:relative; margin-right:1.37rem;}
+.review-gallery .swiper-slide.more-review .thumbnail i:after {display:block; position:absolute; top:0; left:0; z-index:15; width:100%; height:100%; background-color:rgba(255,49,49,.7); content:' ';}
+.review-gallery .swiper-slide.more-review .thumbnail em {display:inline-block; position:absolute; top:50%; left:50%; z-index:15; padding-right:1rem; padding-top:.3rem; color:#fff; font:1.19rem/1 'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold; text-align:center; transform:translate(-50%,-50%);}
+.review-gallery .swiper-slide.more-review .thumbnail em:after {display:inline-block; width:.77rem; height:.77rem; position:absolute; top:50%; right:0; margin-top:-.35rem; background:url(http://fiximage.10x10.co.kr/m/2018/common/ico_plus.png) 50% 50% no-repeat; background-size:100%; content:' ';}
+
+.pdtExplainV16a .post-txtV18 {border-top:1.37rem solid #f4f4f4; padding-bottom:0;}
+.post-txtV18 {padding-top:0 !important;}
+.post-txtV18 .sortingbar {height:auto; padding:1.88rem 0 0; margin:0 1.37rem; border-top:solid .085rem #f1f1f1;}
+.post-txtV18 .sortingbar .option-left {margin-top:.34rem; margin-bottom:1.2rem;}
+.post-txtV18 .sortingbar .option-left ul {overflow:hidden;}
+.post-txtV18 .sortingbar .option-left ul li {float:left; margin-left:1.02rem; color:#a1a1a1; font-size:1.19rem; line-height:1.15;}
+.post-txtV18 .sortingbar .option-left ul li:nth-child(1) {margin-left:0;}
+.post-txtV18 .sortingbar .option-left ul li.current {position:relative; padding-left:1.45rem; margin-top:.03rem; color:#000; font-family:'AvenirNext-Medium', 'AppleSDGothicNeo-Medium'; font-weight:500;}
+.post-txtV18 .sortingbar .option-left ul li.current:before {position:absolute; top:0; left:0; width:1.11rem; height:1.11rem; background:url(http://fiximage.10x10.co.kr/m/2018/common/ico_check3.png); background-size:100%; content:'';}
+.post-txtV18 .sortingbar .option-right {margin-top:-.27rem;}
+.post-txtV18 .sortingbar .option-right button {height:2.22rem; padding:0 .8rem; border-radius:1.11rem; font-size:1.02rem; line-height:2.22rem;}
+.post-txtV18 .sortingbar .option-right button .icon-arrow {width:.69rem; height:.69rem; background:url(http://fiximage.10x10.co.kr/m/2018/common/ico_chevron_red2.png); background-size:100%; transition:all .3s;}
+.post-txtV18 .sortingbar .option-right button.on .icon-arrow {transform:rotate(180deg); transition:all .3s;}
+.post-txtV18 .sortingbar .option-list {padding-top:2.35rem}
+.post-txtV18 .sortingbar .option-list ul li {height:3.24rem; border-top:solid .0085rem #f4f4f4; font-size:1.02rem; line-height:3.24rem;}
+
+.lyDropdownOption {display:none; overflow:hidden; width:100%; max-height:13.62rem; margin:0 0 1.87rem; border-top:solid .085rem #f1f1f1; border-bottom:solid .085rem #f1f1f1;}
+.lyDropdownOption .swiper-container {max-height:13.62rem;}
+.lyDropdownOption .swiper-container .swiper-slide {width:100%; height:auto;}
+.lyDropdownOption .swiper-container-vertical > .swiper-scrollbar {width:.34rem; right:0;}
+.lyDropdownOption .dropDown {background-color:#fff;}
+.lyDropdownOption .dropBoxEval li {position:relative; padding:1.02rem .8rem 0.98rem 3.3rem; color:#a1a1a1; font-size:1.02rem; border-top:1px solid #efefef; cursor:pointer;}
+.lyDropdownOption .dropBoxEval li:first-child {border-top:0;}
+.lyDropdownOption .dropBoxEval li:before {display:inline-block; position:absolute; top:50%; left:1.37rem; width:1.11rem; height:1.11rem; margin-top:-.6rem; border:solid 1px #d5d5d5; border-radius:50%; content:' ';}
+.lyDropdownOption .dropBoxEval li.on {background-color:#fff8f8; color:#ff3131;}
+.lyDropdownOption .dropBoxEval li.on:before {display:inline-block; width:1.024rem; height:1.024rem; border:0; background:url(http://fiximage.10x10.co.kr/m/2018/common/ico_check4.png); background-size:100%; content:' ';}
+.lyDropdownOption .dropBoxEval .option {position:relative; line-height:1.34em;}
+
+.post-txtV18 .bxWt1V16a {margin-top:.85rem;}
+.post-txtV18 .btnBarV16a li {height:3.41rem;}
+.post-txtV18 .btnBarV16a li div {height:3.41rem; color:#a9a9a9; font-size:1.28rem; line-height:3.41rem; border:0; border-left:solid 1px #eaeaea;}
+.post-txtV18 .btnBarV16a li div span {display:inline-block; position:relative; top:-.1rem; margin-left:.34rem; font-size:1.11rem; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.post-txtV18 .btnBarV16a li:nth-child(1) div {border-left:0;}
+.post-txtV18 .btnBarV16a li.current div {border:solid 1px #eaeaea; line-height:3.25rem;}
+.post-txtV18 .btnBarV16a li.current div span {color:#ff3131;}
+.post-txtV18 .txtNoneV16a {color:#0d0d0d; font-size:1.11rem;}
+.post-txtV18 .btnAreaV16a {padding:1.71rem 1.37rem 0; margin-bottom:-.81rem;}
+.post-txtV18 > .btnAreaV16a:first-child {position:relative; text-align:center; padding-bottom:3rem;}
+.post-txtV18 > .btnAreaV16a:first-child:after {position:absolute; left:-1.25rem; right:-1.25rem; bottom:0; height:1.02rem; background-color:#f4f4f4; content:' ';}
+.post-txtV18 > .btnAreaV16a:first-child ~ .review-dashboard .rate-review {border-top:1px solid #f1f1f1; margin-top:1rem;}
+.post-txtV18 .btnAreaV16a p {display:block; margin-bottom:.85rem; font-size:1.19rem; line-height:1.18;}
+
+.post-txtV18 .btn-areaV19 {position:relative; display:table; width:100%; padding:1.71rem 2.56rem 1.79rem 2.62rem; text-align:left;}
+.post-txtV18 .btn-areaV19 p {display:table-cell; padding-right:1.26rem; font-size:1.19rem; line-height:1.5; vertical-align:middle;}
+.post-txtV18 .btn-areaV19 p em {font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.post-txtV18 .btn-areaV19 a {float:right; width:10.24rem; font-size:1.11rem; border-radius:1.71rem;}
+.post-txtV18 .btn-areaV19:after {display:block; position:absolute; bottom:0; left:1.37rem; right:1.37rem; height:1px; background-color:#f1f1f1; content:' ';}
+
+.review-info {display:table; table-layout:fixed; width:100%;}
+.review-info > div {display:table-cell; color:#0d0d0d; font-size:1.11rem; line-height:1.3; vertical-align:top;}
+.review-info .writer {width:4rem; text-align:center;}
+.review-info .writer span {display:block; color:#b5b5b5; font-size:.85rem; line-height:1.15rem; word-break:break-all;}
+.review-info .writer .thumb {display:block; width:3.93rem; height:4.7rem; margin-bottom:.34rem; background-size:100%; background-repeat:no-repeat; text-indent:-999em;}
+.review-info .writer .thumb.white {background-image:url(http://fiximage.10x10.co.kr/m/2018/common/ico_white.png)}
+.review-info .writer .thumb.red {background-image:url(http://fiximage.10x10.co.kr/m/2018/common/ico_red.png)}
+.review-info .writer .thumb.vip {background-image:url(http://fiximage.10x10.co.kr/m/2018/common/ico_vip.png)}
+.review-info .writer .thumb.vipgold {background-image:url(http://fiximage.10x10.co.kr/m/2018/common/ico_gold.png)}
+.review-info .writer .thumb.vvip {background-image:url(http://fiximage.10x10.co.kr/m/2018/common/ico_vvip.png)}
+.review-info .review-conts {padding-left:1.28rem;}
+.review-info div.purchaseOption {margin-bottom:.6rem; padding-top:.5rem; color:#858585 !important; font-size:1.02rem; line-height:1.21; font-family:'AvenirNext-Medium', 'AppleSDGothicNeo-Medium'; font-weight:500;}
+
+.post-txtV18 .postListV16a .review-info {width:100%; padding:1.71rem 1.45rem;}
+.post-txtV18 .postListV16a .review-info div {padding-top:0; color:#0d0d0d;}
+.post-txtV18 .postListV16a .review-info .writer {position:static;}
+.post-txtV18 .postListV16a .review-info .writer .thumb {margin-bottom:.34rem;}
+.post-txtV18 .postListV16a .review-info div.purchaseOption {margin-bottom:.6rem; padding-top:.5rem;}
+.post-txtV18 .postListV16a .review-info .photo {padding-top:.98rem; font-size:0; line-height:1;}
+.post-txtV18 .postListV16a .review-info .photo span {display:inline-block; position:relative; width:18.77rem; height:18.77rem; margin-left:.68rem; background-color:#f4f4f4; }
+.post-txtV18 .postListV16a .review-info .photo span i {display:inline-block; position:relative; z-index:10; width:100%; height:100%; background-size:cover;}
+.post-txtV18 .postListV16a .review-info .photo span:before {content:' '; position:absolute; top:50%; left:50%; width:4.27rem; height:4.27rem; margin:-2.22rem 0 0 -2.22rem; background:url(http://fiximage.10x10.co.kr/m/2017/common/bg_img_loading.png) 50% 0 no-repeat; background-size:100% auto;}
+.post-txtV18 .postListV16a .review-info .photo span:first-child {margin-left:0;}
+.post-txtV18 .postListV16a .review-info .photo-2 span {width:11.09rem; height:11.09rem; margin-left:.85rem;}
+.post-txtV18 .postListV16a .review-info .photo-3 span {width:7.68rem; height:7.68rem; margin-left:.33rem;}
+.post-txtV18 .postListV16a .review-info .date {margin-top:1.07rem; color:#b5b5b5; font-size:.94rem;}
+.post-txtV18 .postListV16a .review-info .offline {display:inline-block; height:1.54rem; line-height:1.54rem; margin:0 0 0.85rem; padding:0.13rem 0.81rem 0 0.77rem; font-size:0.94rem; font-family:'AvenirNext-Medium', 'AppleSDGothicNeo-Medium'; color:#fff; background-color:#ff4b4b; -webkit-border-radius:0.77rem; border-radius:0.77rem;}
+
+.ly-review-gallery {display:none; position:fixed; top:3.07rem; left:0; z-index:100000 !important; width:100%;}
+.ly-review-gallery + .mask {display:none; z-index:99999; background-color:rgba(0,0,0,.6);}
+.ly-review-gallery .swiper-slide {overflow:hidden; width:27.31rem; height:40.27rem; margin-left:1.37rem;}
+.ly-review-gallery .swiper-slide:first-child {margin-left:1.37rem;}
+.ly-review-gallery .swiper-slide:last-child {margin-right:1.37rem;}
+.ly-review-gallery .swiper-slide > a {display:block;}
+.ly-review-gallery .review-info > div {display:table-cell; position:relative; vertical-align:middle;}
+.ly-review-gallery .swiper-slide .thumbnail {overflow:hidden; display:inline-block; width:100%; height:30.72rem; border-radius:.77rem .77rem 0 0; -webkit-border-radius:.77rem .77rem 0 0; vertical-align:top;}
+.ly-review-gallery .swiper-slide .thumbnail i {display:block; position:relative; z-index:10; width:100%; height:100%; background-size:cover; background-position:50% 50%; background-repeat:no-repeat; border-radius:.77rem .77rem 0 0; -webkit-border-radius:.77rem .77rem 0 0;}
+.ly-review-gallery .review-info {position:relative; top:-.1rem; width:100%; height:9.55rem; padding:0 1.28rem; background-color:#fff; border-radius:0 0 .77rem .77rem; -webkit-border-radius:0 0 .77rem .77rem;}
+.ly-review-gallery .review-info .writer {margin-bottom:0;}
+.ly-review-gallery .review-info .review-conts .icon-rating {position:relative; margin-bottom:.68rem;}
+.ly-review-gallery .review-info .review-conts div.purchaseOption + .icon-rating {position:absolute; top:1.8rem; left:1.28rem;}
+.ly-review-gallery .review-info .review-conts div.purchaseOption {padding:0 0 0 4.61rem;}
+.ly-review-gallery .review-info .review-conts div.purchaseOption em {overflow:hidden; display:inline-block; max-width:13rem; text-overflow:ellipsis; white-space:nowrap; vertical-align:middle;}
+.ly-review-gallery .review-info .review-conts .txt-review {overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; height:2.82rem; font:1.11rem/1.45rem 'AvenirNext-Regular', 'AppleSDGothicNeo-Light'; text-overflow:ellipsis;}
+.ly-review-gallery .review-info .review-conts b {display:inline-block; margin-top:.3rem; font-size:.9rem; color:#bababa; font-family:'AvenirNext-Medium', 'AppleSDGothicNeo-Medium'; font-weight:500; text-decoration:underline;}
+.ly-review-gallery .btn-close {display:inline-block; position:absolute; bottom:-3.62rem; left:50%; width:2.75rem; height:2.75rem; background:url(http://fiximage.10x10.co.kr/m/2018/common/btn_close.png) no-repeat 50% 50%; background-size:100%; transform:translate(-50%, 0);}
+
+.pop-photo-review.content {position:relative; padding-bottom:0;}
+.pop-photo-review .swiper {position:relative;}
+.pop-photo-review .swiper .swiper-slide {display: flex; justify-content: center; align-items: center; background-color:#000;}
+.pop-photo-review .swiper-slide .thumb {display:inline-block; width:100%;}
+.pop-photo-review .pagination {position:absolute; left:0; bottom:1.86rem; z-index:50; width:100%; height:.64rem; padding-top:0; text-align:center;}
+.pop-photo-review .pagination span {display:inline-block; width:.86rem; height:.86rem; margin:0 0.6rem; border:0.18rem solid #fff; border-radius:50%; cursor:pointer; background-color:rgba(0,0,0,.1); box-shadow:0 0 0.4rem 0 rgba(0,0,0,.25); transition:all .3s;}
+.pop-photo-review .pagination span.swiper-active-switch {width:2rem; margin:0 0.3rem; border-radius:0.4rem; background-color:#fff;}
+.pop-photo-review .review-info {padding:1.71rem 1.71rem 1.71rem 1.45rem;}
+.pop-photo-review .review-info .items {background-color:transparent;}
+.pop-photo-review .review-info .date {margin-top:1.32rem; color:#b5b5b5; font-size:.94rem;}
+
+.pop-photo-album.content {padding-bottom:0;}
+.pop-photo-album ul {overflow:hidden; margin:-0.8% 0 0 -0.8%;}
+.pop-photo-album li {float:left; width:33.33%; padding:0.8% 0 0 0.8%;}
+.pop-photo-album li a {display:block;}
+.pop-photo-album .thumbnail {display:block; width:100%; height:0; padding-top:100%;}
+.pop-photo-album .thumbnail i {display:block; position:absolute; top:0; left:0; width:100%; height:100%; background-size:cover; font-size:0; color:transparent;} */
+
+/* 테스터후기 - br&sy 2019024 : 실섭에 적용(20190308) */
+/* .tester-reivew h2 {position:relative;}
+.tester-reivew h2:after {display:inline-block; position:absolute; top:0; right:0; width:46.53%; height:100%; background-image:url(//fiximage.10x10.co.kr/m/2018/common/ico_tester.gif); background-repeat:no-repeat; background-size:100%; content:'';}
+.tester-reivew .postListV16a {padding-top:0;}
+.review-info .tester {display:inline-block; height:1.54rem; line-height:1.54rem; margin:0 0 0.85rem; padding:0.13rem 0.81rem 0 0.77rem; font-size:0.94rem; font-family:'AvenirNext-Medium', 'AppleSDGothicNeo-Medium'; color:#fff; background-color:#4075ff; -webkit-border-radius:0.77rem; border-radius:0.77rem;}
+.review-info .tester-conts {margin-top:.57rem; color:#000;}
+.review-info .tester-conts dt {font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold; color:#4075ff;}
+.review-info .tester-conts dd + dt {margin-top:1.02rem;}
+.tester-reivew .post-txtV18 .btnAreaV16a {border-top:1px solid #efefef;}
+.tester-reivew .post-txtV18 .btnAreaV16a .btn {height:3.2rem;}
+.tester-reivew .post-txtV18 .btnAreaV16a .btn span {display:inline-block; position:relative; top:-.3rem; width:.56rem; height:.56rem; margin-left:.3rem; border-width:0 1px 1px 0; border-style:solid; border-color:#4075ff; transform:rotate(45deg);  transition:all .5s;}
+.tester-reivew .post-txtV18 .btnAreaV16a.on .btn span {top:0; transform:rotate(-135deg);} */

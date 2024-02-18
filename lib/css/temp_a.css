@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* 투데이 후기 별점 노출(정렬 변경 및 마진값 조정) - sy20180724 */
+.for-you .total-review {display:flex; align-items:flex-start; justify-content:flex-start; margin-top:.77rem;}
+.for-you .total-review .counting {padding-left:.64rem; color: #8c8c8c; font-size:1.11rem;}
+
+/* 상품상세 메인 썸네일 상품 추천 버튼 추가(마지막 슬라이드 추천버튼 추가) - sm20180725 */
+.more-rec {position:absolute; left:0; top:0; right:0; bottom:0; width:100%; height:100%; background-color:rgba(248, 248, 248, 0.95); text-align:center; /*opacity:0; transition:all 1s 1.2s;*/}
+.more-rec .inner {display:table; width:100%; height:100%;}
+.more-rec .inner > div {display:table-cell; width:100%; height:100%; font-size:1.45rem; vertical-align:middle; text-align:center;}
+.more-rec .btn-group button {margin-top:1.07rem; width:11.86rem; height:3.41rem; background-color:transparent; border:solid 1px rgba(0,0,0,0.15); border-radius:0.17rem; color:#000; font:1.11rem 'AvenirNext-DemiBold', 'AppleSDGothicNeo-Medium', sans-serif-medium; text-align:center;}
+.swiper-slide-duplicate .more-rec {opacity:1}
+
+/* 상품상세 내용 펼쳐보기(접기) 버튼(기존 버튼 폰트 조절, 우측 불릿 이미지 영역) - sy20180810 */
+.pdtExplainV16a .btn-moreV18 .btnV16a {height:4.27rem; margin:1.02rem 0; font-size:1.37rem; font-weight:500;}
