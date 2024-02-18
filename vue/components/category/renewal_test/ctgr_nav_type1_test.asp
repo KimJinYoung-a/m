@@ -1,0 +1,110 @@
+<%@ codepage="65001" language="VBScript" %>
+<% option Explicit %>
+<% response.charset = "UTF-8" %>
+<%
+'####################################################
+' Description : 카테고리 탐색 메뉴 테스트 페이지
+' History : 2020-10-13 이전도 생성
+'####################################################
+%>
+<!-- #INCLUDE Virtual="/lib/util/commlib.asp" -->
+<!-- #include virtual="/lib/inc_const.asp" -->
+<!-- #INCLUDE Virtual="/lib/chkDevice.asp" -->
+<!-- #INCLUDE Virtual="/lib/inc/head.asp" -->
+<%
+	dim gnbflag , testmode, defaultAPIURL
+	gnbflag = RequestCheckVar(request("gnbflag"),1)
+	testmode = RequestCheckVar(request("testmode"),1)
+
+	If gnbflag <> "" Then '//gnb 숨김 여부
+		gnbflag = true
+	Else
+		gnbflag = False
+		strHeadTitleName = "헤더"
+	End if
+
+    dim apiurl : apiurl = ""
+    IF application("Svr_Info") = "Dev" THEN
+        //apiurl = "//testfapi.10x10.co.kr/api/web/v1"
+        apiurl = "//localhost:8080/api/web/v1"
+    ElseIf application("Svr_Info")="staging" Then
+        apiurl = "//fapi.10x10.co.kr/api/web/v1"
+    Else
+        apiurl = "//fapi.10x10.co.kr/api/web/v1"
+    End If
+%>
+<script>
+    apiurl = '<%=apiurl%>';
+</script>
+
+<div id="app"></div>
+
+<script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+<% IF application("Svr_Info") = "Dev" or testmode = "1" THEN %>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vuex"></script>
+<script src="/vue/vue.lazyimg.min.js"></script>
+<% Else %>
+<script src="/vue/vue.min.js"></script>
+<script src="/vue/vue.lazyimg.min.js"></script>
+<script src="/vue/vuex.min.js"></script>
+<% End If %>
+
+<!-- Category Component -->
+<script src="../ctgr_nav_type1.js?v=1.0"></script>
+<script src="../row_category.js?v=1.0"></script>
+<script src="./store_ctgr_nav_type1_test.js?v=1.0"></script>
+<!-- //Category Component -->
+
+<script>
+	var app = new Vue({
+		el: '#app',
+		store: store,
+		template: `
+			<div>
+				<Category-Nav-Type1
+				    :this_category="this_category"
+				    :categories="categories"
+				    :first_category_view_count="first_category_view_count"
+				    :more_category_count="more_category_count"
+                ></Category-Nav-Type1>
+			</div>
+		`,
+		computed : {
+            first_category_view_count : function() { // 첫 카테고리 노출 수
+                return this.$store.getters.first_category_view_count;
+            },
+            more_category_count : function() { // 더보기 카테고리 수
+                return this.$store.getters.more_category_count;
+            },
+            this_category : function() { // 현재 카테고리
+                return this.$store.getters.this_category;
+            },
+            categories : function() { // 카테고리 리스트
+                return this.$store.getters.categories;
+            }
+		},
+		created : function() {
+            // 파라미터 STORE에 SET
+            this.$store.commit('SET_REQ_PARAM', getParametersObject());
+            // 메인 아이템 불러오기
+            this.$store.dispatch('GET_CATEGORIES');
+		}
+	});
+
+	// 파라미터를 java Array 변수로 return
+    function getParametersObject() {
+        var url = unescape(location.href);
+        var paramArr = (url.substring(url.indexOf("?")+1,url.length)).split("&");
+
+        var returnObject = {};
+        for(var i = 0 ; i < paramArr.length ; i++){
+            var temp = paramArr[i].split("=");
+            returnObject[temp[0]] = temp[1];
+        }
+        return returnObject;
+    }
+</script>

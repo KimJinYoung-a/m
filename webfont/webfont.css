@@ -1,0 +1,18 @@
+/* Noto Sans KR
+@font-face {font-family:'NotoSansKRLight'; src:url('/webfont/NotoSansKRLight.woff2') format('woff2'),url('/webfont/NotoSansKRLight.woff') format('woff'),url('/webfont/NotoSansKRLight.ttf') format('truetype');}
+@font-face {font-family:'NotoSansKRRegular'; src:url('/webfont/NotoSansKRRegular.woff2') format('woff2'),url('/webfont/NotoSansKRRegular.woff') format('woff'),url('/webfont/NotoSansKRRegular.ttf') format('truetype');}
+@font-face {font-family:'NotoSansKRMedium'; src:url('/webfont/NotoSansKRMedium.woff') format('woff'),url('/webfont/NotoSansKRMedium.ttf') format('truetype');}
+@font-face {font-family:'NotoSansKRBold'; src:url('/webfont/NotoSansKRBold.woff2') format('woff2'),url('/webfont/NotoSansKRBold.woff') format('woff'),url('/webfont/NotoSansKRBold.ttf') format('truetype');}*/
+
+/* Noto Sans KR */
+@font-face{font-family:'NotoSansKRLight'; font-style:normal; src:url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype'); }
+@font-face{font-family:'NotoSansKRRegular'; font-style:normal; src:url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype'); }
+@font-face{font-family:'NotoSansKRMedium'; font-style:normal; src:url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype'); }
+@font-face{font-family:'NotoSansKRBold'; font-style:normal; src:url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype'); }
+
+/* Core Sans C
+https://www.myfonts.com/fonts/s-core/core-sans-c */
+@font-face {font-family:'CoreSansCLight'; font-style:normal; src:url('/webfont/CoreSansC35Light.woff2') format('woff2'),url('/webfont/CoreSansC35Light.woff') format('woff'),url('/webfont/CoreSansC35Light.ttf') format('truetype');}
+@font-face {font-family:'CoreSansCRegular'; font-style:normal; src:url('/webfont/CoreSansC45Regular.woff2') format('woff2'),url('/webfont/CoreSansC45Regular.woff') format('woff'),url('/webfont/CoreSansC45Regular.ttf') format('truetype');}
+@font-face {font-family:'CoreSansCMedium'; font-style:normal; src:url('/webfont/CoreSansC55Medium.woff2') format('woff2'),url('/webfont/CoreSansC55Medium.woff') format('woff'),url('/webfont/CoreSansC55Medium.ttf') format('truetype');}
+@font-face {font-family:'CoreSansCBold'; font-style:normal; src:url('/webfont/CoreSansC65Bold.woff2') format('woff2'),url('/webfont/CoreSansC65Bold.woff') format('woff'),url('/webfont/CoreSansC65Bold.ttf') format('truetype');}
