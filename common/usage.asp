@@ -1,0 +1,42 @@
+<%@ codepage="65001" language="VBScript" %>
+<% option Explicit %>
+<% response.charset = "utf-8" %>
+<%
+'####################################################
+' Description : 이용약관
+' History : 2021.03.03 임보라 생성
+'####################################################
+%>
+<!-- #include virtual="/lib/db/dbopen.asp" -->
+<!-- #INCLUDE Virtual="/lib/util/commlib.asp" -->
+<!-- #include virtual="/lib/inc_const.asp" -->
+<!-- #INCLUDE Virtual="/lib/chkDevice.asp" -->
+<%
+strHeadTitleName = "이용약관"
+%>
+<!-- #include virtual="/lib/inc/head.asp" -->
+<title>텐바이텐 이용약관</title>
+<style>
+.tenten-footer {display:block; padding-bottom:4.6rem;}
+</style>
+<script>
+$(function() {
+	$('.policyList li a').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - $("#header").outerHeight()}, 0);
+	});
+});
+</script>
+</head>
+<body class="default-font">
+	<!-- #include virtual="/lib/inc/incHeader.asp" -->
+	<div id="content" class="content">
+		<div class="inner5">
+			<h2 class="tit01 tMar20">이용약관</h2>
+			<!-- #include virtual="/common/usage_external.asp" -->
+		</div>
+	</div>
+	<!-- #include virtual="/lib/inc/incFooter.asp" -->
+	<script type="text/javascript" src="/lib/js/iscroll.js"></script>
+</body>
+</html>
