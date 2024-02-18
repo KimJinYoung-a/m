@@ -1,0 +1,717 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>[텐바이텐 모바일] 2017 코딩 리스트</title>
+<style type="text/css">
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);*/
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+/* All Device */
+* {padding:0; margin:0; list-style:none; -webkit-text-size-adjust:100%;}
+body {position:relative; font-size:12px; color:#333; /*font-family:'Noto Sans KR', sans-serif; font-weight:300;*/ font-family: 'Nanum Myeongjo', serif;}
+a,em {font-style:normal; text-decoration:none; }
+.head {overflow:hidden; position:relative; padding:10px 15px; background-color:#2d363e;}
+.head h1 {color:#fff; font-size:20px; line-height:1; font-weight:normal; text-align:center;}
+.head ul {overflow:hidden; margin-top:10px; padding-bottom:3px;}
+.head ul li {position:relative; float:left; margin-right:5px; color:#fff; font-size:14px;}
+.head ul li a {display:inline-block; position:relative; padding:2px 10px; border:1px solid #fff; border-radius:2px; color:#fff;}
+.head ul li a.on:after {content:' '; display:block; position:absolute; bottom:-4px; left:50%; width:0; height:0; margin-left:-3px; border-left:4px solid transparent; border-right:4px solid transparent; border-top:4px solid #fff;}
+.head .update {position:absolute; top:10px; right:15px; display:inline-block; padding:3px 12px; border-radius:20px; color:#f1f1f1; font-weight:bold;}
+.pjInfo {position:relative; padding:20px; border:1px solid #ccc; border-radius:5px; margin:15px; background:#fff;}
+.pjInfo .list {margin:15px 0;}
+.pjInfo .list li {position:relative; padding:0 0 5px 10px;}
+.pjInfo .list li:after {content:''; display:block; position:absolute; top:6px; left:0; width:0; height:0; padding:2px; background:#0091cd; border-radius:10px;}
+.colorIndex {overflow:hidden; margin-top:10px; text-align:center;}
+.colorIndex dt {float:left; width:120px; height:30px; line-height:30px; font-weight:bold; font-size:14px; color:#4c4c4c; background:#efefef;}
+.colorIndex dd {float:left; height:30px;}
+.colorIndex dd span {float:left; display:block; padding:0 10px; height:30px; line-height:30px; font-weight:bold;}
+.tab {overflow:hidden; padding:0 15px;}
+.tab li {float:left; text-align:center; margin-right:5px;}
+.tab li a {display:block; color:#fff;; padding:6px 15px; font-weight:bold; font-size:16px; border:1px solid #808c9f; border-bottom:0; border-radius:8px 8px 0 0; background:#9fa7b4;}
+.tab li.on a {background:#4c4c4c;}
+.btn {display:inline-block; padding:3px 12px; text-align:center; color:#fff; font-weight:bold; border:1px solid #3f8e88; border-radius:15px; background:#59c4bc;}
+.btn2 {display:inline-block; padding:3px 12px; text-align:center; color:#fff; font-weight:bold; border:1px solid #8e5f68; border-radius:15px; background:#c4799c;}
+.design .btn {border:1px solid #13869a; background:#14b9d5;}
+.comp {background:#ffe1e7;}
+.ing {background:#d3f4ff;}
+.modify {background:#e3ffa1;}
+.not {background:#fff5ae;}
+.del {background:#d4d4d4;}
+.workList {margin:0 15px 30px;}
+.workList table {width:100%; border-collapse:collapse; background:#fff;}
+.workList th {font-weight:bold; padding:10px 0; border:1px solid #ddd; border-bottom:2px solid #ddd; white-space:nowrap;}
+.workList td {padding:5px; line-height:1.5; border:1px solid #ddd;}
+.workList td.design, .workList td.dev {text-align:center;}
+.workList td.blank {height:1px; padding:0; border:1px solid #ddd; background-color:#ddd;}
+.workList td.coding a {color:#333;}
+.ct {text-align:center;}
+
+@media all and (max-width:480px){
+	.head .update {position:static; margin-top:10px; padding:0;}
+	.pjInfo .list {display:none;}
+
+	.tab {padding-left:10px !important;}
+	.tab li a {padding-right:5px; padding-left:5px; font-size:11px;}
+}
+
+@media all and (max-width:800px){
+	.colorIndex dt {float:none; width:100%; height:20px; line-height:22px;}
+	.colorIndex dd {float:left; width:100%; height:auto;}
+	.colorIndex dd span {display:block; width:100%; height:20px; line-height:20px; vertical-align:middle; font-size:10px; box-sizing:border-box;}
+	.pjInfo {font-size:11px; padding:10px; margin:10px;}
+	.pjInfo .list li:after {top:4px;}
+	.tab {padding:0; margin-left:-1px;}
+	.workList {margin:0 0 15px; font-size:11px;}
+	.workList .design,
+	.workList .etc,
+	.workList tr th:nth-child(5),
+	.workList tr td:nth-child(5) {display:none;}
+	.workList td {padding:2px;}
+	.btn,.btn2 {font-size:11px;}
+}
+</style>
+</head>
+<body>
+<!--a href="http://testscm.10x10.co.kr/apps/academy/notice/noticeView.asp?idx=9">http://testscm.10x10.co.kr/apps/academy/notice/noticeView.asp?idx=9</a-->
+<div class="head">
+	<h1>2017 Mobile Renewal..</h1>
+	<ul>
+		<li><a href="http://testm.10x10.co.kr/index.html" class="on">2017</a></li>
+		<li><a href="http://testm.10x10.co.kr/index_2016.html">2016</a></li>
+		<li><a href="http://testm.10x10.co.kr/index_v1.html">old</a></li>
+		<li><a href="http://testm.10x10.co.kr/index_etc.html">etc</a></li>
+	</ul>
+</div>
+
+<div class="pjInfo">
+	<div>
+		<span>go_index.asp<a href="/index.asp">[새창]</a>&nbsp;&nbsp;<a href="/index.asp" target="_self">[현재창]</a></span>
+	</div>
+	<dl class="colorIndex">
+		<dt>COLOR INDEX</dt>
+		<dd>
+			<span class="comp">코딩 완료</span>
+			<span class="ing">코딩 진행중</span>
+			<span class="modify">코딩 수정완료</span>
+			<span class="not">작업 대기 / 2차오픈</span>
+			<span class="del">페이지 삭제</span>
+		</dd>
+	</dl>
+	<ul class="list">
+		<li><strong>프로젝트명 : </strong> 2017 모바일 리뉴얼</li>
+		<li><strong>인코딩 방식 : </strong> UTF-8</li>
+		<li><strong>DTD 사용 : </strong> &lt;!doctype html&gt; (HTML 5)</li>
+		<li><strong>기준 디바이스 : </strong> </li>
+		<li><strong>작업자 : </strong></li>
+		<li><strong>개발관련 변경 : </strong> 인클루드된 파일 경로 /html/ 제거
+			<p style="padding-top:5px; line-height:16px;">코딩파일 <span style="color:#008039;">&lt; !-- #include virtual="/html/lib/inc/incCategory.asp" -- &gt;</span> ▶ <span style="color:#008039;">&lt; !-- #include virtual="/category/incCategory.asp" --&gt;</span> 로 교체 해서 개발</p>
+		</li>
+	</ul>
+</div>
+
+<ul class="tab">
+	<li class="on"><a href="index.html">Mobile web ▼</a></li>
+	<li><a href="indexApp.html">App</a></li>
+</ul>
+<div class="workList">
+	<table>
+		<colgroup>
+			<col width="9%" />
+			<col width="10%" />
+			<col width="10%" />
+			<col class="design" width="10%" />
+			<col width="11%" />
+			<col width="18%" />
+			<col width="12%" />
+			<col class="etc" width="*" />
+		</colgroup>
+		<thead>
+		<tr>
+			<th></th>
+			<th class="dep1">1Depth</th>
+			<th class="dep2">2Depth</th>
+			<th class="dep3">3Depth</th>
+			<th class="design">Design</th>
+			<th class="coding">Coding URL</th>
+			<th class="dev">Dev.</th>
+			<th class="etc">etc.</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr class="ing">
+				<td>Guide</td>
+				<td class="dep1">레이아웃</td>
+				<td class="dep2">모바일웹</td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/07/00</em></td>
+				<td class="coding"><a href="/html/guide/layout.asp" target="_blank">/html/guide/layout.asp (진연미 17/07/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc">
+				*** 각 페이지별 body에 붙는 클래스명<br />
+				- 메인메뉴 : body-main<br />
+				- 상세페이지 : body-sub<br />
+				- 1depth메뉴 : body-sub body-1depth (카테고리 메인, 마이텐바이텐, 주문조회, 히스토리)<br />
+				- 팝업 : body-popup<br /><br />
+
+				*** 모바일웹, 앱에서 모두 동일한 스타일을 파일을 호출합니다. 단, <em style="color:red;">앱에서는 /lib/css/app.css 호출</em>해주세요
+				</td>
+			</tr>
+			<tr class="ing">
+				<td></td>
+				<td class="dep1"></td>
+				<td class="dep2">앱</td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/07/00</em></td>
+				<td class="coding"><a href="/html/guide/layout_app.asp" target="_blank">/html/guide/layout_app.asp (진연미 17/07/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc">모바일웹과 동일,<br />
+				단 include 파일 header.asp가 빠집니다.<br />
+				footer는 모바일웹과 동일하나<br />
+				메뉴 중 <em style="color:red;">로그인, APP, PC 버전 보기</em>이 빠집니다.
+				</td>
+			</tr>
+			<tr class="ing">
+				<td></td>
+				<td class="dep1">팝업</td>
+				<td class="dep2">기본 팝업</td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/07/00</em></td>
+				<td class="coding"><a href="/html/guide/popup.asp" target="_blank">/html/guide/popup.asp (진연미 17/09/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc">페이지내에 body가 들어있는 팝업 스타일</td>
+			</tr>
+			<tr class="ing">
+				<td></td>
+				<td class="dep1"></td>
+				<td class="dep2">모달 레이어 팝업</td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/07/00</em></td>
+				<td class="coding"><a href="/html/guide/lypop.asp" target="_blank">/html/guide/lypop.asp (진연미 17/09/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc">모달 팝업<br /> 예) &lt;div class="xxx"&gt;.....&lt;/div&gt;</td>
+			</tr>
+			<tr class="">
+				<td></td>
+				<td class="dep1">폰트</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/07/00</em></td>
+				<td class="coding"><a href="/html/guide/font.asp" target="_blank">/html/guide/font.asp (진연미 17/07/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="">
+				<td></td>
+				<td class="dep1">image sprite</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"></td>
+				<td class="coding"><a href="http://fiximage.10x10.co.kr/m/2017/common/bg_sp.png" target="_blank">http://fiximage.10x10.co.kr/m/2017/common/bg_sp.png</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="">
+				<td></td>
+				<td class="dep1"></td>
+				<td class="dep2"></td>
+				<td class="dep3">레이아웃</td>
+				<td class="design"></td>
+				<td class="coding"><a href="http://fiximage.10x10.co.kr/m/2017/common/bg_sp_layout.png" target="_blank">http://fiximage.10x10.co.kr/m/2017/common/bg_sp_layout.png</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="">
+				<td></td>
+				<td class="dep1"></td>
+				<td class="dep2"></td>
+				<td class="dep3">카테고리 아이콘</td>
+				<td class="design"></td>
+				<td class="coding"><a href="http://fiximage.10x10.co.kr/m/2017/common/bg_sp_icon_category.png" target="_blank">http://fiximage.10x10.co.kr/m/2017/common/bg_sp_icon_category.png</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="">
+				<td></td>
+				<td class="dep1"></td>
+				<td class="dep2"></td>
+				<td class="dep3">arrow</td>
+				<td class="design"></td>
+				<td class="coding"><a href="http://fiximage.10x10.co.kr/m/2017/common/bg_sp_arrow.png" target="_blank">http://fiximage.10x10.co.kr/m/2017/common/bg_sp_arrow.png</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>투데이</td>
+				<td class="dep1"></td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/08/03</em></td>
+				<td class="coding"><a href="/html/index.asp" target="_blank">/html/index.asp (진연미 17/08/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn1">Complete-이종화</a></td>
+				<td class="etc">GNB메뉴 (메인메뉴)</td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="">
+				<td>스페셜</td>
+				<td class="dep1"></td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"></td>
+				<td class="coding"></td>
+				<td class="dev"></td>
+				<td class="etc">GNB메뉴 (메인메뉴)</td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>트렌드</td>
+				<td class="dep1"></td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/07/18</em></td>
+				<td class="coding"><a href="/html/trend/index.asp" target="_blank">/html/trend/index.asp (진연미 17/00/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn1">Complete-이종화</a></td>
+				<td class="etc">GNB메뉴 (메인메뉴)</td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>기획전/이벤트</td>
+				<td class="dep1"></td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn"> 17/07/18</em></td>
+				<td class="coding"><a href="/html/event/index.asp" target="_blank">/html/event/index.asp (진연미 17/00/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn2">Progress-유태욱</a></td>
+				<td class="etc">GNB메뉴 (메인메뉴)</td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">상세</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn"> 17/07/18</em></td>
+				<td class="coding"><a href="/html/event/detail.asp" target="_blank">/html/event/detail.asp (진연미 17/00/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn2">Progress-유태욱</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>베스트</td>
+				<td class="dep1"></td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn"> 17/07/18</em></td>
+				<td class="coding"><a href="/html/best/index.asp" target="_blank">/html/best/index.asp (진연미 17/00/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn2">Progress-이종화</a></td>
+				<td class="etc">GNB메뉴 (메인메뉴)</td>
+			</tr>
+			<tr class="comp">
+				<td>MD&#39; Pick</td>
+				<td class="dep1"></td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn"> 17/07/18</em></td>
+				<td class="coding"><a href="/html/mdpick/index.asp" target="_blank">/html/mdpick/index.asp (진연미 17/00/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn2">Progress-이종화</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td>NEW</td>
+				<td class="dep1"></td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn"> 17/07/18</em></td>
+				<td class="coding"><a href="/html/new/index.asp" target="_blank">/html/new/index.asp (진연미 17/00/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn2">Progress-이종화</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>SALE</td>
+				<td class="dep1"></td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn"> 17/07/18</em></td>
+				<td class="coding"><a href="/html/sale/index.asp" target="_blank">/html/sale/index.asp (진연미 17/00/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn2">Progress-이종화</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">CLEARANCE</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn"> 17/07/18</em></td>
+				<td class="coding"><a href="/html/sale/clearance.asp" target="_blank">/html/sale/clearance.asp (진연미 17/00/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn2">Progress-이종화</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>카테고리</td>
+				<td class="dep1">메인</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/07/00</em></td>
+				<td class="coding"><a href="/html/category/index.asp" target="_blank">/html/category/index.asp (진연미 17/07/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn1">Complete-이종화</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">리스트</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/07/24</em></td>
+				<td class="coding"><a href="/html/category/list.asp" target="_blank">/html/category/list.asp (진연미 17/07/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn2">Progress-유태욱</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1"></td>
+				<td class="dep2">필터</td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/07/24</em></td>
+				<td class="coding"><a href="/html/category/filter.asp" target="_blank">/html/category/filter.asp (진연미 17/07/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc">코딩 보기용 페이지 (카테고리 리스트 페이지에 작업되어있습니다.)</td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">상품상세</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"></td>
+				<td class="coding"><a href="/html/category/category_itemPrd.asp" target="_blank">/html/category/category_itemPrd.asp (진연미 17/07/11)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn1">Complete-이종화</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>브랜드</td>
+				<td class="dep1">상세</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"></td>
+				<td class="coding"><a href="/html/brand/detail.asp" target="_blank">/html/brand/detail.asp (진연미 17/08/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn2">Progress-유태욱</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>마이텐바이텐</td>
+				<td class="dep1">메인</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"></td>
+				<td class="coding"><a href="/html/my10x10/index.asp" target="_blank">/html/my10x10/index.asp (진연미 17/08/00)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn1">Complete-이종화</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">비회원</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"></td>
+				<td class="coding"><a href="/html/my10x10/nonmember.asp" target="_blank">/html/my10x10/nonmember.asp (진연미 17/09/01)</a></td>
+				<td class="dev"><a href="" target="_blank" class="btn1">Complete-이종화</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>컬쳐스테이션</td>
+				<td class="dep1">메인</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/07/00</em></td>
+				<td class="coding"><a href="/html/culturestation/index.asp" target="_blank">/html/culturestation/index.asp (김송이 17/07/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>고객센터</td>
+				<td class="dep1">고마워 텐바이텐</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/07/</em></td>
+				<td class="coding"><a href="/html/cscenter/thanks.asp" target="_blank">/html/cscenter/thanks.asp (최선미 17/07/17)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>검색</td>
+				<td class="dep1">메인 (검색 전 화면)</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/06/00</em></td>
+				<td class="coding"><a href="/html/search/index.asp" target="_blank">/html/search/index.asp (진연미 17/06/00)</a></td>
+				<td class="dev"><a href="/search/" target="_blank">완료(강준구)</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">카테고리 검색</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/06/00</em></td>
+				<td class="coding"><a href="/html/search/category.asp" target="_blank">/html/search/category.asp (진연미 17/06/00)</a></td>
+				<td class="dev"><a href="/search/dispnamelist.asp" target="_blank">완료(강준구)</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">브랜드 검색</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/06/00</em></td>
+				<td class="coding"><a href="/html/search/brand.asp" target="_blank">/html/search/brand.asp (진연미 17/06/00)</a></td>
+				<td class="dev"><a href="/search/brandlist.asp" target="_blank">완료(강준구)</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1"></td>
+				<td class="dep2">결과</td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/06/00</em></td>
+				<td class="coding"><a href="/html/search/brand_list.asp" target="_blank">/html/search/brand_list.asp (진연미 17/06/00)</a></td>
+				<td class="dev"><a href="/search/brandlist_result.asp?rect=이" target="_blank">완료(강준구)</a></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">검색결과가 없을 경우</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/06/00</em></td>
+				<td class="coding"><a href="/html/search/nodata.asp" target="_blank">/html/search/nodata.asp (진연미 17/06/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">검색결과 - 리스트</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/06/00</em></td>
+				<td class="coding"><a href="/html/search/list.asp" target="_blank">/html/search/list.asp (진연미 17/06/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">검색결과 - 대체검색</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/06/00</em></td>
+				<td class="coding"><a href="/html/search/list_replace.asp" target="_blank">/html/search/list_replace.asp (진연미 17/06/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">퀵뷰</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/06/00</em></td>
+				<td class="coding"><a href="/html/search/quickview.asp" target="_blank">/html/search/quickview.asp (진연미 17/06/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc">코딩 보기용 페이지 (검색결과 - 리스트 페이지에 작업되어있습니다.)</td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">상세검색(필터)</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/06/00</em></td>
+				<td class="coding"><a href="/html/search/filter.asp" target="_blank">/html/search/filter.asp (진연미 17/06/00)</a></td>
+				<td class="dev"><a href="/search/search_item.asp?rect=가방" target="_blank">완료(강준구)</a></td>
+				<td class="etc">코딩 보기용 페이지 (검색결과 - 리스트 페이지에 작업되어있습니다.)</td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">상품비교</td>
+				<td class="dep2">비교모드</td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/06/00</em></td>
+				<td class="coding"><a href="/html/search/compare.asp" target="_blank">/html/search/compare.asp (진연미 17/06/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc">코딩 보기용 페이지 (검색결과 - 리스트 페이지에 작업되어있습니다.)</td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1"></td>
+				<td class="dep2">비교결과</td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">수지 17/06/00</em></td>
+				<td class="coding"><a href="/html/search/compare_result.asp" target="_blank">/html/search/compare_result.asp (진연미 17/06/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="ing">
+				<td>Piece</td>
+				<td class="dep1">메인 (리스트)</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/08/10</em></td>
+				<td class="coding"><a href="/html/piece/index.asp" target="_blank">/html/piece/index.asp (진연미 17/08/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc">GNB메뉴 (메인메뉴)</td>
+			</tr>
+			<tr class="ing">
+				<td></td>
+				<td class="dep1">공유</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/08/10</em></td>
+				<td class="coding"><a href="/html/piece/share.asp" target="_blank">/html/piece/share.asp (진연미 17/08/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="ing">
+				<td></td>
+				<td class="dep1">조각모음</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/08/10</em></td>
+				<td class="coding"><a href="/html/piece/gather.asp" target="_blank">/html/piece/gather.asp (진연미 17/08/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="">
+				<td></td>
+				<td class="dep1">검색 결과 리스트</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/08/10</em></td>
+				<td class="coding"><a href="/html/piece/search_list.asp" target="_blank">/html/piece/search_list.asp (진연미 17/08/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="">
+				<td></td>
+				<td class="dep1">내 조각 공유하기</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/08/10</em></td>
+				<td class="coding"><a href="/html/piece/.asp" target="_blank">/html/piece/.asp (진연미 17/08/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="">
+				<td></td>
+				<td class="dep1">상품 등록</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/08/10</em></td>
+				<td class="coding"><a href="/html/piece/item.asp" target="_blank">/html/piece/item.asp (진연미 17/08/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="">
+				<td></td>
+				<td class="dep1">조각편지</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/08/10</em></td>
+				<td class="coding"><a href="/html/piece/write.asp" target="_blank">/html/piece/write.asp (진연미 17/08/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>로그인</td>
+				<td class="dep1">회원</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/05/00</em></td>
+				<td class="coding"><a href="/html/login/login.asp" target="_blank">/html/login/login.asp (진연미 17/05/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">비회원 주문조회</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"></td>
+				<td class="coding"><a href="/html/login/nonMember.asp" target="_blank">/html/login/nonMember.asp (진연미 17/05/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>회원가입</td>
+				<td class="dep1">SNS 연동 선택 (인증완료)</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"></td>
+				<td class="coding"><a href="/html/member/sns.asp" target="_blank">/html/member/sns.asp (진연미 17/05/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">회원가입 선택</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"></td>
+				<td class="coding"><a href="/html/member/step1.asp" target="_blank">/html/member/step1.asp (진연미 17/05/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">개인정보 입력</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"></td>
+				<td class="coding"><a href="/html/member/step2.asp" target="_blank">/html/member/step2.asp (진연미 17/05/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">가입완료</td>
+				<td class="dep2"></td>
+				<td class="dep3"></td>
+				<td class="design"></td>
+				<td class="coding"><a href="/html/member/step3.asp" target="_blank">/html/member/step3.asp (진연미 17/05/00)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+			<tr class="comp">
+				<td>마이텐바이텐</td>
+				<td class="dep1">개인정보수정</td>
+				<td class="dep2">나의 정보 관리</td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/04/00</em></td>
+				<td class="coding"><a href="/html/my10x10/myInfo.asp" target="_blank">/html/my10x10/myInfo.asp (진연미 17/04/28)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td class="dep1">상품후기</td>
+				<td class="dep2">상품 후기 작성</td>
+				<td class="dep3"></td>
+				<td class="design"><em class="btn">보름 17/07/04</em></td>
+				<td class="coding"><a href="/html/my10x10/reviewWrite.asp" target="_blank">/html/my10x10/reviewWrite.asp (진연미 17/07/10)</a></td>
+				<td class="dev"></td>
+				<td class="etc"></td>
+			</tr>
+			<tr><td colspan="8" class="blank"></td></tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

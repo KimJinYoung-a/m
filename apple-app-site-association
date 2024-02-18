@@ -1,0 +1,9 @@
+{
+	"applinks": {
+		"apps": [],
+		"details": [{
+			"appID": "WNRH885J34.kr.co.10x10.wish",
+			"paths": ["/search/search_item.asp", "/street/*", "/category/category_list.asp", "/event/*" ]
+		}]
+	}
+}

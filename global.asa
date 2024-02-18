@@ -1,0 +1,84 @@
+<!--==Visual InterDev Generated - startspan==-->
+<!--METADATA TYPE="TypeLib" NAME="Microsoft ActiveX Data Objects 2.8 Library" UUID="{00000200-0000-0010-8000-00AA006D2EA4}" VERSION="2.0"-->
+<!--==Visual InterDev Generated - endspan==-->
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+Sub Application_OnStart
+	sbSetServer ' 서버 정보
+
+	'데이터베이스 커넥션(db_server name_database name)
+	dim objFSO, objFile, mainConnStr, appNotiConnStr, appWishConnStr, cacheConnStr, evtConnStr
+	Dim TenCrypto
+	IF (application("Svr_Info")	= "Dev") Then
+		Set TenCrypto = Server.CreateObject("TenCrypto.ConnectionString")
+        mainConnStr     = TenCrypto.DecryptString("c:\conn\dbmain_enc.conn")
+		appNotiConnStr  = TenCrypto.DecryptString("c:\conn\dbappnoti_enc.conn")
+		appWishConnStr  = TenCrypto.DecryptString("c:\conn\dbAppWish_enc.conn")
+        cacheConnStr    = TenCrypto.DecryptString("c:\conn\dbCache_enc.conn")
+        evtConnStr      = TenCrypto.DecryptString("c:\conn\dbEVT_enc.conn")
+        set TenCrypto = Nothing
+	ELSE
+		Set objFSO  = Server.CreateObject("Scripting.FileSystemObject")
+		Set objFile = objFSO.OpenTextFile("c:\conn\dbmain.conn",1)
+		mainConnStr = objFile.ReadLine()
+		objFile.Close
+		
+		Set objFile = objFSO.OpenTextFile("C:\conn\dbappnoti.conn",1)
+		appNotiConnStr = objFile.ReadLine()
+		objFile.Close
+		
+		Set objFile = objFSO.OpenTextFile("c:\conn\dbAppWish.conn",1)
+		appWishConnStr = objFile.ReadLine()
+		objFile.Close
+		
+		Set objFile = objFSO.OpenTextFile("c:\conn\dbCache.conn",1)
+		cacheConnStr = objFile.ReadLine()
+		objFile.Close
+		
+		Set objFile = objFSO.OpenTextFile("c:\conn\dbEVT.conn",1)
+		evtConnStr = objFile.ReadLine()
+		objFile.Close
+		
+		Set objFile = Nothing
+		Set objFSO  = Nothing
+	END IF
+
+	Application("db_main") 	 = mainConnStr
+	Application("db_appNoti") = appNotiConnStr
+	Application("db_appWish") = appWishConnStr
+    Application("db_cache") = cacheConnStr
+    Application("db_EVT") = evtConnStr
+    
+
+	'Main Award 업데이트 실행 시간
+	Application("chk_main_award_update") = now()
+	'디자인핑거스 업데이트 실행 시간
+	Application("chk_main_fingers_update") = now()
+	'main chance 업데이트 실행 시간
+	Application("chk_main_chance_update") = now()
+End Sub
+
+Sub Session_OnStart
+
+End Sub
+
+Sub Sesson_OnEnd
+
+End Sub
+
+'# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+'	@ 함수명 : sbSetServer
+'	@ 목   적 : 서버 정보
+'	@ 이   력 : 2006.11.15  정윤정
+
+Sub sbSetServer
+	On Error Resume Next
+	Dim objShell
+	Set objShell = CreateObject("WScript.Shell")
+	application("Svr_Info") = objShell.RegRead("HKLM\SOFTWARE\10x10\ServerInfo")
+	if application("Svr_Info") = "DevServer" Then application("Svr_Info")="Dev"
+
+	Set objShell = Nothing
+	On Error Goto 0
+End Sub
+'# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+</SCRIPT>
