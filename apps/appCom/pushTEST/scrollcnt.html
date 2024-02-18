@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<title>Count of Scroll Event</title>
+</head>
+<body>
+<script>
+var count = 0;
+window.addEventListener( "scroll", function( event ) {
+    count++;
+    document.getElementById("cnt").innerHTML = count;
+});
+</script>
+<div id="cnt" style="position:fixed; background:#F0F0F0; width:100%; height:40px;">0</div>
+<div style="padding-top:40px;">As it turns out,<br />
+there are many completely valid reasons you may want to perform actions during scrolling,<br />
+for example parallax effects,<br />
+or performance-friendly infinite scroll lists.<br />
+And because of Apple’s decision to pause JavaScript during scrolling,<br />
+these effects became impossible to do on the mobile web,<br />
+at least without implementing scrolling with JavaScript,<br />
+which a number of libraries actually do.<br />
+
+For example the popular iScroll library reimplements scrolling using CSS translations to make custom scroll events possible.<br />
+Kendo UI Mobile includes a custom scroll widget and uses it to drive its list-based widgets.<br />
+To be fair,<br />
+these frameworks offer a lot more functionality than simple scroll events,<br />
+and the custom JavaScript is usually done to get the best possible performance,<br />
+but,<br />
+the fact that you have to rebuild scrolling — a basic tenet of a web browser — to get usable scroll events on mobile is…insane.<br />
+<br />
+And keep in mind that we’re not just talking about the scroll event.<br />
+iOS < 8 pauses all JavaScript execution during scrolling.<br />
+Therefore,<br />
+any intervals you create with setInterval() are also paused.<br />
+<br />
+As it turns out,<br />
+there are many completely valid reasons you may want to perform actions during scrolling,<br />
+for example parallax effects,<br />
+or performance-friendly infinite scroll lists.<br />
+And because of Apple’s decision to pause JavaScript during scrolling,<br />
+these effects became impossible to do on the mobile web,<br />
+at least without implementing scrolling with JavaScript,<br />
+which a number of libraries actually do.<br />
+
+For example the popular iScroll library reimplements scrolling using CSS translations to make custom scroll events possible.<br />
+Kendo UI Mobile includes a custom scroll widget and uses it to drive its list-based widgets.<br />
+To be fair,<br />
+these frameworks offer a lot more functionality than simple scroll events,<br />
+and the custom JavaScript is usually done to get the best possible performance,<br />
+but,<br />
+the fact that you have to rebuild scrolling — a basic tenet of a web browser — to get usable scroll events on mobile is…insane.<br />
+<br />
+And keep in mind that we’re not just talking about the scroll event.<br />
+iOS < 8 pauses all JavaScript execution during scrolling.<br />
+Therefore,<br />
+any intervals you create with setInterval() are also paused.<br />
+<br />
+As it turns out,<br />
+there are many completely valid reasons you may want to perform actions during scrolling,<br />
+for example parallax effects,<br />
+or performance-friendly infinite scroll lists.<br />
+And because of Apple’s decision to pause JavaScript during scrolling,<br />
+these effects became impossible to do on the mobile web,<br />
+at least without implementing scrolling with JavaScript,<br />
+which a number of libraries actually do.<br />
+
+For example the popular iScroll library reimplements scrolling using CSS translations to make custom scroll events possible.<br />
+Kendo UI Mobile includes a custom scroll widget and uses it to drive its list-based widgets.<br />
+To be fair,<br />
+these frameworks offer a lot more functionality than simple scroll events,<br />
+and the custom JavaScript is usually done to get the best possible performance,<br />
+but,<br />
+the fact that you have to rebuild scrolling — a basic tenet of a web browser — to get usable scroll events on mobile is…insane.<br />
+<br />
+And keep in mind that we’re not just talking about the scroll event.<br />
+iOS < 8 pauses all JavaScript execution during scrolling.<br />
+Therefore,<br />
+any intervals you create with setInterval() are also paused.<br />
+<br />
+</div>
+</body>
+</html>

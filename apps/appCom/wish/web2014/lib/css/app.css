@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* layout */
+.body-main {padding-top:108px;}
+.body-main .btn-top.nav-up {bottom:1.88rem;}
+.body-main .btn-top.nav-down {bottom:6.48rem;}
+.body-main.ios .btn-top {bottom:85px;}
+.body-main .tenten-footer {padding-bottom:0;}
+.body-1depth .content {padding-bottom:0;}
+.body-1depth .btn-top {bottom:1.88rem;}
+/*.body-main.ios .btn-top.nav-up {bottom:40px;}
+.body-main.ios .btn-top.nav-down {bottom:95px;}*/
+
+.popWin .content {padding-top:0;}
+
+/* alramList */
+.alramList {width:100%;}
+.alramList li {border-bottom:1px solid #cbcbcb; background-color:#fff;}
+.alramList li a {display:block; width:100%; height:100%;}
+.alramList li div {width:100%; height:100%; padding:15px 12px;}
+.alramList li p {position:relative; padding-left:15px; font-size:15px; color:#555; line-height:1.2;}
+.alramList li p:before {position:absolute; content:''; width:9px; height:9px; border-radius:50%; left:0; top:3px;}
+.alramList li.alram01 p:before {background-color:#ff3131;}
+.alramList li.alram02 p:before {background-color:#48c8f7;}
+.alramList li.alram03 p:before {background-color:#ffc000;}
+.alramList li span {font-size:11px; color:#999; display:block; padding:6px 0 0 15px;}
+@media all and (min-width:480px){
+	.alramList li div {padding:22px 18px;}
+	.alramList li p {padding-left:22px; font-size:22px;}
+	.alramList li p:before {width:13px; height:13px; top:6px;}
+	.alramList li span {font-size:16px; padding:9px 0 0 22px;}
+}
+
+/* coupon code */
+.formCodeV17 {padding:3.3rem 0 3rem; background:#c8dbe8 url(http://fiximage.10x10.co.kr/m/2017/common/bg_pattern_sky.gif) 0 0 repeat-y; background-size:100% auto; text-align:center;}
+.formCodeV17 input[type=number] {width:19.4rem; height:5rem; border:0.1rem solid #b3d0e4; border-radius:0; color:#000; font-size:2.5rem; text-align:center; letter-spacing:1rem;}
+.formCodeV17 input[type=number]:focus {border:0.15rem solid #579cc9;}
+.formCodeV17 input[type=number]:disabled {background-color:#e6e6e6; opacity:1;}
+.formCodeV17 .button {display:block; width:20.3rem; height:4.8rem; margin:2.4rem auto 0; border-radius:4.8rem; background-color:#595959; font-size:1.6rem; line-height:4.8rem;}
+.formCodeV17 .button.btnRed {background-color:#db2122;}
+.formCodeV17 .button.disabled {background-color:#b3b3b3;}
+
+.listBulletHypen {margin-top:1.9rem; padding:0 2.1rem; color:#737373;}
+.listBulletHypen li {position:relative; padding-left:1.15rem; font-size:1rem; line-height:1.6rem;}
+.listBulletHypen li:after {content:'-'; position:absolute; top:0; left:0; color:#555;}
+
+/* playing */
+.playDetailV16 .cover {position:fixed;}
+
+/* ios 하단 버튼 대응 */
+/* Safari 9.0+ (iOS Only) */
+@supports (-webkit-touch-callout: none) {
+    .simpleJoinForm .btnGroup input {
+        height: calc(3.41rem + env(safe-area-inset-bottom));
+        height: calc(3.41rem + constant(safe-area-inset-bottom));
+    }
+}

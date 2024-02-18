@@ -1,0 +1,450 @@
+@charset "utf-8";
+
+.body-main {padding-top:0 !important;}
+
+/* loading image */
+.thumbnail {position:relative; background-color:#f4f4f4;}
+.thumbnail img {position:relative; z-index:5;}
+.thumbnail:before {content:' '; position:absolute; top:50%; left:50%; width:4.27rem; height:4.27rem; margin:-2.22rem 0 0 -2.22rem; background:url(http://fiximage.10x10.co.kr/m/2017/common/bg_img_loading.png) 50% 0 no-repeat; background-size:100% auto;}
+
+/* label */
+.label-triangle {width:4.01rem; height:4.01rem; color:#000;}
+.label-triangle:after {content:' '; position:absolute; bottom:0; right:0; width:0; height:0; border-style:solid; border-width:0 0 4.01rem 4.01rem; border-color:transparent transparent #fff transparent;}
+.label-triangle em {display:block; position:relative; z-index:5; width:100%; margin-left:-0.17rem; padding-top:2.65rem; font:0.85rem/0.85rem 'AvenirNext-Medium', sans-serif-medium; letter-spacing:-0.017rem; text-align:center; transform:rotate(-45deg); -webkit-transform:rotate(-45deg);}
+
+/* swiper js
+.swiper-container-multirow>.swiper-wrapper{-webkit-box-lines:multiple; -moz-box-lines:multiple; -ms-flex-wrap:wrap; -webkit-flex-wrap:wrap; flex-wrap:wrap;} */
+
+/* button */
+.btn-arrow {overflow:hidden; position:relative; width:2.39rem; height:2.39rem; text-indent:-999em;}
+.btn-arrow:after {content:' '; position:absolute; top:50%; left:50%; width:1.28rem; height:1.54rem; margin:-0.77rem 0 0 -0.64rem; background-position:-15.45rem 0;}
+.btn-plus {display:block; width:100%; height:4.27rem;}
+
+/* heading */
+.hgroup {position:relative;}
+.hgroup .btn-more {position:absolute; top:0; right:1.28rem;}
+.headline-speech {position:relative; min-height:2.39rem; padding:0 2.05rem; font-size:1.28rem; line-height:2.39rem;}
+.headline-speech span, .headline-speech small {vertical-align:middle;}
+.headline-speech span {display:inline-block; position:relative; height:2.73rem; margin-top:-0.17rem; margin-right:0.4rem; padding:0.17rem 0.94rem 0 1.11rem; border:1px solid #000; border-radius:2.22rem; color:#000; line-height:2.13rem; text-align:center;}
+.headline-speech span:lang(ko) {font:bold 1.19rem/2.35rem 'AppleSDGothicNeo-Bold';}
+.headline-speech span:lang(en) {padding-top:0.09rem; font:italic bold 1.19rem/2.53rem 'AvenirNext-DemiBold';}
+.headline-speech span:after {content:' '; position:absolute; left:-1px; bottom:-0.22rem; width:0.47rem; height:1.51rem; background:url(http://fiximage.10x10.co.kr/m/2017/common/bg_tail.png) 50% 100% no-repeat; background-size:100% auto; }
+.headline-speech small {color:#838383; font-size:1.28rem;}
+
+/* bg image sprite */
+.playing-bnr > a:after, .hitchhiker-bnr > a:after,
+.menu-etc .icon,
+.shipping-bnr .icon-car {background-image:url(http://fiximage.10x10.co.kr/m/2017/common/bg_sp.png?v=1.59); background-repeat:no-repeat; background-size:17.07rem auto;}
+
+/* bg image sprite - icon categroy */
+.menu-category li .icon,
+.category-item-list .headline .icon {background-image:url(http://fiximage.10x10.co.kr/m/2017/common/bg_sp_icon_category.png?v=1.53); background-repeat:no-repeat; background-size:17.07rem auto;}
+
+/* bg image sprite - arrow */
+.menu-category .icon-arrow:after,
+.icon-up:after,
+.btn-arrow:after,
+.brand-items .btn-more span,
+.shipping-bnr em:after,
+.time-sale .icon-arrow {background-image:url(http://fiximage.10x10.co.kr/m/2017/common/bg_sp_arrow.png?v=1.53); background-repeat:no-repeat; background-size:17.07rem auto;}
+
+/* items list */
+.items .name {height:3.07rem; color:#4a4a4a; font-size:1.19rem; line-height:1.54rem;}
+.items .name, .items .price {font-family:'AvenirNext-Regular', 'AppleSDGothicNeo-Regular';}
+.items .price b {font-family:'AppleSDGothicNeo-Regular'; font-weight:normal;}
+.items .price .discount {font-family:'AvenirNext-Medium', sans-serif-medium;}
+.items .price .sum,
+.items .price .won {color:#838383; font:1.11rem/1.11rem 'AvenirNext-Regular', 'AppleSDGothicNeo-Regular';}
+
+/* banner type text */
+.text-bnr {position:relative; padding-bottom:5.8rem;}
+.text-bnr .desc {position:absolute; bottom:0; left:0; z-index:10; width:100%; padding:0 2.05rem;}
+.text-bnr .headline,
+.text-bnr .subcopy {display:block;}
+.text-bnr .headline {margin-top:1.11rem; padding-right:4.27rem; font:bold 2.39rem/3.07rem 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold';}
+.text-bnr .subcopy {overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; height:3.24rem; margin-top:1.19rem; color:#4a4a4a; font-size:1.19rem; line-height:1.71rem;}
+/*.text-bnr .thumbnail img {min-height:34.73rem;}*/
+
+/* main banner */
+.main-bnr {padding-bottom:0;}
+.main-bnr a {display:block; position:relative; padding-bottom:5.8rem;}
+.main-bnr .pagination-dot {bottom:7.42rem; left:auto; right:1.79rem;}
+/*.main-bnr .thumbnail img {min-height:43.95rem;}*/
+
+/* juest one day */
+.time-sale .headline {font:bold 1.45rem/1.45rem 'AvenirNext-DemiBold'; letter-spacing:0.256rem;}
+.time-sale .weekday,
+.time-sale .bnr {margin-top:6.31rem;}
+.time-sale .weekday a {display:block; position:relative; height:10.75rem; padding:0 2.05rem;}
+.time-sale .weekday .thumbnail {position:absolute; top:0; left:2.05rem; width:10.75rem; height:10.75rem;}
+.time-sale .weekday .thumbnail img {width:100%; height:100%;}
+.time-sale .weekday .thumbnail:after,
+.time-sale .weekend .thumbnail:after {content:' '; position:absolute; top:0; left:0; z-index:15; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.03);}
+.time-sale .desc {height:10.75rem; padding:0.43rem 0 0 14.16rem;}
+.time-sale .name {display:block; margin-top:1.45rem; height:1.54rem; color:#000; white-space:nowrap;}
+.time-sale .price {margin-top:0.17rem; color:#838383; font-size:1.28rem; letter-spacing:-0.034rem;}
+.time-sale .price .sum,
+.time-sale .price .won {color:#000; font:bold 1.28rem 'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold';}
+.time-sale .discount {display:block; margin-top:0.51rem; font:bold 3.58rem/3.58rem 'AvenirNext-DemiBold';}
+.time-sale .time-line {position:relative; margin:1.37rem 2.05rem 0; padding-bottom:0.85rem; border-bottom:2px solid #ececec;}
+.time-sale .time {display:inline-block; position:relative; width:8.53rem; height:2.05rem; padding-top:0.0426rem; border-radius:2.05rem; background-color:#000; color:#fff; font:bold 1.02rem/2.13rem 'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; text-align:center;}
+.time-sale .time-line:after, .time-sale .time-line:before {content:' '; position:absolute;}
+.time-sale .time-line:after {bottom:-0.43rem; width:0.34rem; height:0.34rem; border:2px solid #000; border-radius:50%; background-color:#fff; transition:left 0.3s;}
+@media all and (min-width:360px) and (max-width:360px){
+	.time-sale .time-line:after {width:4px; height:4px; border:2px solid #000;}
+}
+.time-sale .time-line:before {bottom:-2px; height:0.17rem; background-color:#000; transition:width 0.3s;}
+.time-sale .interval-1:after {left:3.07%;}
+.time-sale .interval-1:before {width:3.07%;}
+.time-sale .interval-2:after {left:12.27%;}
+.time-sale .interval-2:before {width:12.27%;}
+.time-sale .interval-3:after {left:21.47%;}
+.time-sale .interval-3:before {width:21.47%;}
+.time-sale .interval-3 .time {margin-left:8%;}
+.time-sale .interval-4 .time {margin-left:16.34%;}
+.time-sale .interval-4:after {left:30.67%;}
+.time-sale .interval-4:before {width:30.67%;}
+.time-sale .interval-5 .time {margin-left:26.2%;}
+.time-sale .interval-5:after {left:40.49%;}
+.time-sale .interval-5:before {width:40.49%;}
+.time-sale .interval-6 .time {margin-left:36%;}
+.time-sale .interval-6:after {left:50%;}
+.time-sale .interval-6:before {width:50%;}
+.time-sale .interval-7 .time {margin-left:45.5%;}
+.time-sale .interval-7:after {left:59.51%;}
+.time-sale .interval-7:before {width:59.51%;}
+.time-sale .interval-8 .time {margin-left:55%;}
+.time-sale .interval-8:after {left:69.02%;}
+.time-sale .interval-8:before {width:69.02%;}
+.time-sale .interval-9 .time {margin-left:64.5%;}
+.time-sale .interval-9:after {left:78.52%;}
+.time-sale .interval-9:before {width:78.52%;}
+.time-sale .interval-10 .time, .time-sale .interval-11 .time {margin-left:70%;}
+.time-sale .interval-10:after {left:88.03%;}
+.time-sale .interval-10:before {width:88.03%;}
+.time-sale .interval-11:after {left:97.55%;}
+.time-sale .interval-11:before {width:97.55%;}
+.time-sale .weekend {margin-top:6.4rem;}
+.time-sale .weekend > a {display:block; position:relative; padding-bottom:7rem; text-align:center;}
+.time-sale .weekend .headline {position:absolute; bottom:0; left:0; width:100%; font-family:'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; font-weight:bold;}
+.time-sale .weekend .copy {display:block; height:1.96rem; line-height:1.96rem; letter-spacing:0.26rem;}
+.time-sale .weekend .ellipsis {overflow:hidden; display:inline-block; max-width:22.99rem; text-overflow:ellipsis; white-space:nowrap;}
+.time-sale .icon-arrow {width:0.51rem; height:1.02rem; margin-top:0.26rem; margin-left:0.34rem; border:0; background-position:0 -1.54rem; vertical-align:top;}
+@media all and (min-width:360px) and (max-width:360px){
+	.time-sale .icon-arrow {margin-top:0.43rem;}
+}
+.time-sale .weekend .discount {margin-top:-0.09rem; font-size:2.99rem; letter-spacing:0.26rem;}
+.time-sale .weekend .thumbnail {position:relative; width:8.7rem; height:8.7rem;}
+.time-sale .weekend .thumbnail img {width:100%; height:100%;}
+.time-sale .weekend .items {overflow:hidden; width:28.92rem; margin:0 auto;}
+.time-sale .weekend .items li {float:left; margin:0 0.47rem;}
+
+.marketing-bnr .thumbnail img {min-height:6.66rem;}
+
+.keyword-raking {margin-top:3.16rem;}
+.keyword-raking ul {column-count:2; -webkit-column-count:2; column-gap:0; -webkit-column-gap:0; margin-top:1.45rem; padding-top:1.28rem; border-top:1px solid #efefef;}
+.keyword-raking li {padding:0.26rem 0;}
+.keyword-raking a {overflow:hidden; display:block; position:relative; height:2.56rem; padding:0 1.02rem 0 2.13rem; color:#000; font:1.28rem/2.56rem 'AvenirNext-Regular ', 'AppleSDGothicNeo-Light';}
+.keyword-raking li:nth-child(n+6) a {padding:0 2.22rem 0 1.19rem;}
+.keyword-raking .no {display:inline-block; width:1.79rem; height:1.96rem; font:italic bold 1.37rem/1.96rem 'AvenirNext-DemiBold'; vertical-align:middle;}
+.keyword-raking .icon {position:absolute; top:50%; right:0; z-index:5; width:2.22rem; height:1.19rem; margin-top:-0.68rem; color:#ff3030; font:italic 0.85rem/1.19rem 'AvenirNext-Medium';}
+@media all and (min-width:360px) and (max-width:360px){
+	.keyword-raking .icon {margin-top:-0.6rem;}
+}
+.keyword-raking li:nth-child(n+6) .icon {right:2.05rem;}
+.keyword-raking .icon-up {text-indent:-999em;}
+.keyword-raking .icon-up:after {content:' '; position:absolute; top:0; left:50%; width:1.19rem; height:1.19rem; margin-left:-0.6rem; background-position:-14.03rem 0;}
+.keyword-raking .keyword {overflow:hidden; display:inline-block; width:8.53rem; height:1.96rem; line-height:1.96rem; text-overflow:ellipsis; white-space:nowrap; vertical-align:middle;}
+
+.gif-bnr {margin-top:3.33rem;}
+.gif-bnr .thumbnail img {min-height:32rem;}
+
+.hot-keyword {position:relative; padding:2.56rem 0 8.79rem;}
+.hot-keyword .headline {position:absolute; bottom:3.58rem; left:0; width:100%; padding:0 2.65rem;}
+.hot-keyword .headline span {font:1.37rem/1.79rem 'AvenirNext-Medium'; letter-spacing:0.09rem;}
+.hot-keyword .headline em, .hot-keyword .headline .vol {font-family:'AvenirNext-Bold'; font-weight:bold;}
+.hot-keyword .headline em {display:block;}
+.hot-keyword .headline .vol {font-size:1.19rem;}
+.hot-keyword .headline small {position:absolute; bottom:0; right:2.65rem; font:bold 2.39rem/3.33rem 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold'; text-decoration:underline;}
+.hot-keyword ul {overflow:hidden; width:28rem; margin:0 auto;}
+.hot-keyword li {float:left; position:relative; width:11.78rem; margin:1.02rem 1.11rem 0;}
+.hot-keyword .thumbnail {width:11.78rem; height:11.78rem; border-radius:50%;}
+.hot-keyword .thumbnail img {width:100%; height:100%; border-radius:50%;}
+.hot-keyword .label {position:absolute; right:0; bottom:0; z-index:10; width:3.93rem; height:3.93rem; text-transform:capitalize;}
+
+.type-multi-row .swiper-slide {overflow:hidden; width:9.73rem; margin-right:1.02rem;}
+.type-multi-row .swiper-slide a {height:16.64rem;}
+.type-multi-row .swiper-slide .btn-more {display:block; width:9.73rem; height:9.73rem; padding:6.36rem 0.6rem 0 0; color:#000; font:2.39rem 'AvenirNext-Medium'; letter-spacing:0.0853rem; text-align:right;}
+.type-multi-row .thumbnail {width:9.73rem; height:9.73rem;}
+.type-multi-row .thumbnail img {width:100%; height:100%;}
+
+.md-pick {position:relative; margin-top:3.67rem;}
+.md-pick .swiper-container {margin-top:1.96rem; padding:0 1.02rem 0 2.05rem;}
+.md-pick .desc {/*height:6.6rem;*/ padding-left:0.38rem; padding-right:0.38rem;}
+.md-pick .items .name {height:auto;}
+.md-pick .discount {display:block; margin-top:0.34rem; font-family:'AvenirNext-Medium', sans-serif-medium;}
+.md-pick .type-multi-row .swiper-slide {width:11.95rem;}
+.md-pick .type-multi-row .swiper-slide a {height:18.86rem ;}
+.md-pick .type-multi-row .thumbnail {width: 11.93rem; height: 11.93rem;}
+
+.md-pick + .exhibition-list {margin-top:1.54rem;}
+
+.items-single-bnr {margin-top:6.31rem;}
+.items-single-bnr li {margin-top:0.85rem; padding:0 2.05rem;}
+.items-single-bnr a {display:block; position:relative; height:12.63rem; padding:2.99rem 2.39rem 0 12.46rem; background-color:rgba(0, 0, 0, 0.03);}
+.items-single-bnr .headline {font-size:1.45rem; line-height:2.13rem;}
+.items-single-bnr .headline u {font-size:1.71rem;}
+.items-single-bnr .price {display:block; margin-top:1.11rem;}
+.items-single-bnr .thumbnail {position:absolute; background-color:transparent; width:15.36rem; height:13.65rem;}
+.items-single-bnr .thumbnail:before {display:none;}
+.items-single-bnr .thumbnail img {width:100%; height:100%;}
+.items-single-bnr li:nth-child(1) a {text-align:right;}
+.items-single-bnr li:nth-child(1) .thumbnail {top:-1.02rem; left:-1.02rem;}
+.items-single-bnr li:nth-child(2) .thumbnail {right:-1.02rem; bottom:-1.02rem;}
+.items-single-bnr li:nth-child(2) a {padding:3.41rem 12.46rem 0 2.39rem;}
+.items-single-bnr u {display:block; font-family:'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-weight:bold;}
+.items-single-bnr .price .sum,
+.items-single-bnr .price .won {color:#000;}
+.items-single-bnr .label {position:absolute; right:0; bottom:0;}
+
+.new-items {margin-top:5.8rem;}
+.on-sale-items {margin-top:5.2rem;}
+.enjoy-items {margin-top:3.93rem;}
+.new-items .swiper-container,
+.on-sale-items .swiper-container,
+.enjoy-items .swiper-container {margin-top:1.71rem; padding:0 2.05rem;}
+.on-sale-items .type-multi-row .swiper-slide a {height:18.26rem;}
+.on-sale-items .items .desc {padding-left:0.38rem; padding-right:0.38rem;}
+.on-sale-items .items .price {margin-top:0.34rem;}
+
+.new-items + .exhibition-list {margin-top:3.75rem;}
+#enjoySwiper + .exhibition-list {margin-top:3.75rem;}
+.on-sale-items + .exhibition-list {margin-top:1.2rem;}
+
+.headline-bubble + .type-box-grey {margin-top:1.71rem;}
+.type-box-grey .swiper-slide {margin-right:0.68rem;}
+.type-box-grey .swiper-slide:last-child {margin-right:0;}
+.type-box-grey .label {position:absolute; bottom:0; right:0;}
+
+.exhibition-plus-item {margin-top:4.27rem}
+.exhibition-plus-item + .exhibition-list {margin-top:4.18rem;}
+.exhibition-plus-item .list-card .desc {position:relative;}
+.exhibition-plus-item .list-card .desc:after {content:' '; position:absolute; top:-0.85rem; left:2.05rem; z-index:15; width:0; height:0; border-style:solid; border-width:0 1.02rem 1.02rem 1.02rem; border-color:transparent transparent #fff transparent;}
+.exhibition-plus-item .items ul {overflow:hidden; width:28.68rem; margin:0 auto;}
+.exhibition-plus-item .items li {float:left; margin:0 0.43rem;}
+.exhibition-plus-item .items .thumbnail:after {content:' '; position:absolute; top:0; left:0; z-index:10; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.03);}
+.exhibition-plus-item .items .thumbnail {width:8.7rem; height:8.7rem;}
+.exhibition-plus-item .items .thumbnail img {width:100%; height:100%;}
+.exhibition-plus-item .items .price {margin-top:0.77rem; font-size:1.11rem;}
+
+/* brand */
+.brand-bnr {margin-top:5.21rem;}
+.brand-bnr .thumbnail {width:23.21rem; height:28.33rem; margin:0 auto;}
+.brand-bnr .thumbnail img {width:100%; height:100%;}
+.brand-bnr .desc {position:relative; z-index:10; margin-top:-1.11rem; padding:0 2.22rem;}
+.brand-bnr h2 {font:bold 2.3rem/2.3rem 'AvenirNext-Bold'; letter-spacing:0.085rem;}
+.brand-bnr h3 {margin-top:1.19rem; font:bold 1.28rem/1.71rem 'AvenirNext-Bold', 'AppleSDGothicNeo-Bold';}
+.brand-bnr .desc p {margin-top:0.085rem; color:#838383; font-size:1.19rem; line-height:1.71rem;}
+.brand-items {position:relative; width:27.8rem; margin:2.05rem auto 0;}
+.brand-items ul {overflow:hidden;}
+.brand-items li {float:left; margin-right:0.85rem;}
+.brand-items .thumbnail {display:block; width:8.7rem; height:8.7rem;}
+.brand-items .btn-group {position:absolute; top:0; right:0;}
+.brand-items .btn-more {position:absolute; top:0; left:0; z-index:15; width:100%; height:8.7rem; padding:0 0 0 0.26rem; color:#000; font:1.11rem 'AppleSDGothicNeo-Medium'; text-align:center; line-height:8.7rem;}
+.brand-items .btn-more span {width:0.6rem; height:1.02rem; margin-left:0.34rem; border:0; background-position:0 -1.54rem; vertical-align:-0.001rem;}
+.brand-items .icon-arrow:after {display:none;}
+
+.brand-bnr + .text-bnr {margin-top:5.46rem;}
+
+.text-bnr + .exhibition-list {margin-top:6.31rem;}
+
+.menu-category {margin-top:1.71rem; background-color:#f7f7f7;}
+.menu-category ul {overflow:hidden;}
+.menu-category li {float:left; width:25%; margin-top:2.22rem; height:5.03rem; padding-top:0.6rem; text-align:center;}
+.menu-category li .icon {display:block; width:2.9rem; height:2.9rem; margin:0 auto;}
+.menu-category li a {display:block;}
+.menu-category .name {display:inline-block; position:relative; margin-top:0.26rem; color:#6e6e6e; font:1.11rem 'AppleSDGothicNeo-Light';}
+.menu-category .on .name:before {content:' '; position:absolute; top:-0.26rem; right:-0.51rem; width:0.43rem; height:0.43rem; border-radius:50%; background-color:#ff3131;}
+@media all and (max-width:360px){
+	.menu-category .on .name:before {width:4px; height:4px;}
+}
+.menu-category .btn-group {margin-top:2.3rem;}
+.menu-category button {width:100%; height:4.27rem; background-color:transparent; color:#3f75ff; font:1.28rem/4.1rem 'AppleSDGothicNeo-Medium'; text-align:center;}
+.menu-category .icon-arrow {position:relative; width:1.19rem; height:100%; margin-left:0.77rem; text-indent:-999em;}
+.menu-category .icon-arrow:after {content:' '; position:absolute; top:50%; left:0; width:1.19rem; height:1.19rem; margin-top:-0.85rem; background-position:-12.63rem 0; vertical-align:middle; -webkit-transform:rotate(180deg); transform:rotate(180deg); transition:transform 0.3s; transition:-webkit-transform 0.3s; vertical-align:middle;}
+.menu-category .btn-close {display:none;}
+.menu-category .btn-close .icon-arrow:after {-webkit-transform:rotate(0deg); transform:rotate(0deg);}
+
+.menu-etc {margin-top:2.82rem;}
+.menu-etc ul {width:27.32rem; margin:0 auto;}
+.menu-etc ul:after {content:' '; display:block; clear:both;}
+.menu-etc li {float:left; position:relative; width:6.83rem; height:4.27rem; border-left:1px solid #ededed; text-align:center;}
+.menu-etc li:first-child {border:0;}
+.menu-etc .icon {position:absolute; top:-0.34rem; left:50%; width:2.56rem; height:3.07rem; margin-left:-1.28rem;}
+.menu-etc .icon-coupon {top:-0.17rem; background-position:-13.86rem -43.73rem;}
+.menu-etc .icon-gift {background-position:-8.32rem -40.96rem;}
+.menu-etc .icon-exhibition {background-position:0 -40.96rem;}
+.menu-etc .icon-event {top:-0.43rem; background-position:-11.09rem -43.73rem;}
+.menu-etc .name {display:block; padding-top:2.81rem; color:#000; font:1.11rem 'AppleSDGothicNeo-Medium';}
+
+/* category icon */
+.menu-category .icon-category101 {background-position:0 0;}
+.menu-category .icon-category102 {background-position:-3.11rem 0;}
+.menu-category .icon-category124 {background-position:-6.23rem 0;}
+.menu-category .icon-category121 {background-position:-9.34rem 0;}
+.menu-category .icon-category122 {background-position:-12.46rem 0;}
+.menu-category .icon-category120 {background-position:0 -3.11rem;}
+.menu-category .icon-category112 {background-position:-3.11rem -3.11rem;}
+.menu-category .icon-category119 {background-position:-6.23rem -3.11rem;}
+.menu-category .icon-category117 {background-position:-9.34rem -3.11rem;}
+.menu-category .icon-category116 {background-position:-12.46rem -3.11rem;}
+.menu-category .icon-category125 {background-position:0 -6.23rem;}
+.menu-category .icon-category118 {background-position:-3.11rem -6.23rem;}
+.menu-category .icon-category103 {background-position:-6.23rem -6.23rem;}
+.menu-category .icon-category104 {background-position:-9.34rem -6.23rem;}
+.menu-category .icon-category115 {background-position:-12.46rem -6.23rem;}
+.menu-category .icon-category110 {background-position:0 -9.34rem;}
+
+.category-item-content {padding-top:1.71rem;}
+.category-item-content section:first-child {margin-top:0;}
+
+.category-item-list {margin-top:1.71rem; padding:2.56rem 0 0.77rem; background-color:#fff;}
+.category-item-list > .headline {width:28.41rem; height:2.99rem; margin:0 auto; font:1.37rem/2.99rem 'AppleSDGothicNeo-Medium';}
+.category-item-list .headline .icon {width:2.99rem; height:2.99rem; margin-left:-0.85rem; vertical-align:bottom;}
+.category-item-list .items ul {overflow:hidden; width:29.7rem; margin:-1.11rem auto 0;}
+.category-item-list .items li {float:left; width:8.7rem; margin:2.56rem 0.6rem 0;}
+.category-item-list .items a {height:15.02rem;}
+.category-item-list .items .thumbnail {width:8.7rem; height:8.7rem;}
+.category-item-list .items .thumbnail img {width:100%; height:100%;}
+.category-item-list .btn-group {text-align:center;}
+.category-item-list .btn-group a {width:100%; color:#3f75ff; font:1.19rem/4.27rem 'AppleSDGothicNeo-Medium';}
+.category-item-list .exhibition-list {margin-top:3.33rem;}
+
+/* contents banner */
+.contents-bnr {margin-top:3.41rem;}
+.contents-bnr .playing-bnr,
+.contents-bnr .hitchhiker-bnr {margin-top:3.07rem;}
+.contents-bnr a {display:block; position:relative;}
+.contents-bnr .headline {font:bold 1.54rem 'AvenirNext-Bold'; letter-spacing:0.17rem;}
+.contents-bnr .subcopy {margin-top:0.26rem; color:#4a4a4a; font-size:1.19rem; line-height:1.71rem;}
+.contents-bnr .thumbnail {background-color:transparent;}
+.playing-bnr .thumbnail, .hitchhiker-bnr .thumbnail {width:29.01rem; height:19.28rem; margin:0 auto;}
+.playing-bnr .thumbnail img, .hitchhiker-bnr .thumbnail img {width:100%; height:100%; border-radius:1.71rem;}
+.playing-bnr .desc, .hitchhiker-bnr .desc {position:relative; z-index:10; width:29.01rem; padding:0 1.54rem; margin:-1.37rem auto 0;}
+.playing-bnr > a:after,
+.hitchhiker-bnr > a:after {content:' '; position:absolute; top:14.68rem; left:50%; z-index:5; width:29.01rem; height:5.21rem; margin-left:-14.505rem; background-position:0 -98.56rem; background-size:34.2rem;}
+.hitchhiker-bnr > a:after {transform:rotateY(180deg); -webkit-transform:rotateY(180deg); /*background-position:0 -104.192rem;*/}
+.contents-bnr .culture-bnr {margin-top:3.75rem; background-color:#f7f7f7;}
+.culture-bnr > a {display:table; padding:3.41rem 3.07rem 3.24rem; align-items:center;}
+.culture-bnr .thumbnail {display:table-cell; position:relative; width:12.46rem; height:12.97rem; background-color:transparent; text-align:center;}
+.culture-bnr .thumbnail:after {content:' '; position:absolute; bottom:-0.85rem; left:0.17rem; width:11.09rem; height:0; border:0.51rem solid rgba(0, 0, 0, 0); border-top:0 solid; border-bottom:1.71rem solid #e9e9e9;}
+.culture-bnr .thumbnail:before {display:none;}
+.culture-bnr .thumbnail img {position:relative; z-index:5; width:8.79rem; height:100%; box-shadow:0 0 0.17rem 0 rgba(0, 0, 0, 0.12);}
+.culture-bnr .desc {display:table-cell; text-align:center; vertical-align:middle;}
+.culture-bnr .headline {font-size:1.71rem; line-height:2.39rem; letter-spacing:0.187rem;}
+.culture-bnr .subcopy {margin-top:0.85rem;}
+.culture-bnr .btn-group {text-align:center;}
+.culture-bnr .btn-group a {width:100%; color:#3f75ff; font:1.19rem/4.1rem 'AppleSDGothicNeo-Medium';}
+.culture-bnr .label {position:absolute; top:-1.96rem; left:0; z-index:10;}
+
+.shipping-bnr {margin-top:5.55rem; padding-bottom:5.63rem;}
+.shipping-bnr a {display:block; padding:0 4.01rem; font-size:1.62rem; line-height:2.47rem; letter-spacing:0.23rem;}
+.shipping-bnr p {position:relative; padding-bottom:1.02rem; border-bottom:2px solid #000;}
+.shipping-bnr em {display:inline-block; font:bold 1.79rem 'AppleSDGothicNeo-Bold';}
+.shipping-bnr em:after {content:' '; display:inline-block; width:1.28rem; height:1.54rem; margin-left:0.34rem; background-position:-15.45rem 0; vertical-align:-0.17rem;}
+.shipping-bnr .icon-car {position:absolute; bottom:0; right:0; width:3.58rem; height:2.39rem; background-position:0 -54.91rem; opacity:0;}
+
+.tentencar {animation:tentencar 2s cubic-bezier(0.19, 1, 0.22, 1) forwards; -webkit-animation:tentencar 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;}
+@keyframes tentencar {
+	0% {transform:translateX(200px);}
+	30% {transform:translateX(100px);}
+	80% {transform:translateX(50px);}
+	100% {transform:translateX(0); opacity:1;}
+}
+@-webkit-keyframes tentencar {
+	0% {transform:translateX(200px);}
+	30% {transform:translateX(100px);}
+	80% {transform:translateX(50px);}
+	100% {transform:translateX(0); opacity:1;}
+}
+
+/* diarystory2021 */
+.bnr_main_dr {display:block; width:100%; margin:3.41rem auto 0;}
+.category_banner {margin:0.68rem 0 -0.68rem;}
+
+/* 20181011 Just1Day 17th */
+.time-sale-17th {padding:0 2.05rem; margin:5.29rem 0 2.17rem;}
+.time-sale-17th .multi-head {overflow:hidden; margin-bottom:1.36rem;}
+.time-sale-17th .date {display:block; width:6rem; height:1.71rem; padding-top:0.11rem; margin-bottom:0.3rem; border-radius:0.86rem; background-color:#000; color:#fff; font:0.94rem/1.6rem 'AvenirNext-Medium', 'AppleSDGothicNeo-SemiBold'; text-align:center;}
+.time-sale-17th .headline {font:bold 1.71rem 'AvenirNext-DemiBold'; letter-spacing:0.08rem;}
+.time-sale-17th .time {display:inline-block; position:relative; width:auto; height:1.53rem; margin:.42rem 0 0 1.54rem; padding-left:.85rem; background-color:transparent; border-radius:0; color:#000; font:bold 1.11rem/1.53rem 'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold'; font-style:italic;}
+.time-sale-17th .time s {color:#a9a9a9; text-decoration:none; font-style:normal;}
+.time-sale-17th .time:before {content:' '; display:inline-block; position:absolute; top:50%; left:0rem; width:.084rem; height:.94rem; margin-top:-.47rem; background-color:#e1e1e1;}
+.time-sale-17th .weekday {display:block; position:relative;}
+.time-sale-17th .weekday a {display:block; position:absolute; top:0; left:0; z-index:15; width:100%; height:100%;}
+.time-sale-17th .weekday .thumbnail {position:absolute; top:0; left:0; width:11.78rem; height:11.78rem;}
+.time-sale-17th .weekday .thumbnail:after,
+.time-sale-17th .weekend .thumbnail:after {content:' '; position:absolute; top:0; left:0; z-index:15; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.03);}
+.time-sale-17th .weekday .desc {height:10.82rem; margin:0.51rem 0 0 13.32rem; border-bottom:solid #eee .085rem;}
+.time-sale-17th .weekday .discount {display:block; font:bold 3.24rem/4.44rem 'AvenirNext-DemiBold';}
+.time-sale-17th .weekday .name {display:block; height:1.62rem; margin-top:0.51rem; font-size:1.19rem; line-height:1.2; color:#000; white-space:nowrap;}
+.time-sale-17th .weekday .price {font-size:1.28rem; line-height:1.71rem; margin-top:.085rem;}
+.time-sale-17th .weekday .price .sum,
+.time-sale-17th .weekday .price .won {color:#000; font:bold 1.37rem 'AvenirNext-DemiBold', 'AppleSDGothicNeo-SemiBold';}
+.time-sale-17th .weekend {margin-top:1.71rem; text-align:center;}
+.time-sale-17th .weekend a {display:block; position:absolute; top:0; left:0; z-index:15; width:100%; height:100%;}
+.time-sale-17th .weekend .items {overflow:hidden; width:27.9rem; margin:0 auto;}
+.time-sale-17th .weekend .items li {width:8.7rem; float:left;}
+.time-sale-17th .weekend .items li + li {margin-left:0.9rem;}
+.time-sale-17th .weekend .thumbnail {position:relative; width:8.7rem; height:8.7rem;}
+.time-sale-17th .weekend .thumbnail img {width:100%; height:100%;}
+.time-sale-17th .weekend .name {display:block; white-space:nowrap; height:1.62rem; margin-bottom:0.1rem; font:bold 1.28rem/1.2 'AppleSDGothicNeo-SemiBold'; color:#000;}
+.time-sale-17th .weekend .eng {overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font:0.93rem 'AvenirNext-Regular'; color:#666; word-break:break-all;}
+.time-sale-17th .weekend .discount {display:block; margin-top:0.34rem; font:bold 1.71rem/2.3rem 'AvenirNext-DemiBold'; letter-spacing:0.05rem;}
+.time-sale-17th .items .soldout {padding-top:40%; background-color:rgba(0, 0, 0, 0.3); font:1.71rem 'AvenirNext-Medium', 'AppleSDGothicNeo-Medium'; letter-spacing:0.04rem;}
+
+
+/* 베스트 추가 */
+.best_2021{width:91.5vw;margin:5rem auto 5.97rem;border:1px solid #E5E5E5;border-radius:0.85rem;position:relative;}
+
+.best_2021 .today_best{display:block;height:12.03rem;}
+.best_2021 .today_best .best_ment{float:left;margin-left:2.56rem;margin-top:2.73rem;}
+.best_2021 .today_best .best_ment .now{font-size:1.19rem;color:#999;font-family:var(--rg);line-height:1.43rem;margin-bottom:0.68rem;}
+.best_2021 .today_best .best_ment .rank_ment{font-size:2.05rem;color:#111;font-family:var(--bd);line-height:2.73rem;}
+
+.best_2021 .today_best .icon{float:right;position:relative;}
+.best_2021 .today_best .icon .main{width:40.53vw;position:absolute;top:3.3rem;right:-1.5vw;}
+.best_2021 .today_best .icon .book{width:12.27vw;position:absolute;top:-2rem;right:15vw;z-index:9;}
+.best_2021 .today_best .icon .pen{width:5.07vw;position:absolute;top:2rem;right:33vw;}
+.best_2021 .today_best .icon .clock{width:7.2vw;position:absolute;top:1.5rem;right:0;}
+
+.best_2021 .re_best{display:flex; flex-direction:row; align-items:center;position:relative;margin-bottom:1.024rem;}
+.best_2021 .re_best.rank_five{margin-bottom:3rem;}
+.best_2021 .re_best::after {display:block; clear:both; content:' ';}
+.best_2021 .re_best .best_wrap{overflow:hidden;display:flex; flex-direction:row; align-items:center;text-align:left;width:84vw;margin:0 0.68rem 0 0;background:#fff;}
+.best_2021 .re_best .best_rank{font-family:'CoreSansCBold', 'AppleSDGothicNeo-Bold', 'NotoSansKRBold'; font-style:italic;font-size:1.19rem; color:var(--c_111);width:8vw;position:relative;text-align:center;display:flex;align-items:center;justify-content:center;flex-direction:column;}
+.best_2021 .re_best .best_rank .rank_up{display:block;width:0.51rem !important;height:0.5rem;margin-top:0.43rem;}
+.best_2021 .re_best .best_rank .rank_down{display:block;width:0.51rem !important;height:0.5rem;margin-top:0.43rem;}
+.best_2021 .re_best .prd_img {float:left; flex-shrink:0; width:20vw; height:20vw; padding-top:0; margin-right:1rem;}
+.best_2021 .re_best .set_price{font-size:1.28rem;line-height:1.26rem;}
+.best_2021 .re_best .prd_name {display:-webkit-box; -webkit-line-clamp:1;overflow:hidden; -webkit-box-orient: vertical;font-size:1.19rem;margin-top:0.47rem;}
+.best_2021 .re_best .prd_info {width:17.49rem;}
+
+.best_2021 .gra{position:relative;}
+.best_2021 .gra::before{content:'';width:100%;padding:4rem 0;position:absolute;bottom:3rem;background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 50%,  rgba(255,255,255,0.5) 75%, rgba(255,255,255,0) 100%);border-radius:0 0 0.85rem 0.85rem;}
+.best_2021 .gra .all_rank{margin-bottom:3rem;z-index:9;background:#FF214F;color:#fff;font-family:var(--bd);font-size:1.19rem;line-height:2.83rem;width:40.27vw;height:2.73rem;position:absolute;bottom:0;left:50%;margin-left:-20.135vw;text-align:center;border-radius:1.5rem;}
+.best_2021 .gra .all_rank i{font-weight:bold;}
+
+/* 기본 css 추가 */
+.prd_item dfn {overflow:hidden; position:absolute; width:0; height:0; font-size:0; color:transparent;}
+.prd_item .prd_price {overflow-wrap:break-word;}
+.prd_item .set_price {font-family:'CoreSansCBold', sans-serif; font-size:1.54rem; color:var(--c_111); letter-spacing:-0.025em;}
+.prd_item .set_price em {font-family:var(--bd); font-size:.9em;}
+.prd_item .set_price em:nth-of-type(1) {padding-right:.1em;}
+.prd_item .set_price em:nth-of-type(2) {padding-left:.1em;}
+.prd_item .discount {font-family:'CoreSansCBold', sans-serif; font-size:1.19rem; color:var(--ten); vertical-align:1px;}
+.prd_item .discount em {font-family:var(--bd); font-size:.9em; vertical-align:1px;}
+.prd_item .prd_info {position:relative; text-align:left;}
+.prd_item .prd_name {overflow:hidden; font-family:var(--md); font-size:1.19rem; color:var(--c_111); line-height:1.54rem; word-break:break-all;}
+.prd_item .prd_brand {overflow:hidden; font-family:var(--md); font-size:1.11rem; color:var(--c_999); line-height:1.37rem; white-space:nowrap; text-overflow:ellipsis;}
+.prd_item .prd_link {position:absolute; top:0; right:0; bottom:0; left:0;}

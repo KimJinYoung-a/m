@@ -1,0 +1,199 @@
+.today h1 {display:none;}
+
+.today .mainBigIssue {padding-top:10px;}
+.today .mainBigIssue img {width:100%; vertical-align:top;}
+@media all and (min-width:480px){
+	.today .mainMulti {padding-top:20px;}
+}
+
+.today .mainMulti {width:100%; padding-top:10px; position:relative; overflow:hidden;}
+.today .mainMulti .swiper-container {width:100%; overflow:hidden; margin:0 auto; position:relative; padding-bottom:16px;}
+.today .mainMulti .swiper-wrapper {position:relative; overflow:hidden;}
+.today .mainMulti .swiper-slide {width:100%; float:left; overflow:hidden;}
+.today .mainMulti .swiper-slide img {width:100%;}
+.today .mainMulti .pagination {position:absolute; left:0; width:100%; bottom:0; margin:0; text-align:center;}
+.today .mainMulti .pagination span {width:7px; height:7px; display:inline-block; text-align:center; text-indent:-9999px; background-image:url(http://fiximage.10x10.co.kr/m/2013/today/today_page.png); background-size:19px 7px; background-position:right top; background-repeat:no-repeat; margin:0 2px;}
+.today .mainMulti .pagination span.swiper-active-switch {background-position:left top;}
+@media all and (min-width:480px){
+	.today .mainMulti {padding-top:20px;}
+	.today .mainMulti .swiper-container {padding-bottom:32px;}
+	.today .mainMulti .pagination span {width:14px; height:14px; background-size:38px 14px; margin:0 5px;}
+}
+
+.today .mainJustDay {width:100%; margin-top:24px;}
+.today .mainJustDay a {display:block; width:100%; text-decoration:none;}
+.today .mainJustDay img {vertical-align:top;}
+.today .mainJustDay .justInnerBox {background-color:#eaeaea; padding:8px 8px 8px 32px; position:relative; background-image:url(http://fiximage.10x10.co.kr/m/2013/today/today_ico_time.png); background-repeat:no-repeat; background-position:8px 15px; background-size:15px 15px;}
+.today .mainJustDay .justInnerBox:before {z-index:1000; content:''; position:absolute; top:19px; left:29px; background-color:#fff; width:6px; height:6px; transform:rotate(45deg); -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg);}
+.today .mainJustDay .justInnerBox div {border-radius:5px; -webkit-border-radius:5px; background-color:#fff; overflow:hidden; padding:5px 10px 5px 5px; position:relative;}
+.today .mainJustDay .justInnerBox div dl {float:none;}
+.today .mainJustDay .justInnerBox dl {margin:0; padding:0;}
+.today .mainJustDay .justInnerBox dl dt {margin:0; padding:0; border-bottom:1px solid #888; padding:9px 0;}
+.today .mainJustDay .justInnerBox dl dt img {width:96px;}
+.today .mainJustDay .justInnerBox dl dd {margin:0; padding:0;}
+.today .mainJustDay .justInnerBox div dl dd.justPdt {padding-top:8px; font-size:12px; color:#555; line-height:1.2; padding-right:30px; letter-spacing:-0.025em;}
+.today .mainJustDay .justInnerBox div dl dd.justPrice {padding-top:6px; font-size:14px; color:#333; line-height:1.1; font-weight:bold;}
+.today .mainJustDay .justInnerBox div .justSale {position:absolute; right:10px; bottom:8px; display:table-cell; width:38px; height:38px; background-color:#c40000; color:#fff; font-size:17px; line-height:38px; border-radius:38px; -webkit-border-radius:38px; text-align:center; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.today .mainJustDay .justInnerBox div .justSale span {font-size:11px;}
+.today .justPic {float:left; width:94px; width:94px; padding-right:10px; background-color:#fff;}
+.today .justPic img {width:100%;}
+@media all and (min-width:480px){
+	.today .mainJustDay {margin-top:48px;}
+	.today .mainJustDay .justInnerBox {padding:16px 16px 16px 64px; background-position:16px 30px; background-size:30px 30px;}
+	.today .mainJustDay .justInnerBox:before {width:12px; height:12px; top:36px; left:58px;}
+	.today .mainJustDay .justInnerBox div {padding:10px 20px 10px 10px;}
+	.today .mainJustDay .justInnerBox dl dt {padding:18px 0;}
+	.today .mainJustDay .justInnerBox dl dt img {width:192px;}
+	.today .mainJustDay .justInnerBox div dl dd.justPdt {padding-top:16px; font-size:24px; padding-right:40px;}
+	.today .mainJustDay .justInnerBox div dl dd.justPrice {padding-top:14px; font-size:28px;}
+	.today .mainJustDay .justInnerBox div .justSale {right:20px; bottom:15px; width:76px; height:76px; font-size:35px; line-height:76px; border-radius:76px; -webkit-border-radius:76px;}
+	.today .mainJustDay .justInnerBox div .justSale span {font-size:22px;}
+	.today .justPic {width:188px; height:188px; padding-right:20px;}
+}
+
+.today .todayWish {padding:20px 10px 0 10px; position:relative;}
+.today .todayWish h2 {font-size:16px; color:#000; padding-left:8px; position:relative; line-height:1; margin-top:5px;}
+.today .todayWish h2:before {z-index:1000; content:''; position:absolute; top:2px; left:0; background-color:#cc1912; width:3px; height:12px;}
+.today .todayWish .more {position:absolute; display:block; right:14px; top:20px; border-radius:22px; -webkit-border-radius:22px; width:22px; height:22px; background:#fff url(http://fiximage.10x10.co.kr/m/2013/today/today_more.png) no-repeat 53% 50%; background-size:7px 11px; border:1px solid #d6d6d6; text-indent:-9999em; overflow:hidden;}
+.today .todayWish .more a {display:block; width:100%;}
+.today .todayWish .todayWishList {overflow:hidden; margin-top:5px;}
+.today .todayWish .todayWishList li {float:left; width:33.33333%; text-align:center;}
+.today .todayWish .todayWishList li .picMask {padding:5px; position:relative; overflow:hidden;}
+.today .todayWish .todayWishList li .picMask p {position:absolute; left:0; top:0; bottom:0; background:url(http://fiximage.10x10.co.kr/m/2013/today/today_wish_mask.png) no-repeat 50% 0; background-size:100%; width:100%; height:100%;}
+.today .todayWish .todayWishList li img {width:100%;}
+.today .todayWish .todayWishList li a {text-decoration:none;}
+.today .todayWish .todayWishList li .wishPdt {color:#333; font-size:12px; line-height:1.2; padding:0 5px; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word; height:28px;}
+.today .todayWish .todayWishList li .wishPrice {font-size:11px; color:#888; line-height:1.2; padding-top:5px;}
+@media all and (min-width:480px){
+	.today .todayWish {padding:40px 20px 0 20px;}
+	.today .todayWish h2 {font-size:32px; padding-left:15px; margin-top:10px;}
+	.today .todayWish h2:before {width:6px; height:23px; top:4px;}
+	.today .todayWish .more {right:28px; top:40px; border-radius:44px; -webkit-border-radius:44px; width:44px; height:44px; background-size:14px 22px;}
+	.today .todayWish .todayWishList li .picMask {padding:10px 5px 5px 5px;}
+	.today .todayWish .todayWishList li .wishPdt {font-size:24px; height:56px;}
+	.today .todayWish .todayWishList li .wishPrice {font-size:22px; padding-top:10px;}
+}
+
+.today .mainTxtBnr {margin-top:40px;}
+.today .mainTxtBnr img {width:100%;}
+@media all and (min-width:480px){
+	.today .mainTxtBnr {margin-top:75px;}
+}
+
+.today .todayTheme {background-color:#eff2f4; margin-top:40px; border-top:1px solid #d6d6d6; border-bottom:1px solid #d6d6d6; position:relative; text-align:center;}
+.today .todayTheme:before {z-index:1000; content:''; width:100%; height:1px; background-color:#fff; position:absolute; top:0; left:0; right:0;}
+.today .todayTheme:after {z-index:1000; content:''; width:100%; height:1px; background-color:#fff; position:absolute; bottom:0; left:0; right:0;}
+.today .todayTheme h2 {font-size:15px; color:#1f2122; padding:13px 0 11px 0; position:relative; line-height:1; font-style:italic; letter-spacing:0.125em; font-family:"times new roman", times, serif;}
+.today .todayTheme h2:before {z-index:1000; content:''; position:absolute; top:-1px; left:50%; margin-left:-20px; background-color:#000; width:40px; height:3px;}
+.today .todayTheme h2:after {z-index:1000; content:''; position:absolute; bottom:0; left:50%; margin-left:-105px; background-color:#000; width:210px; height:1px;}
+.today .todayTheme h3 {padding:10px 0; font-size:14px; font-weight:bold; color:#1f2122; position:relative; line-height:1.2; text-align:center; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.today .todayTheme .todayWrap {padding-bottom:65px;}
+.today .todayTheme .todayWrap .goodsSwiper {position:relative;}
+.today .todayTheme .todayWrap .goodsSwiper .swiper-container {position:absolute; left:50%; top:0; margin-left:-101px; overflow:hidden; width:202px;}
+.today .todayTheme .todayWrap .goodsSwiper .swiper-slide {float:left;}
+.today .todayTheme .todayWrap .goodsSwiper .swiper-slide a {display:block; width:100%; text-decoration:none;}
+.today .todayTheme .todayWrap .goodsSwiper .swiper-slide .thumbNail {padding:5px 1px; width:200px; height:200px; margin:0 auto;}
+.today .todayTheme .todayWrap .goodsSwiper .swiper-slide .thumbNail img {width:200px; width:200px;}
+.today .todayTheme .todayWrap .goodsSwiper .swiper-slide .todayPdt {padding-top:11px; font-size:12px; line-height:1.1; color:#3d3d3d; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; font-weight:bold;}
+.today .todayTheme .todayWrap .goodsSwiper .swiper-slide .todayPrice {padding-top:4px; font-size:12px; line-height:1.1; color:#888; /*font-weight:bold;*/}
+.today .todayTheme .todayWrap .goodsSwiper .btnArrow {display:block; position:absolute; top:50%; margin-top:-115px; z-index:10; width:12px; height:200px; text-indent:-999em; background-image:url(http://fiximage.10x10.co.kr/m/2013/today/today_arrow.png); background-repeat:no-repeat; background-size:279px 21px;}
+.today .todayTheme .todayWrap .goodsSwiper .arrow-left {left:7.5%; background-position:left 50%;}
+.today .todayTheme .todayWrap .goodsSwiper .arrow-right {right:7.5%; background-position:right 50%;}
+.today .todayTheme .todayWrap .goodsSwiper .picFrame {width:210px; height:210px; background-color:#fff; box-shadow:0 0 2px #bbb, 0px 10px 7px -5px #bbb; margin:0 auto;}
+@media all and (min-width:480px){
+	.today .todayTheme {margin-top:80px;}
+	.today .todayTheme h2 {font-size:30px; padding:26px 0 22px 0;}
+	.today .todayTheme h2:before {width:80px; height:6px; margin-left:-40px;}
+	.today .todayTheme h2:after {width:420px; height:2px; margin-left:-210px;}
+	.today .todayTheme h3 {padding:20px 0; font-size:28px;}
+	.today .todayTheme .todayWrap {padding-bottom:130px;}
+	.today .todayTheme .todayWrap .goodsSwiper .swiper-container {width:402px; margin-left:-201px;}
+	.today .todayTheme .todayWrap .goodsSwiper .swiper-slide .thumbNail {padding:10px 1px; width:400px; height:400px;}
+	.today .todayTheme .todayWrap .goodsSwiper .swiper-slide .thumbNail img {width:400px; width:400px;}
+	.today .todayTheme .todayWrap .goodsSwiper .swiper-slide .todayPdt {padding-top:22px; font-size:24px;}
+	.today .todayTheme .todayWrap .goodsSwiper .swiper-slide .todayPrice {padding-top:8px; font-size:24px;}
+	.today .todayTheme .todayWrap .goodsSwiper .btnArrow {width:24px; margin-top:-230px; height:400px; background-size:558px 42px;}
+	.today .todayTheme .todayWrap .goodsSwiper .picFrame {width:420px; height:420px; background-color:#fff; box-shadow:0 0 2px #bbb, 0px 10px 7px -5px #bbb;}
+}
+
+.today .todayDeal {background-color:#eff2f4; margin-top:40px; border-top:1px solid #d6d6d6; border-bottom:1px solid #d6d6d6; position:relative; text-align:center;}
+.today .todayDeal:before {z-index:1000; content:''; width:100%; height:1px; background-color:#fff; position:absolute; top:0; left:0; right:0;}
+.today .todayDeal:after {z-index:1000; content:''; width:100%; height:1px; background-color:#fff; position:absolute; bottom:0; left:0; right:0;}
+.today .todayDeal h2 {font-size:17px; color:#1f2122; padding:13px 0 2px 0; position:relative; line-height:1; letter-spacing:0.125em; font-family:roboto, sans-serif;}
+.today .todayDeal h2:before {z-index:1000; content:''; position:absolute; top:-1px; left:50%; margin-left:-20px; background-color:#000; width:40px; height:3px;}
+.today .todayDeal h3 {font-size:10px; font-weight:bold; color:#7d7d7d; position:relative; line-height:1.2; text-align:center; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.today .todayDeal .todayWrap {padding:20px 0 25px 0; width:220px; margin:0 auto; text-align:center; position:relative;}
+.today .todayDeal .todayWrap a {display:block; text-decoration:none;}
+.today .todayDeal .todayWrap .thumbNail {padding:5px; width:210px; height:210px; background-color:#fff; box-shadow:0 0 2px #bbb, 0px 10px 7px -5px #bbb; margin:0 auto;}
+.today .todayDeal .todayWrap .thumbNail img {width:210px; width:210px;}
+.today .todayDeal .todayWrap .todayPdt {padding-top:12px; font-size:12px; line-height:1.1; color:#3d3d3d; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; font-weight:bold;}
+.today .todayDeal .todayWrap .todayPrice {padding-top:4px; font-size:12px; line-height:1.1; color:#888; font-weight:bold;}
+.today .todayDeal .todayWrap .tag {display:block; z-index:200; position:absolute; top:12px; left:50%; padding:0 6px; background-color:#c40000; color:#fff; height:13px; line-height:14px; font-size:10px; text-align:center; font-weight:bold;}
+.today .todayDeal .todayWrap .tag:after {z-index:-100; content:''; width:5px; height:10px; background-color:#c40000; position:absolute; bottom:-2px; left:50%; transform:matrix(0.5,1,0.45,-1,0,0); -moz-transform:matrix(0.5,1,0.45,-1,0,0); -webkit-transform:matrix(0.5,1,0.45,-1,0,0); margin-left:-2px;}
+@media all and (min-width:480px){
+	.today .todayDeal {margin-top:80px;}
+	.today .todayDeal h2 {font-size:34px; padding:26px 0 4px 0;}
+	.today .todayDeal h2:before {width:80px; height:6px; margin-left:-40px;}
+	.today .todayDeal h3 {font-size:20px;}
+	.today .todayDeal .todayWrap {padding:40px 0 50px 0; width:440px;}
+	.today .todayDeal .todayWrap .thumbNail {padding:10px; width:420px; height:420px; background-color:#fff; box-shadow:0 0 2px #bbb, 0px 10px 7px -5px #bbb;}
+	.today .todayDeal .todayWrap .thumbNail img {width:420px; width:420px;}
+	.today .todayDeal .todayWrap .todayPdt {padding-top:24px; font-size:24px;}
+	.today .todayDeal .todayWrap .todayPrice {padding-top:8px; font-size:24px;}
+	.today .todayDeal .todayWrap .tag {top:26px; padding:0 12px; height:24px; line-height:24px; font-size:20px;}
+	.today .todayDeal .todayWrap .tag:after {bottom:-4px; width:7px; height:12px; margin-left:-3px;}
+}
+
+.today .enjoyEvent {padding:25px 10px 0 10px; position:relative;}
+.today .enjoyEvent h2 {font-size:16px; color:#000; padding-left:8px; position:relative; line-height:1; margin-top:5px;}
+.today .enjoyEvent h2:before {z-index:1000; content:''; position:absolute; top:2px; left:0; background-color:#cc1912; width:3px; height:12px;}
+.today .enjoyEvent .more {position:absolute; display:block; right:14px; top:25px; border-radius:22px; -webkit-border-radius:22px; width:22px; height:22px; background:#fff url(http://fiximage.10x10.co.kr/m/2013/today/today_more.png) no-repeat 53% 50%; background-size:7px 11px; border:1px solid #d6d6d6; text-indent:-9999em; overflow:hidden;}
+.today .enjoyEvent .more a {display:block; width:100%;}
+.today .enjoyEvent .enjoyEventList {padding:6px 0 25px 0; border-bottom:1px solid #d6d6d6;}
+.today .enjoyEvent .enjoyEventList li {padding-top:5px; position:relative;}
+.today .enjoyEvent .enjoyEventList li img {width:100%;}
+.today .enjoyEvent .enjoyEventList li a {text-decoration:none;}
+.today .enjoyEvent .enjoyEventList .eventTitWrap {position:absolute; left:0; right:0; bottom:0; opacity:0.85; background-color:#fff; overflow:hidden; padding:5px;}
+.today .enjoyEvent .enjoyEventList .eventTitWrap .evtTit {float:left; font-size:11px; color:#000; line-height:1.2; letter-spacing:-0.025em; font-weight:bold;}
+.today .enjoyEvent .enjoyEventList .eventTitWrap .evtTerm {float:right; font-size:10px; color:#000; line-height:1.2;}
+@media all and (min-width:480px){
+	.today .enjoyEvent {padding:50px 20px 0 20px;}
+	.today .enjoyEvent h2 {font-size:32px; padding-left:15px; margin-top:10px;}
+	.today .enjoyEvent h2:before {width:6px; height:23px; top:4px;}
+	.today .enjoyEvent .more {right:28px; top:50px; border-radius:44px; -webkit-border-radius:44px; width:44px; height:44px; background-size:14px 22px;}
+	.today .enjoyEvent .enjoyEventList {padding:15px 0 50px 0;}
+	.today .enjoyEvent .enjoyEventList li {padding-top:10px;}
+	.today .enjoyEvent .enjoyEventList .eventTitWrap {padding:10px;}
+	.today .enjoyEvent .enjoyEventList .eventTitWrap .evtTit {font-size:22px;}
+	.today .enjoyEvent .enjoyEventList .eventTitWrap .evtTerm {font-size:20px;}
+}
+
+.today .mdPick {padding:25px 5px 45px 5px; position:relative;}
+.today .mdPick h2 {font-size:16px; color:#000; padding-left:8px; position:relative; line-height:1; margin-top:5px; margin-left:5px;}
+.today .mdPick h2:before {z-index:1000; content:''; position:absolute; top:2px; left:0; background-color:#cc1912; width:3px; height:12px;}
+.today .mdPick .mdPickList {overflow:hidden;}
+.today .mdPick .mdPickList li {width:50%; float:left; padding:12px 5px 0 5px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; text-align:center;}
+.today .mdPick .mdPickList li img {width:100%;}
+.today .mdPick .mdPickList li a {display:block; width:100%; padding:0 0 14px; border-bottom:1px solid #d6d6d6; text-decoration:none;}
+.today .mdPick .mdPickList li .picArea {width:100%; position:relative;}
+.today .mdPick .mdPickList li .picArea > p {display:none;}
+.today .mdPick .mdPickList li .picArea .tag {display:block; position:absolute; left:0; top:0; width:45px; height:45px; background-position:0 0; background-repeat:no-repeat; background-size:100%;}
+.today .mdPick .mdPickList li .picArea p.saleTag {background-image:url(http://fiximage.10x10.co.kr/m/2013/today/today_tag_sale.png);}
+.today .mdPick .mdPickList li .picArea p.newTag {background-image:url(http://fiximage.10x10.co.kr/m/2013/today/today_tag_new.png);}
+.today .mdPick .mdPickList li .picArea p.limitTag {background-color:#000; opacity:0.8; display:block; position:absolute; left:0; top:10px; width:75px; height:20px; color:#fff; font-size:12px; line-height:20px; text-align:center; font-weight:bold;}
+.today .mdPick .mdPickList li .mdPickPdt {padding-top:9px; color:#000; font-size:12px; line-height:1.2; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.today .mdPick .mdPickList li .mdPickPrice {padding-top:5px; color:#888; font-size:12px; line-height:1.2;}
+@media all and (min-width:480px){
+	.today .mdPick {padding:50px 10px 70px 10px;}
+	.today .mdPick h2 {font-size:32px; padding-left:15px; margin-top:10px; margin-left:10px;}
+	.today .mdPick h2:before {width:6px; height:23px; top:4px;}
+	.today .mdPick .mdPickList li {padding:24px 10px 0 10px;}
+	.today .mdPick .mdPickList li a {padding:0 0 28px;}
+	.today .mdPick .mdPickList li .picArea .tag {width:90px; height:90px;}
+	.today .mdPick .mdPickList li .picArea p.limitTag {top:20px; width:150px; height:40px; font-size:24px; line-height:40px;}
+	.today .mdPick .mdPickList li .mdPickPdt {padding-top:18px; font-size:24px;}
+	.today .mdPick .mdPickList li .mdPickPrice {padding-top:10px; font-size:24px;}
+}
+
+.cRed {color:#c40000 !important;}
+.cGrn {color:#2c9336 !important;}

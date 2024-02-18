@@ -1,0 +1,9 @@
+#header .page-title.with-stroke { background: ##c10707; padding: 0 20px; display: inline-block; margin: 10px auto; position: relative;}
+#header .page-title.with-stroke:before { content:" "; background: #ff5757; height: 1px; width: 1000px; position: absolute; top:50%; margin-top:-1px; right:100%; }
+
+#header .page-title.with-stroke:after { content:" "; background: #ff5757; height: 1px; width: 1000px; position: absolute; top:50%; margin-top:-1px; left:100%; }
+
+
+.product-spec .rank { background: url(../img/rank-bg.png) no-repeat 50% 50%; background-size: 34px auto; width: 34px; height: 34px; display: block; text-align: center; line-height: 34px; color: #fff; font-weight: bold; font-size: 14px; margin-bottom: 6px;}
+
+.product-spec .rank.hot { background-image:url(../img/rank-bg-hot.png);}

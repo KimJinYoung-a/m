@@ -1,0 +1,85 @@
+.two-btns {
+    margin: 0 -3px 10px;
+    clear:both;}
+.two-btns .col { width: 50%; float:left; padding:0 3px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -o-box-sizing:border-box;}
+.two-btns .col .btn { width: 100%; padding:0;}
+
+.three-btns {
+    margin: 0 -3px 10px;
+    clear:both;}
+.three-btns .col { width: 33.333333%; float:left; padding:0 3px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -o-box-sizing:border-box;}
+.three-btns .col .btn { width: 100%; padding:0;}
+
+.four-btns {
+    margin: 0 -3px 10px;
+    clear:both;}
+.four-btns .col { width: 25%; float:left; padding:0 3px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -o-box-sizing:border-box;}
+.four-btns .col .btn { width: 100%; padding:0;}
+/*btn*/
+.btn.margined { margin: 5px;}
+
+.btn {box-sizing: border-box;	-o-box-sizing: border-box;	-ms-box-sizing: border-box;	-moz-box-sizing: border-box; -webkit-box-sizing: border-box;border:0; display: inline-block;text-decoration: none; color: #696969; }
+.btn.type-a {background-color: #696969; border-radius: 50px; -moz-border-radius: 50px;-webkit-border-radius: 50px;font-size: 14px; line-height: 40px; text-align: center; padding: 0 20px; color: #fff;}
+.btn.type-b {background-color: #dc0d0d; border-radius: 50px; -moz-border-radius: 50px;-webkit-border-radius: 50px;font-size: 14px; line-height: 40px; text-align: center; padding: 0 20px; color: #fff;}
+.btn.type-c {background-color: #696969; border-radius: 50px; -moz-border-radius: 50px;-webkit-border-radius: 50px;font-size: 14px; line-height: 40px; text-align: center; padding: 0 20px; color: #fff;}
+.btn.type-d {background-color: #f2f2f2; border-radius: 50px; -moz-border-radius: 50px;-webkit-border-radius: 50px;font-size: 14px; line-height: 40px; text-align: center; padding: 0 20px; color: #333;}
+.btn.type-e {background-color: #9a9a9a; border-radius: 50px; -moz-border-radius: 50px;-webkit-border-radius: 50px;font-size: 14px; line-height: 40px; text-align: center; padding: 0 20px; color: #fff;}
+
+.btn.type-f {background-color: #fff; border-radius: 50px; -moz-border-radius: 50px;-webkit-border-radius: 50px;font-size: 14px; line-height: 36px; text-align: center; padding: 0 20px; color: #333; border:2px solid #9a9a9a;}
+
+.btn.type-f.red { border-color: #dc0d0d !important; color:#dc0d0d;}
+
+.btn.type-g {background-color: #e6e6e6; border-radius: 50px; -moz-border-radius: 50px;-webkit-border-radius: 50px;font-size: 14px; line-height: 40px; text-align: center; padding: 0 20px; color: #333;}
+
+.btn.simple {color: #696969; text-decoration: underline;}
+
+.btn.small { font-size:12px; line-height: 28px; padding: 0 10px; }
+.btn.type-f.small { font-size: 12px; line-height: 26px;}
+
+.btn.disabled {background-color: #d6d6d6; border-radius: 50px; -moz-border-radius: 50px;-webkit-border-radius: 50px;font-size: 14px; line-height: 40px; text-align: center; padding: 0 20px; color: #fff;}
+
+.btn i { display: inline-block; width: 20px; height: 20px; vertical-align: middle; margin-right:2px;}
+.btn i.icon-download  { background:url(../img/icon-download.png) 50% 50% no-repeat; background-size: 15px auto;}
+.btn i.icon-cart  { background:url(../img/icon-small-cart-new.png) 50% 50% no-repeat; background-size: 20px auto;}
+.btn i.icon-cart-white { background:url(../img/icon-small-cart-white.png) 50% 50% no-repeat; background-size: 20px auto;}
+.btn i.icon-love  { background:url(../img/icon-small-love.png) 50% 50% no-repeat; background-size: 20px auto;}
+.btn.red i.icon-love  { background:url(../img/icon-small-love-red.png) 50% 50% no-repeat; background-size: 20px auto;}
+.btn i.icon-share  { background:url(../img/icon-small-share.png) 50% 50% no-repeat; background-size: 20px auto;}
+.btn i.icon-trash  { background:url(../img/icon-small-trash.png) 50% 50% no-repeat; background-size: 20px auto;}
+.btn i.icon-check  { background:url(../img/icon-small-check.png) 50% 50% no-repeat; background-size: 20px auto;}
+.btn i.icon-airplane  { background:url(../img/icon-small-airplane.png) 50% 50% no-repeat; background-size: 20px auto;}
+.btn i.icon-box { background:url(../img/icon-small-box.png) 50% 50% no-repeat; background-size: 20px auto;}
+
+.btn.type-go {border:2px solid #9a9a9a; border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px;
+    background: #fff url(../img/icon-arrow-go.png) no-repeat 100% 50%; background-size: auto 10px;  padding: 0 30px 0 10px; line-height: 28px; color: #9a9a9a; font-size: 12px;}
+
+.btn.full-size {width: 100%;}
+
+i.icon-arrow-up-down { background: url(../img/icon-arrow-up-down.png) no-repeat; background-size:30px auto; width: 15px; height: 15px; display: inline-block; vertical-align: middle;}
+i.icon-arrow-up-down.down { background-position: -15px 0;}
+i.icon-camera { background: url(../img/icon-camera.png) no-repeat; background-size: 20px auto; width: 20px; height: 20px; display: inline-block; vertical-align: middle;}
+
+.btn.left-cursor {position: relative; padding-left:20px;}
+.btn.left-cursor:after {content:''; width:14px; height: 14px; background-color:#9a9a9a; position: absolute; top:50%; margin-top:-7px; left:-3px;transform:rotate(45deg);-moz-transform:rotate(45deg);-webkit-transform:rotate(45deg);}
+
+i.absolute-right { position: absolute; right: 10px; top:50%; margin-top:-7px;}
+
+button.btn.couponDown {background-color:#2d8d35; color:#fff;}
+
+/* 20140624 SYS JYM Coupon Book */
+.btn-down-all {display:table; width:75px; height:75px; margin-right:10px; border:2px solid #dc0d0d; border-radius:50px; background-color:#fff; color:#dc0d0d; font-size:12px; font-weight:bold; text-decoration:none; text-align:center;}
+.btn-down-all span {display:table-cell; background:url(../img/icon-arrow-down.png) no-repeat 50% 55px; background-size:16px auto; vertical-align:middle;}
+.btn-cp-area {overflow:hidden;}
+.btn-cp-area .half {float:left; width:50%; padding:0 4px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+.btn-cp-area .half .btn {width:100%;}
+.btn.type-h {padding:0 20px; border-radius:50px; -moz-border-radius:50px;-webkit-border-radius:50px; background-color: #2d8d35; color: #fff; font-size:12px; line-height:28px; text-align:center;}
+.btn.type-i {padding:0 20px; border:1px solid #9a9a9a; border-radius:50px; -moz-border-radius:50px;-webkit-border-radius:50px; background-color: #f6f6f6; color: #888; font-size:12px; line-height:26px; text-align:center;}
+.btn-cp-book {display:block; position:absolute; right:0; top:50%; height:24px; margin-top:-14px; padding:0 15px; border:2px solid #dc0d0d; border-radius:24px; color:#dc0d0d; font-size:12px; font-weight:bold; line-height:24px; text-decoration:none;}
+.btn-cp-book span {padding-right:10px; background:url(../img/icon-arrow-red.png) no-repeat 100% 50%; background-size:7px auto;}
+
+/* 20140626 SYS JYM ¿ì¼öÈ¸¿ø¼¥ */
+.type-b.btn-vip-shop {margin-left:5px; padding: 0 10px; background-color:#d70808; font-size:12px; line-height:20px;}
+.btn-vip-shop span {padding-right:8px; background:url(../../img/icon-arrow-right-white.png) 100% 50% no-repeat; background-size:5px auto;}
+.btn-vip-shop.left-cursor:after {left:-2px; width:10px; height:10px; margin-top:-5px; background-color:#d70808;}
+
+.btn.type-cart {background-color: #fff; border-radius: 50px; -moz-border-radius: 50px;-webkit-border-radius: 50px;font-size: 14px; line-height: 36px; text-align: center; padding: 0 20px; color: #d70808; border:2px solid #dc0d0d;}

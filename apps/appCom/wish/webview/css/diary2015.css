@@ -1,0 +1,376 @@
+/* 2015 diary story reset */
+.hide {visibility:hidden;overflow:hidden; position:absolute; top:-1000%; width:0; height:0; line-height:0;}
+
+.diarystory2015 {background-color:#f4f7f7;}
+.diarystory2015 * {box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+.diarystory2015 img {width:100%;}
+.diarystory2015 em {font-style:normal;}
+.diarystory2015 a {text-decoration:none; color:inherit;}
+.diarystory2015 dl, .diarystory2015 dt, .diarystory2015 dd {margin:0; padding:0;}
+.diarystory2015 button {border:0;}
+
+.diarystory2015 #content {padding-bottom:20px;}
+
+/* form */
+input {-webkit-appearance:none; -webkit-border-radius:0; outline-style:none; border:0;}
+select {height:36px; padding:0 23px 0 10px; margin:0; background:#fff url(http://fiximage.10x10.co.kr/m/2014/common/element_select.png) no-repeat right 50%; vertical-align:middle; background-size:24px 6px; color:#888; font-size:13px; -webkit-border-radius:4px; border:1px solid #cfcfcf; -webkit-appearance:none;}
+input[type=radio],
+input[type=checkbox] {-webkit-border-radius:4px; -webkit-appearance:none; border:1px solid #cfcfcf; width:20px; height:20px; vertical-align:middle; background-color:#fff; margin:0;}
+input[type=radio]:checked {background:#fff url(http://fiximage.10x10.co.kr/m/2014/common/element_radio.png) no-repeat 50% 50%; background-size:10px 10px;}
+input[type=checkbox]:checked {background:#fff url(http://fiximage.10x10.co.kr/m/2014/common/element_checkbox.png) no-repeat 50% 50%; background-size:12px 12px;}
+
+/* button */
+.button {display:inline-block; border-radius:3px; vertical-align:middle;}
+.button a, .button input {display:block; width:100%; border:0; margin:0; line-height:1; text-align:center; cursor:pointer; color:inherit; background-color:inherit; border-radius:3px; white-space:nowrap;}
+.btB1 a, .btB1 input {padding:13px 35px 12px; font-size:14px; font-weight:bold;}
+.btS2 a {padding:3px 6px; font-size:11px;}
+
+.btRed {border:1px solid #d60000; background-color:#d60000;}
+
+/* box */
+.box1 {overflow:hidden; background-color:#fff !important; border-radius:3px; -webkit-border-radius:3px; -webkit-box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.15); -moz-box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.15); box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.15);}
+
+/* etc */
+.cRd1 {color:#d60000 !important;}
+
+.inner5 {padding-left:5px; padding-top:5px; padding-right:5px; padding-bottom:5px; overflow:hidden;}
+.inner10 {padding-left:10px; padding-top:10px; padding-right:10px; padding-bottom:10px; overflow:hidden;}
+
+/* product list */
+.pdtListWrap {background:url(http://fiximage.10x10.co.kr/m/2014/common/double_line.png) left bottom repeat-x; background-size:1px 1px; padding-bottom:1px}
+.pdtList {overflow:hidden; background:url(http://fiximage.10x10.co.kr/m/2014/common/double_line.png) left top repeat-x; background-size:1px 1px; margin-bottom:-1px;}
+.pdtList li {float:left; width:50%; padding-top:25px; padding-bottom:27px; background:url(http://fiximage.10x10.co.kr/m/2014/common/double_line.png) left bottom repeat-x; background-size:1px 1px;}
+.pdtList li:nth-child(2n) {padding-left:7px;}
+.pdtList li:nth-child(2n+1) {padding-right:7px;}
+
+.pdtCont {min-height:94px;}
+.pPhoto {position:relative;}
+.pPhoto img {vertical-align:top; display:inline;}
+.pBrand {color:#999; font-size:11px; line-height:1.1; padding-top:10px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.pName {color:#000; font-size:12px; line-height:1.1; padding-top:5px; font-weight:bold;}
+.pdtList .pName {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word; height:30px;}
+.pPrice {color:#000; font-size:11px; line-height:1.3; padding-top:1px; font-family:helveticaNeue, helvetica, sans-serif !important;}
+.pShare {color:#999; font-size:11px; line-height:13px; padding-top:11px;}
+.pShare span {padding-left:18px; background-repeat:no-repeat; background-size:13px 13px; background-position:left 1px; margin-right:10px; font-family:helveticaNeue, helvetica, sans-serif !important;}
+.pShare .cmtView {background-image:url(http://fiximage.10x10.co.kr/m/2014/common/ico_pdt_cmt.png);}
+.pShare .wishView {background-image:url(http://fiximage.10x10.co.kr/m/2014/common/ico_pdt_wish.png);}
+
+.pPhoto p {display:none;}
+.soldOut .pPhoto p {display:block; vertical-align:middle; width:86%; height:86%; position:absolute; left:7%; top:7%; right:7%; bottom:7%; border-radius:50%; -webkit-border-radius:50%; background-color:#000; opacity:0.6; color:#fff; font-size:24px; text-align:center; font-weight:bold;}
+.soldOut .pPhoto p span {display:table; vertical-align:middle; width:100%; height:100%; text-align:center;}
+.soldOut .pPhoto p span em {display:table-cell; vertical-align:middle; width:100%; height:100%; text-align:center;}
+
+.sorting {padding:5px 0 15px; display:table; width:100%;}
+.sorting p {display:table-cell; text-align:center; padding:0 3px;}
+.sorting p:first-child {padding-left:0;}
+.sorting p:last-child {padding-right:0;}
+.sorting .button {width:100%; background-color:#e9ecee; border:0; border-radius:3px; -webkit-border-radius:3px; -webkit-box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 1); -moz-box-shadow:0px 1px 1px 0px rgba(255, 255, 255, 1); box-shadow:0px 1px 1px 0px rgba(255, 255, 255, 1);}
+.sorting .button a {background-color:transparent; padding:7px 0 6px 0; font-size:11px; color:#a4a9ae; font-weight:bold;}
+.sorting .selected .button {background-color:#fff; -webkit-box-shadow:inset 0px -1px 1px 0px rgba(0, 0, 0, 0.2); -moz-box-shadow:inset 0px -1px 1px 0px rgba(0, 0, 0, 0.2); box-shadow:inset 0px -1px 1px 0px rgba(0, 0, 0, 0.2);}
+.sorting .selected .button a {color:#000;}
+.sorting .selectBox {width:100%; height:25px; padding:0 8px; font-size:11px; font-weight:bold; border:0; color:#000;  border-radius:3px; -webkit-border-radius:3px; -webkit-box-shadow:inset 0px -1px 1px 0px rgba(0, 0, 0, 0.2); -moz-box-shadow:inset 0px -1px 1px 0px rgba(0, 0, 0, 0.2); box-shadow:inset 0px -1px 1px 0px rgba(0, 0, 0, 0.2); background:url(http://fiximage.10x10.co.kr/m/2014/common/element_select2.png) no-repeat 98% 50% #fff; background-size:12px 3px;}
+
+/* EVENT */
+.evtList li {margin-top:20px; border-bottom:1px solid #d0d2d2;}
+.evtList li .pic img {vertical-align:top; display:inline;}
+.evtList li:first-child {padding-top:0; border-top:0;}
+.evtList li dl {text-align:center; padding:14px 0 16px; border-top:0; background:#fff;}
+.evtList li dt {font-weight:bold; font-size:14px; color:#000;}
+.evtList li dd {padding-top:5px; font-size:12px; color:#888;}
+
+/* paging */
+.paging {overflow:hidden; text-align:center; margin-top:20px;}
+.paging span {display:inline-block; width:37px; height:37px; border-radius:4px; -webkit-border-radius:4px; border:1px solid #d2d2d2; margin:0 3px; overflow:hidden;}
+.paging span a {display:block; width:100%; height:100%; font-size:16px; line-height:18px; text-align:center; padding-top:9px; color:#8f8f8f; font-family:helveticaNeue, helvetica, sans-serif !important;}
+.paging span.current {font-weight:bold; background-color:#fff;}
+.paging span.current a {color:#000;}
+.paging span.arrow {background-color:#dadddd; border:1px solid #dadddd; text-indent:-9999em; background-position:50% 50%; background-repeat:no-repeat; background-size:10px 16px;}
+.paging span.prevBtn {background-image:url(http://fiximage.10x10.co.kr/m/2014/common/blt_arrow_lt2.png); margin-right:7px;}
+.paging span.nextBtn {background-image:url(http://fiximage.10x10.co.kr/m/2014/common/blt_arrow_rt5.png); margin-left:7px;}
+
+/* 2015 diary story common */
+.plus {display:block; width:36px; height:36px; border-radius:25px; background-color:#d60000; color:#fff; font-size:15px; line-height:36px; text-align:center;}
+.countdown {display:block; text-align:center;}
+.countdown span {display:inline-block; height:18px; padding:3px 6px 2px; background-color:rgba(0,0,0,.75); color:#fff; font-size:11px; line-height:1.125em;}
+.more a {padding-right:6px; background:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/blt_arrow_grey.gif) no-repeat 100% 50%; background-size:4px auto; color:#676767; font-size:12px;}
+
+/* main */
+.diaryTopic {position:relative; padding:12px; background-repeat:no-repeat; background-position:50% 50%; background-size:100% 100%;}
+.diaryTopic .desc {position:relative; z-index:10; padding:12px 0 18px; background-color:#fff; box-shadow: 0 0 10px 5px rgba(0,0,0,.1); text-align:center;}
+.diaryTopic h1 img {width:52%;}
+.diaryTopic h1 a {width:auto; margin:0;}
+.diaryTopic a {display:block; position:relative; width:194px; margin:12px auto 0;}
+.diaryTopic .pPhoto {padding:6px; border:1px solid #e1e1e1;}
+.diaryTopic .pdtCont {min-height:0;}
+.diaryTopic .plus {position:absolute; top:-18px; right:-18px;}
+.diaryTopic .countdown {position:absolute; left:0; width:100%; margin-top:-26px;}
+.diaryTopic .mask {position:absolute; top:0; left:0; z-index:5; width:100%; height:100%; background-color:rgba(0,0,0,.2);}
+
+.diaryGift {margin-top:15px;}
+
+.diaryFinder {margin:27px 7px 0;}
+.diaryFinder ul {overflow:hidden; border-bottom:1px solid #fff;}
+.diaryFinder ul:after {content:' '; display:block; clear:both; padding-bottom:12px; border-bottom:1px solid #d2d2d2;}
+.diaryFinder ul li {float:left; width:25%; text-align:center;}
+.diaryFinder ul li a {display:block; margin:0 3px; padding:10px 5px; color:#676767; font-size:12px; font-weight:bold; line-height:1.375em;}
+.diaryFinder ul li a span {display:block; font-weight:normal;}
+.diaryFinder .button {width:100%; margin-top:12px; -webkit-box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.15); -moz-box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.15); box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.15);}
+.diaryFinder .button a {color:#fff;}
+.diaryFinder .button a em {padding-right:15px; background:transparent url(http://fiximage.10x10.co.kr/m/2014/common/blt_arrow_rt5.png) right 50% no-repeat; background-size:7px 12px;}
+
+.diaryList {position:relative; margin-top:12px;}
+.diaryList .tab-nav:after {content:' '; display:block; clear:both;}
+.diaryList .tab-nav li {float:left;}
+.diaryList .tab-nav li a {display:block; position:relative; padding:20px 10px 6px; color:#999; font-size:12px; line-height:1.125em; text-align:center;}
+.diaryList .tab-nav li:first-child {margin-right:15px;}
+.diaryList .tab-nav li a.on {padding:15px 10px 3px; color:#000; font-size:15px; line-height:1.438em;}
+.diaryList .tab-nav li a.on:after {content:' '; display:block; position:absolute; left:0; bottom:-1px; width:59px; border-bottom:2px solid #d60000;}
+.diaryList .tab-nav li:last-child a.on:after {width:56px;}
+.diaryList .pdtListWrap {border-top:1px solid #d2d2d2; background:none;}
+.diaryList .pdtList {background:none;}
+.diaryList .pdtList li {text-align:center;}
+.diaryList .pdtList li:nth-child(5), .diaryList .pdtList li:nth-child(6) {background:none;}
+.diaryList .more {position:absolute; top:22px; right:8px;}
+
+.diaryEvt {position:relative;}
+.diaryEvt h2 {position:relative; padding-bottom:6px; padding-left:6px; border-bottom:1px solid #d2d2d2; color:#000; font-size:15px; font-weight:bold; line-height:1.438em;}
+.diaryEvt h2:after {content:' '; display:block; position:absolute; left:0; bottom:-1px; width:111px; border-bottom:2px solid #d60000;}
+.diaryEvt .evtList li {}
+.diaryEvt .more {position:absolute; top:9px; right:8px;}
+.diaryEvt .sorting {margin-bottom:-20px; padding:18px 10px;}
+.diaryEvt .sorting p {padding:0 12px;}
+.diaryEvt .noData {text-align:center;}
+
+/* today diary */
+.todayDiary {padding:15px 10px 0;}
+.todayDiary h1 {margin-bottom:8px;}
+.todayDiary h1 img {width:52%;}
+.todayDiary .desc a {position:relative; display:block; padding:6px 6px 12px; border:1px solid #e1e1e1; background-color:#fff; text-align:center;}
+.todayDiary .desc .plus {position:absolute; top:12px; right:12px;}
+.todayDiary .countdown {position:absolute; left:0; width:100%; margin-top:-19px;}
+.todayDiary .pdtCont {min-height:0;}
+
+.plus-slae .hgroup {position:relative; min-height:63px; border-top:1px solid #d2d2d2;}
+.plus-slae .hgroup:before {content:' '; display:block; padding-top:14px; border-top:1px solid #fff;}
+.plus-slae .hgroup h2 {position:absolute; top:50%; left:0; width:63px; height:63px; margin-top:-21px; padding-top:19px; border-radius:50px; background-color:#d60000; color:#fff; font-size:15px; font-weight:bold; line-height:1.125em; text-align:center;}
+.plus-slae .hgroup h2:after, .plus-slae .hgroup h2:before {content:' '; display:block; position:absolute; top:10px; left:50%; width:12px; height:3px; margin-left:-6px; background-color:#fff;}
+.plus-slae .hgroup h2:before {transform:rotate(-90deg); -webkit-transform:rotate(-90deg);}
+.plus-slae .hgroup p {margin-top:10px; padding-right:15px; padding-left:82px; color:#676767; font-size:12px; line-height:1.25em;}
+.plus-slae .hgroup p em {color:#000; text-decoration:underline;}
+.plus-slae .pdtListWrap {border-top:0;}
+
+.holiday {margin:20px 20% 0;}
+#diaryBest h2 {position:relative; padding:5px 7px 5px; color:#000; font-size:15px; line-height:1.438em;}
+#diaryBest h2:after {content:' '; display:block; position:absolute; left:0; bottom:-1px; width:51px; border-bottom:2px solid #d60000;}
+
+/* seaerch */
+.sorting + .diaryList {margin-top:0;}
+.sorting + .diaryList .pdtListWrap {border-top:0; background:url(http://fiximage.10x10.co.kr/m/2014/common/double_line.png) left bottom repeat-x; background-size:1px 1px;}
+.sorting + .diaryList .pdtList {background:url(http://fiximage.10x10.co.kr/m/2014/common/double_line.png) left top repeat-x; background-size:1px 1px;}
+
+/* filter listup */
+.filterListup {text-align:center; padding:25px 10px 5px;}
+.filterListup h2 {display:inline-block; font-size:12px; line-height:13px; padding:0 8px 3px; margin-bottom:15px; font-weight:bold; color:#101010; border-bottom:2px solid #d60000;}
+.filterListup section {margin-bottom:30px;}
+.filterListup section.box {border-radius:3px; background:#f3f3f3;}
+
+.filterListup h3 {margin-bottom:10px; background:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/bg_pattern.gif) repeat-x 0 0; background-size:18px auto; text-align:left;}
+.filterListup h3 span {display:block; position:relative; height:18px; margin-left:10px; padding:2px 0 1px 10px; color:#000; font-size:12px; font-weight:bold; line-height:1.313em;}
+.filterListup h3 span:after, .filterListup h3 span:before {content:' '; display:block; position:absolute; top:50%; left:0; width:6px; height:2px; margin-top:-1px; background-color:#000;}
+.filterListup h3 span:before {transform:rotate(-90deg); -webkit-transform:rotate(-90deg);}
+
+.checkType ul {overflow:hidden; padding:0 5px;}
+.checkType li {float:left; width:50%; padding:8px 0; text-align:left; color:#686868; font-size:13px;}
+.checkType li label {vertical-align:middle; padding-left:2px;}
+.col-three ul li {width:33.3333%;}
+
+.filterListup .colorType {margin-top:18px;}
+.colorType ul {overflow:hidden;}
+.colorType li {float:left; width:20%; padding-bottom:18px; font-size:11px; text-align:center; color:#aaa;}
+.colorType li p {position:relative; width:50px; height:50px; margin:0 auto; border-radius:50%;}
+.colorType li .wine {background:#aa134c;}
+.colorType li .red {background:#d60000;}
+.colorType li .orange {background:#ff6c00;}
+.colorType li .brown {background:#b97e38;}
+.colorType li .camel {background:#c09f51;}
+.colorType li .yellow {background:#f2d800;}
+.colorType li .beige {background:#f7e8b5;}
+.colorType li .ivory {background:#f5deb9;}
+.colorType li .khaki {background:#688053;}
+.colorType li .green {background:#0ca700;}
+.colorType li .mint {background:#37dba3;}
+.colorType li .skyblue {background:#5dc9ec;}
+.colorType li .blue {background:#0060ff;}
+.colorType li .navy {background:#1f5c8f;}
+.colorType li .violet {background:#aa36c7;}
+.colorType li .lilac {background:#eba3e5;}
+.colorType li .pink {background:#ff6493;}
+.colorType li .babypink {background:#ffacc3;}
+.colorType li .white {background:#fff; border:2px solid #d9d9d9;}
+.colorType li .grey {background:#d9d9d9;}
+.colorType li .charcoal {background:#7a7a7a;}
+.colorType li .black {background:#000;}
+.colorType li .silver {background:url(http://fiximage.10x10.co.kr/m/2014/category/bg_pattern.png) left top no-repeat; background-size:450px 50px;}
+.colorType li .gold {background:url(http://fiximage.10x10.co.kr/m/2014/category/bg_pattern.png) -50px top no-repeat; background-size:450px 50px;}
+.colorType li .check {background:url(http://fiximage.10x10.co.kr/m/2014/category/bg_pattern.png) -100px top no-repeat; background-size:450px 50px;}
+.colorType li .stripe {background:url(http://fiximage.10x10.co.kr/m/2014/category/bg_pattern.png) -150px top no-repeat; background-size:450px 50px;}
+.colorType li .dot {background:url(http://fiximage.10x10.co.kr/m/2014/category/bg_pattern.png) -200px top no-repeat; background-size:450px 50px;}
+.colorType li .flower {background:url(http://fiximage.10x10.co.kr/m/2014/category/bg_pattern.png) -250px top no-repeat; background-size:450px 50px;}
+.colorType li .drawing {background:url(http://fiximage.10x10.co.kr/m/2014/category/bg_pattern.png) -300px top no-repeat; background-size:450px 50px;}
+.colorType li .animal {background:url(http://fiximage.10x10.co.kr/m/2014/category/bg_pattern.png) -350px top no-repeat; background-size:450px 50px;}
+.colorType li .geometric {background:url(http://fiximage.10x10.co.kr/m/2014/category/bg_pattern.png) right top no-repeat; background-size:450px 50px;}
+.colorType li span {display:inline-block; padding-top:3px;}
+.colorType li em {display:none; position:absolute; left:50%; top:50%; width:40px; height:40px; margin:-20px 0 0 -20px; border-radius:50%; background:rgba(0,0,0,.5); background-image:url(http://fiximage.10x10.co.kr/m/2014/common/ico_check.png); background-position:50% 50%; background-repeat:no-repeat; background-size:26px 26px;}
+
+.floatingBar {position:fixed; left:0; right:0; bottom:0; z-index:100; width:100%; border-top:1px solid #e8e8e8; box-shadow:0 0 3px #cfcfcf; background:#fff; height:52px;}
+.floatingBar .btnWrap {padding:5px; height:52px;}
+.floatingBar .btB1 {width:100%;}
+.floatingBar .btB1 input {color:#fff;}
+
+/* gift */
+.diary-gift img {vertical-align:top;}
+.gift-intro {margin-top:30px;}
+.gift-intro h2 {position:relative; padding-left:8px; color:#888; font-size:11px;}
+.gift-intro h2:after {content:' '; display:block; position:absolute; top:50%; left:0; width:3px; height:33px; margin-top:-16px; background-color:#d60000;}
+.gift-intro h2 strong {display:block; margin-bottom:5px; color:#d60000; font-size:18px;}
+.gift-swipe {margin-top:9px;}
+.gift-swipe .swiper {position:relative;}
+.gift-swipe .swiper-container {position:relative; overflow:hidden;}
+.gift-swipe .swiper-wrapper {position:relative; margin:0;}
+.gift-swipe .swiper-slide {float:left; position:relative;}
+.gift-swipe button {position:absolute; top:50%; width:33px; height:33px; margin-top:-17px; background-color:transparent; background-repeat:no-repeat; background-position:50% 50%; background-size:33px auto; text-indent:-999em;}
+.gift-swipe .arrow-left {left:0; background-image:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/btn_nav_prev.png);}
+.gift-swipe .arrow-right {right:0; background-image:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/btn_nav_next.png);}
+.gift-intro .desc {position:relative; padding:10px 5px; border-bottom:1px solid #000;}
+.gift-intro .desc p {font-size:12px;}
+.gift-intro .desc .button {position:absolute; top:7px; right:0; background-color:#000; color:#fff;}
+.gift-intro .button a em {padding-right:10px; background:transparent url(http://fiximage.10x10.co.kr/m/2014/common/blt_arrow_rt5.png) right 50% no-repeat; background-size:4px auto;}
+
+.gift-condition {margin-top:40px; padding-top:24px; border-top:3px solid #d60000; background-color:#e3e7e7;}
+.gift-condition h2 {color:#000; font-size:12px; line-height:1.375em;}
+.gift-condition h2 strong {display:block; margin-bottom:2px; padding-left:20px; background:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/blt_exclamation_mark.png) 0 0 no-repeat; background-size:15px auto; color:#d60000; font-size:15px;}
+.gift-condition p {margin-top:8px; color:#898989; font-size:11px; line-height:1.375em;}
+.gift-condition h3 {margin-top:15px; color:#000; font-size:12px;}
+.gift-condition ul {margin-top:8px; padding-bottom:25px; border-bottom:1px solid #999;}
+.gift-condition ul li {margin-top:7px; padding-left:10px; color:#898989; font-size:11px; line-height:1.375em; text-indent:-8px;}
+.gift-condition .example {margin-top:15px;}
+
+.noti {padding-top:22px; padding-bottom:22px; background-color:#e3e7e7;}
+.noti h2 {padding-left:20px; background:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/blt_exclamation_mark.png) 0 0 no-repeat; background-size:15px auto; color:#d60000; font-size:15px; font-weight:bold;}
+.noti ul {margin-top:13px; padding:0 13px;}
+.noti ul li {margin-top:7px; padding-left:10px; background:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/blt_arrow_red.png) 0 3px no-repeat; background-size:5px auto; color:#898989; font-size:11px; line-height:1.375em;}
+
+@media all and (min-width:480px){
+	input[type=radio],
+	input[type=checkbox] {width:30px; height:30px;}
+	input[type=radio]:checked {background-size:15px 15px;}
+	input[type=checkbox]:checked {background-size:18px 18px;}
+
+	select {height:54px; padding:0 35px 0 19px; background-size:24px 5px; font-size:20px;}
+
+	.inner5 {padding-left:7px; padding-top:7px; padding-right:7px; padding-bottom:7px;}
+	.inner10 {padding-left:15px; padding-top:15px; padding-right:15px; padding-bottom:15px;}
+
+	.btS2 a {padding:5px 9px; font-size:17px;}
+
+	/* product list */
+	.pdtList li {padding-top:38px; padding-bottom:40px;}
+	.pdtList li:nth-child(2n) {padding-left:10px;}
+	.pdtList li:nth-child(2n+1) {padding-right:10px;}
+
+	.pdtCont {min-height:138px;}
+	.pBrand {font-size:16px; padding-top:15px;}
+	.pName {font-size:18px; padding-top:7px;}
+	.pdtList .pName {height:45px;}
+	.pPrice {font-size:16px; padding-top:3px;}
+	.pShare {font-size:16px; line-height:18px; padding-top:16px;}
+	.pShare span {padding-left:27px; background-size:20px 20px; margin-right:15px;}
+
+	.sorting {padding:7px 0 22px;}
+	.sorting p {padding:0 4px;}
+	.sorting .button {border-radius:4px; -webkit-border-radius:4px;}
+	.sorting .button a {padding:10px 0 9px 0; font-size:16px;}
+	.sorting .selectBox {height:36px; padding:0 7px; font-size:16px; border-radius:4px; -webkit-border-radius:4px; background-size:18px 4px;}
+
+	/* paging */
+	.paging {margin-top:30px;}
+	.paging span {width:55px; height:55px; border-radius:5px; -webkit-border-radius:5px; margin:0 4px;}
+	.paging span a {font-size:24px; line-height:26px; padding-top:13px;}
+	.paging span.arrow {background-size:15px 24px;}
+	.paging span.prevBtn {margin-right:10px;}
+	.paging span.nextBtn {margin-left:10px;}
+
+	/* filter listup */
+	.filterListup {padding:38px 15px 7px;}
+	.filterListup h2 {font-size:18px; line-height:19px; padding:0 12px 4px; margin-bottom:23px; border-bottom:3px solid #d60000;}
+	.filterListup section {margin-bottom:45px;}
+
+	.plus {width:48px; height:48px; font-size:23px; line-height:48px;}
+	.countdown span {height:24px; padding:3px 9px 2px; font-size:17px;}
+	.more a {padding-right:12px; background-size:8px auto; font-size:18px;}
+
+	.diaryTopic {padding:18px;}
+	.diaryTopic .desc {padding:18px 0 27px;}
+	.diaryTopic .countdown {margin-top:-34px;}
+	.diaryTopic a {width:360px;}
+	.diaryTopic .pPhoto {padding:9px;}
+
+	.diaryFinder {margin-top:40px;}
+	.diaryFinder ul:after {padding-bottom:18px;}
+	.diaryFinder ul li a {font-size:18px;}
+	.diaryFinder .button {margin-top:18px;}
+	.diaryFinder .button a em {padding-right:22px; background-size:8px 18px;}
+	
+	.diaryGift {margin-top:23px;}
+	
+	.diaryList {margin-top:20px;}
+	.diaryList .tab-nav li a {padding:22px 15px 6px; font-size:18px;}
+	.diaryList .tab-nav li a.on {font-size:25px;}
+	.diaryList .tab-nav li a.on:after {width:90px;}
+	.diaryList .tab-nav li:last-child a.on:after {width:79px;}
+	.diaryList .more {top:30px;}
+	
+	.diaryEvt .more {top:17px;}
+	.diaryEvt h2 {padding-left:10px; font-size:23px;}
+	.diaryEvt h2:after {width:166px;}
+	.diaryEvt .sorting {margin-bottom:-22px; padding:25px 10px;}
+	
+	.todayDiary .countdown {margin-top:-24px;}
+	
+	.plus-slae .hgroup h2 {width:94px; height:94px; margin-top:-31px; padding-top:30px; font-size:23px;}
+	.plus-slae .hgroup h2:after, .plus-slae .hgroup h2:before {top:15px; width:18px; height:4px; margin-left:-9px;}
+	.plus-slae .hgroup p {padding-left:123px; font-size:18px;}
+	
+	#diaryBest h2 {padding:0 15px 7px; font-size:25px;}
+	#diaryBest h2:after {width:103px;}
+
+	.filterListup h3 {margin-bottom:15px; background-size:36px auto;}
+	.filterListup h3 span {height:36px; padding:8px 0 5px 15px; font-size:18px;}
+	.filterListup h3 span:after, .filterListup h3 span:before {width:10px; height:3px;}
+
+	.checkType ul {padding:0 10px;}
+	.checkType li {padding:12px 0; font-size:20px;}
+	.filterListup .colorType {margin-top:27px;}
+
+	.gift-intro {margin-top:45px;}
+	.gift-intro .button a em {background-size:7px 12px;}
+
+	.gift-intro h2 {font-size:17px;}
+	.gift-intro h2:after {height:50px; margin-top:-25px;}
+	.gift-intro h2 strong {font-size:27px;}
+	.gift-swipe {margin-top:15px;}
+	.gift-swipe button {width:56px; height:56px; margin-top:-28px; background-size:56px auto;}
+	.gift-intro .desc {padding:20px 1px;}
+	.gift-intro .desc p {font-size:18px;}
+	.gift-intro .desc .button {top:14px;}
+
+	.gift-condition h2 {font-size:18px;}
+	.gift-condition h2 strong {padding-left:25px; background-size:22px auto; font-size:23px;}
+	.gift-condition p {font-size:17px;}
+	.gift-condition h3 {font-size:18px;}
+	.gift-condition ul li {font-size:17px;}
+
+	.noti h2 {padding-left:25px; background-size:22px auto; font-size:23px;}
+	.noti ul {padding:0 20px;}
+	.noti ul li {font-size:17px;}
+}

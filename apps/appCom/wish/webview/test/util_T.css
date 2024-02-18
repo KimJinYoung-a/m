@@ -1,0 +1,16 @@
+/*util*/
+
+.util .welcome { text-align: center; font-size: 14px; line-height: 20px;  padding-bottom: 40px;}
+.util .welcome strong { color: #000;}
+.util .welcome img { display: block; margin:10px auto;}
+
+
+.util .login { padding-top:40px;}
+
+.util .login .login-btns > *  {margin-bottom: 10px;}
+
+.find-id-result h1 { font-size: 12px; line-height: 12px; color: #2a2a2a; font-weight: normal; margin: 0; margin-bottom: 10px;}
+
+.find-id-result .id-list { list-style: decimal; list-style-position: inside;}
+.find-id-result .id-list li { background: #fff; margin: 0; padding: 10px; font-size: 15px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;}
+.find-id-result .id-list li+li { margin-top: 5px;}

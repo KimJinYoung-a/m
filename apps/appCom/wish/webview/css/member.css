@@ -1,0 +1,90 @@
+
+/*join*/
+.join .process {margin: 10px -2px; padding: 0; list-style: none; clear:both; }
+.join .process li { float:left; height: 30px; width: 25%; position: relative;  }
+.join .process li .label {border-radius: 60px; -moz-border-radius: 60px; -webkit-border-radius: 60px; -o-border-radius: 60px; text-align: center;line-height: 30px;font-size: 12px;color:#ff6969;border:1px solid #ff6969; margin:0 12px; display: block;}
+.join .process li .label:before {content:' ';height:0; display: block; border-top:1px solid #ff6969; position: absolute; width: 12px; top:15px; left: -12px;}
+.join .process li .label:after {content:' ';height:0; display: block; border-top:1px solid #ff6969; position: absolute; width: 12px; top:15px; right: -12px;}
+.join .process li.active .label {background-color: #fff; border-color:#fff; color: #c10707;}
+
+.agree-container { margin-bottom: 10px; }
+.agree-container .agree-desc { font-size: 14px; line-height: 30px; }
+.agree-container .agree-action { float:right; font-size: 12px;}
+.agree-container .agree-action .btn {margin-right: 10px;}
+
+.join .welcome { text-align: center; font-size: 14px; line-height: 20px;  padding-bottom: 40px;}
+.join .welcome strong { color: #000;}
+.join .welcome img { display: block; margin: 20px auto  60px;}
+
+
+
+/*mypage*/
+
+.mypage .profile #header { margin-bottom: 0;}
+.mypage .profile .my-profile { background: #c10707; position: relative; height: 140px; margin-bottom: 20px;}
+.mypage .profile .my-profile .profile-img {position: absolute; width: 80px; height: 80px; top:0; left:50%; margin-left: -40px; border-radius: 100px;-moz-border-radius: 100px;-webkit-border-radius: 100px;-o-border-radius: 100px;}
+
+.mypage .profile.logout .my-profile { height: 110px;}
+
+.mypage .profile .my-profile .following,
+.mypage .profile .my-profile .follower { float:left; width: 50%; text-align: center; font-size: 12px; color: #bcbcbc; display: block; box-sizing:border-box; -moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box; padding-top:20px;}
+.mypage .profile .my-profile .following { padding-right: 40px;}
+.mypage .profile .my-profile .follower { padding-left:40px;}
+.mypage .profile .my-profile .following strong,
+.mypage .profile .my-profile .follower strong { display: block; font-size: 23px; color: #fff; font-weight: bold;}
+
+
+.mypage .profile .my-profile .actions { position:absolute; padding: 0;
+    margin: 0 0 0 -65px;
+    list-style: none; bottom:26px; left:50%; text-align: center;}
+
+.mypage .profile .my-profile .actions li { display: block; margin:2px; float:left;}
+.mypage .profile .my-profile .actions li a .icon { width: 22px; height: 22px;}
+.mypage .profile .my-profile .actions li a { display: block; width: 22px; height: 22px; background: #a20000; border-radius: 100px; -moz-border-radius: 100px;-webkit-border-radius: 100px;-o-border-radius: 100px; color: #fff; text-decoration: none; text-align: center;font-size: 8px; line-height: 22px; font-weight: bold;}
+
+
+.mypage .profile .my-profile .grade { position: absolute; width: 100%; bottom:-13px; height: 26px; text-align: center;}
+
+.mypage .profile .my-profile .grade .yellow { display: inline-block; line-height: 26px; padding:0 20px; background: #ffbd0a; font-size: 10px; color: #fff; font-weight: bold; border-radius: 100px; -moz-border-radius: 100px; -webkit-border-radius: 100px; -o-border-radius: 100px; text-decoration: none; color: #fff !important;  }
+
+.mypage .profile .my-profile-meta {padding: 0; margin: 0; list-style: none;}
+.mypage .profile .my-profile-meta li { float:left; width: 25%; position: relative;}
+.mypage .profile .my-profile-meta li i { background:url(../img/icons-mypage.png) no-repeat; background-size: auto 60px; display: block; padding-top:60px; text-align: center; width: 60px; height: 16px; position: relative; left:50%; margin-left: -30px; font-style: normal; font-size: 10px; color: #a6a9ac;}
+.mypage .profile .my-profile-meta li i.icon-wish { background-position: 0 0;}
+.mypage .profile .my-profile-meta li i.icon-coupon { background-position: -60px 0;}
+.mypage .profile .my-profile-meta li i.icon-mileage { background-position: -120px 0;}
+.mypage .profile .my-profile-meta li i.icon-deposit { background-position: -180px 0;}
+.mypage .profile .my-profile-meta li strong {text-align: center; display: block; font-weight: bold; color: #dc0d0d; font-size: 14px;}
+
+.mypage .profile .mypage-menu { background: #f7f7f7; padding: 0 10px; margin: 0; list-style: none;}
+.mypage .profile .mypage-menu li { height: 50px; border-bottom: 1px solid #ebebec; background: url(../img/icon-arrow-go.png) 100% 50% no-repeat; background-size: 15px auto;}
+.mypage .profile .mypage-menu li a { display: block; line-height: 50px; text-decoration: none; color: #696969; font-size: 12px; position: relative; text-indent: 40px;}
+
+.mypage .profile .mypage-menu li i { background:url(../img/icon-mypage-menu.png) no-repeat; background-size: 40px auto; display: block; position: absolute; width: 40px; height: 40px; left:0; top:50%; margin-top: -20px; }
+
+
+.mypage .profile .mypage-menu li:nth-child(1) i {background-position: 0 0;}
+.mypage .profile .mypage-menu li:nth-child(2) i {background-position: 0 -40px;}
+.mypage .profile .mypage-menu li:nth-child(3) i {background-position: 0 -80px;}
+.mypage .profile .mypage-menu li:nth-child(4) i {background-position: 0 -120px;}
+.mypage .profile .mypage-menu li:nth-child(5) i {background-position: 0 -160px;}
+.mypage .profile .mypage-menu li:nth-child(6) i {background-position: 0 -200px;}
+.mypage .profile .mypage-menu li:nth-child(7) i {background-position: 0 -240px;}
+.mypage .profile .mypage-menu li:nth-child(8) i {background-position: 0 -280px;}
+.mypage .profile .mypage-menu li:nth-child(9) i {background-position: 0 -320px;}
+
+
+.mypage .myinfo #header .toggle { margin:20px 10px; background: #c10707; border-color: #a20000;}
+.mypage .myinfo #header .toggle a {  color: #ff6969; }
+.mypage .myinfo #header .toggle a.active  {background:#a20000; color: #fff; }
+
+.mypage .btn-kakao-auth { color: #fff313;}
+
+.mypage .sns { padding: 0; margin: 10px; display: block; text-align: center;}
+.mypage .sns li  {display: inline-block; margin: 2px;}
+.mypage .sns li a { display: block; width: 50px; height: 50px; background: url(../img/icon-sns.png) no-repeat 50% 50%; background-size: auto 50px; text-indent: -999em; font-size: 0; color: rgba(0,0,0,0)}
+.mypage .sns li a.facebook{ background-position: 0 0;}
+.mypage .sns li a.twitter{ background-position: -50px 0;}
+.mypage .sns li a.pinterest{ background-position: -100px 0;}
+
+.member-grade .txt-list li { font-size: 12px; margin-bottom: 5px;}

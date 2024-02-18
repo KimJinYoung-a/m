@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<title>비트윈 APP 코딩 파일 리스트</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+	* {margin:0; padding:0; font-family:Malgun Gothic,돋움,Verdana,Dotum sans-serif; line-height:14px; color:#666;}
+	body {margin:0; padding:0; font:11px/14px Malgun Gothic,돋움,Verdana,Dotum sans-serif; padding:10px; color:#666;}
+	p {margin-top:3px; padding:0;}
+	a {color:red; text-decoration:none;}
+	h1 {font-size:12px; color:#fff; min-width:970px; text-align:center; background:#939494; margin:10px 0 5px; padding:10px 0;}
+	.fb {font-weight:bold;}
+	.infor {font-family:Verdana;width:100%; min-width:970px; text-align:center; margin:10px 0; border:1px solid #999;}
+	.infor tr.first th, .infor tr.first td {border:none;}
+	.infor th {white-space:nowrap;}
+	.infor th, .infor td {padding:5px;}
+	.infor td.update {color:#f00; text-align:right; font-weight:bold; padding:0 20px;}
+	.infor.aL th {text-align:left; padding-left:10px; background:#ededed; border-top:1px dashed #ccc;}
+	.infor.aL td {text-align:left; border-top:1px dashed #ccc;}
+	.listTable {width:100%; min-width:970px; color:#333; border-collapse:collapse; border-top:1px solid #ccc; border-right:1px solid #ccc; margin-bottom:30px;}
+	.listTable th, .listTable td {border-left:1px solid #ccc; border-bottom:1px solid #ccc;}
+	.listTable th {font-weight:bold; background:#ededed; padding:4px;}
+	.listTable th.work {background:#ddd;}
+	.listTable td {padding:3px 8px 2px; line-height:16px;}
+	.listTable td span {font-size:9px;}
+	.listTable td.ct {text-align:center;}
+	.listTable td.url a {display:inline-block; float:left;}
+	.listTable .tab1 {display:none;}
+	.listTable .tab2 {display:block;}
+	.gline td {border-top:2px solid #acacac;}
+	.comp td, tr td.comp, .not.comp td {background:#ffebef;}
+	.ing td, tr td.ing, .not.comp td.ing {background:#edf9fd;}
+	.modify td, tr td.modify, .not.comp td.modify {background:#dcf5a0;}
+	.not td, tr td.not {background:#fff6b9;}
+	.del td, tr td.del {background:#ddd;}
+	.del td a,tr td.del a {text-decoration:line-through;}
+	.tab {overflow:hidden; height:1%; border-bottom:1px solid #ccc; margin:0; padding:0; margin-top:15px;}
+	.tab li {float:left; height:20px; padding:8px 25px 0 25px; list-style:none; border:1px solid #ccc; border-bottom:none; margin-right:2px; background:#fff;}
+	.tab li.selected {font-weight:bold; background:#fafafa;}
+	.tab li a {color:#666;}
+	strong {font-weight:bold; color:#333;}
+
+	.listTable .btnDesign {display:inline-block; height:18px; border:1px solid #4281bc; background:#478dd0; border-radius:2px;}
+	.listTable .btnDesign span{display:block; height:16px; padding:0 8px; line-height:16px; border:1px solid #78aee2; color:#fff; font-family:verdana; border-radius:2px;}
+	.listTable .btnDevelop {display:inline-block; height:18px; border:1px solid #bd353c; background:#d73941; border-radius:2px;}
+	.listTable .btnDevelop span{display:block; height:16px; padding:0 8px; line-height:16px; border:1px solid #ef999d; color:#fff; font-family:verdana; border-radius:2px;}
+
+</style>
+</head>
+<body>
+	<table cellspacing="3" class="infor">
+		<colgroup><col width="100px" /><col width="130px" /><col width="130px" /><col width="130px" /><col width="130px" /><col width="*" /></colgroup>
+		<tr>
+			<td>Color Index :</td>
+			<td class="comp">코딩 완료</td>
+			<td class="ing">코딩 진행중</td>
+			<td class="modify">코딩 수정완료</td>
+			<td class="not">작업 대기 / 2차오픈</td>
+			<td class="update">최종업데이트날짜 : 2014.03.17</td>
+		</tr>
+	</table>
+
+	<table cellspacing="0" class="infor aL">
+		<colgroup><col width="180px" /><col width="*" /></colgroup>
+		<tr class="first">
+			<th>1. 프로젝트명</th>
+			<td><strong>비트윈 APP</strong></td>
+		</tr>
+		<tr>
+			<th>2. 인코딩 방식</th>
+			<td>utf-8</td>
+		</tr>
+		<tr>
+			<th>3. DTD 사용</th>
+			<td>&lt;!DOCTYPE html&gt;</td>
+		</tr>
+		<tr>
+			<th>4. 크로스 브라우징 종류</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>5. 작업자</th>
+			<td>퍼블리셔 : 최선미, 진연미 / 개발자 : 김진영, 이종화 , 한용민 , 강준구 , 허진원 , 원승현</td>
+		</tr>
+		<tr>
+			<th>6. 기타</th>
+			<td>
+				- css 파일, 이미지 파일, js 파일등은 계속 수정 업로드 예정<br />
+				- for dev msg 로 시작하는 주석은 확인후 삭제요망
+			</td>
+		</tr>
+	</table>
+
+	<table class="listTable">
+		<colgroup><col width="10%" /><col width="10%" /><col width="10%" /><col width="10%" /><col width="10%" /><col width="20%" /><col width="12%" /><col width="*" /></colgroup>
+		<thead>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>4Depth</th>
+			<th>Designed Pages</th>
+			<th class="work">Coding pages URL</th>
+			<th class="work">Programed Pages</th>
+			<th>etc</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr class="gline comp">
+				<td>Guide</td>
+				<td>Layout</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/layout.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/layout.asp</a></td>
+				<td class="ct"></td>
+				<td></td>
+			</tr>
+			<tr class="gline comp">
+				<td>비트윈추천</td>
+				<td>메인</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/btwRecmdMain.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/btwRecmdMain.asp</a></td>
+				<td class="ct"><strong>김진영 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/index.asp">http://testm.10x10.co.kr/apps/appCom/between/index.asp</a></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>기념일 선물 추천</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/btwRecmdList.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/btwRecmdList.asp</a></td>
+				<td class="ct" rowspan="4">
+					<strong>강준구 - 개발완료</strong><br>
+					<a href="/apps/appCom/between/project/?project_idx=3" target="_blank">/apps/appCom/between/project/?project_idx=3</a><br>
+					<a href="/apps/appCom/between/project/?project_idx=4" target="_blank">/apps/appCom/between/project/?project_idx=4</a><br>
+					<a href="/apps/appCom/between/project/?project_idx=6" target="_blank">/apps/appCom/between/project/?project_idx=6</a><br>
+					<a href="/apps/appCom/between/project/?project_idx=7" target="_blank">/apps/appCom/between/project/?project_idx=7</a><br>
+				</td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>MD’s Pick</td>
+				<td>남자</td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/btwRecmdListMdM.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/btwRecmdListMdM.asp</a></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td>여자</td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/btwRecmdListMdF.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/btwRecmdListMdF.asp</a></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>일반 기획전</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/btwRecmdList02.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/btwRecmdList02.asp</a></td>
+				<td></td>
+			</tr>
+			<tr class="gline comp">
+				<td>카테고리</td>
+				<td>상품목록</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/pdtList.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/pdtList.asp</a></td>
+				<td class="ct">
+					<strong>원승현 - 개발완료</strong><br>
+					<a href="/apps/appCom/between/category/category_list.asp" target="_blank">/apps/appCom/between/category/category_list.asp</a><br>
+				</td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>상품상세</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/pdtDetail.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/pdtDetail.asp</a></td>
+				<td class="ct">
+					<strong>원승현 - 개발완료</strong><br>
+					<a href="/apps/appCom/between/category/category_itemPrd.asp?itemid=1000082" target="_blank">/apps/appCom/between/category/category_itemPrd.asp?itemid=1000082</a><br>
+				</td>
+				<td></td>
+			</tr>
+			<tr class="gline comp">
+				<td>마이페이지</td>
+				<td>메인</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/mypageMain.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/mypageMain.asp</a></td>
+				<td class="ct">
+					<strong>강준구 - 개발완료</strong><br>
+					<a href="/apps/appCom/between/my10x10/" target="_blank">/apps/appCom/between/my10x10/</a>
+				</td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>주문결제</td>
+				<td>일반</td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/order/orderPayment01.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/order/orderPayment01.asp</a></td>
+				<td class="ct"></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td>회원</td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/order/orderPayment02.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/order/orderPayment02.asp</a></td>
+				<td class="ct"></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>주문완료</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/order/orderFinish.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/order/orderFinish.asp</a></td>
+				<td class="ct"><strong>김진영 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/inipay/DisplayOrder.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/inipay/DisplayOrder.asp</a></strong></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>주문실패 / 결제실패</td>
+				<td></td>
+				<td></td>
+				<td class="ct"></td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/order/fail.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/order/fail.asp</a></td>
+				<td class="ct"></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>장바구니</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/order/cart.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/order/cart.asp</a></td>
+				<td class="ct"><strong>허진원 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/inipay/ShoppingBag.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/inipay/ShoppingBag.asp</a></strong></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td>장바구니가 비어 있을 경우</td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/order/cart02.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/order/cart02.asp</a></td>
+				<td class="ct"><strong>허진원 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/inipay/ShoppingBag.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/inipay/ShoppingBag.asp</a></strong></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>주문/배송조회</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderList.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderList.asp</a></td>
+				<td class="ct"><strong>한용민 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderlist.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderlist.asp</a></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td>주문내역이 없을 경우</td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderList02.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderList02.asp</a></td>
+				<td class="ct"><strong>한용민 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderlist.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderlist.asp</a></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td>주문/배송 상세내역</td>
+				<td>주문상품</td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderDetail.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderDetail.asp</a></td>
+				<td class="ct"><strong>한용민 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderdetail.asp?idx=10071458095&pflag=&cflag=" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderdetail.asp</a></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>구매자</td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderDetail02.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderDetail02.asp</a></td>
+				<td class="ct"><strong>한용민 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderdetail_info.asp?idx=10071458095" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderdetail_info.asp</a></strong></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>결제</td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderDetail03.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderDetail03.asp</a></td>
+				<td class="ct"><strong>한용민 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderdetail_mtd.asp?idx=10071458095" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderdetail_mtd.asp</a></strong></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>배송지</td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderDetail04.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderDetail04.asp</a></td>
+				<td class="ct">
+					<strong>강준구 - 개발완료</strong><br>
+					<a href="/apps/appCom/between/my10x10/order/myorderdetail_addr.asp" target="_blank">/apps/appCom/between/my10x10/order/myorderdetail_addr.asp</a>
+				</td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td>주문취소</td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderCancel.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderCancel.asp</a><br>무통장 결제 후 주문취소 추가</td>
+				<td class="ct">
+					<strong>강준구 - 개발완료</strong><br>
+					<a href="/apps/appCom/between/my10x10/order/myorderallcancel.asp" target="_blank">/apps/appCom/between/my10x10/order/myorderallcancel.asp</a>
+				</td>
+				<td></td>
+			</tr>
+			<!--tr class="comp">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>무통장 결제 후 주문취소</td>
+				<td class="ct"></td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderCancelDeposit.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/orderCancelDeposit.asp</a></td>
+				<td class="ct"></td>
+				<td></td>
+			</tr-->
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td>배송지정보 변경</td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/delivery.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/delivery.asp</a></td>
+				<td class="ct">
+					<strong>이종화 - 개발완료</strong><br/>
+					<a href="/apps/appcom/between/my10x10/order/myorderchangeaddr.asp?orderserial=14042461883" target="_blank">/apps/appCom/between/my10x10/order/myorderchangeaddr.asp</a>
+				</td>
+				<td></td>
+			</tr>
+			<tr class="not">
+				<td></td>
+				<td></td>
+				<td>반품/환불</td>
+				<td></td>
+				<td class="ct"></td>
+				<td><!--a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/return.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/return.asp</a--></td>
+				<td class="ct"></td>
+				<td>2차 오픈 작업 범위</td>
+			</tr>
+			<tr class="not">
+				<td></td>
+				<td></td>
+				<td>반품/환불 접수</td>
+				<td></td>
+				<td class="ct"></td>
+				<td><!--a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/returnReceipt.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/returnReceipt.asp</a--></td>
+				<td class="ct"></td>
+				<td>2차 오픈 작업 범위</td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td>취소/교환/반품 내역</td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/cancel.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/cancel.asp</a></td>
+				<td class="ct"><strong>이종화 - 개발완료</strong><br>
+				<a href="http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderallcancellist.asp?orderserial=14042461883" target="_blank">/apps/appCom/between/my10x10/order/myorderallcancellist.asp</a>
+				</td>
+				<td>2차 오픈 작업 범위</td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>취소/교환/반품 내역이 없을 경우</td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/cancel02.asp" target="_blank">/apps/appCom/between/html/mypage/cancel02.asp</a></td>
+				<td class="ct"><strong>이종화 - 개발완료</strong></td>
+				<td>2차 오픈 작업 범위</td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>상세</td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/cancelDetail.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/cancelDetail.asp</a></td>
+				<td class="ct"><strong>이종화 - 개발 1차 완료 미구현 있음</strong><br/>
+				<a href="http://testm.10x10.co.kr/apps/appCom/between/my10x10/order/myorderallcanceldetail.asp?CsAsID=676545" target="_blank">/apps/appCom/between/my10x10/order/myorderallcanceldetail.asp</a>
+				</td>
+				<td>2차 오픈 작업 범위 & 반품운송장 미구현 </td>
+			</tr>
+			<tr class="not">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>운송장 등록</td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/invoice.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/invoice.asp</a></td>
+				<td class="ct"></td>
+				<td>2차 오픈 작업 범위</td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>공지사항</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료 (3/14)</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/notice.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/notice.asp</a></td>
+				<td class="ct">
+					<strong>강준구 - 개발완료</strong><br>
+					<a href="/apps/appCom/between/my10x10/notice.asp" target="_blank">/apps/appCom/between/my10x10/notice.asp</a>
+				</td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>FAQ</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료 (3/14)</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/faq.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/faq.asp</a></td>
+				<td class="ct">
+					<strong>강준구 - 개발완료</strong><br>
+					<a href="/apps/appCom/between/my10x10/faq.asp" target="_blank">/apps/appCom/between/my10x10/faq.asp</a>
+				</td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>텐바이텐 고객센터</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/mypage/customerCenter.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/mypage/customerCenter.asp</a></td>
+				<td class="ct">
+					<strong>강준구 - 개발완료</strong><br>
+					<a href="/apps/appCom/between/my10x10/cscenter.asp" target="_blank">/apps/appCom/between/my10x10/cscenter.asp</a>
+				</td>
+				<td></td>
+			</tr>
+			<tr class="gline comp">
+				<td></td>
+				<td>텐바이텐 로그인</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/tentenLogin.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/tentenLogin.asp</a></td>
+				<td class="ct"></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>우편번호찾기</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/zipCode.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/zipCode.asp</a></td>
+				<td class="ct"><strong>이종화 - 개발완료</strong></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>기타 팝업모음</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/layerPopup.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/layerPopup.asp</a></td>
+				<td class="ct"></td>
+				<td>최초방문 약관 미동의 팝업, 주문 확인 팝업</td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>이용약관</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/terms.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/terms.asp</a></td>
+				<td class="ct"><strong>김진영 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/common/join.asp">http://testm.10x10.co.kr/apps/appCom/between/common/join.asp</a></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>개인정보 취급방침</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/privacy.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/privacy.asp</a></td>
+				<td class="ct"><strong>김진영 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/common/private.asp">http://testm.10x10.co.kr/apps/appCom/between/common/private.asp</a></td>
+				<td></td>
+			</tr>
+			<tr class="comp">
+				<td></td>
+				<td>사업자 정보</td>
+				<td></td>
+				<td></td>
+				<td class="ct">디자인 전달 완료</td>
+				<td><a href="http://testm.10x10.co.kr/apps/appCom/between/html/licenseeInfo.asp" target="_blank">http://testm.10x10.co.kr/apps/appCom/between/html/licenseeInfo.asp</a></td>
+				<td class="ct"><strong>김진영 - 개발완료</strong><br><a href="http://testm.10x10.co.kr/apps/appCom/between/common/Info.asp">http://testm.10x10.co.kr/apps/appCom/between/common/Info.asp</a></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

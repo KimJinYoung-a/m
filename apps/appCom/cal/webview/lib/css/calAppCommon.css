@@ -1,0 +1,34 @@
+@charset "utf-8";
+html,body {width:100%; height:100%;}
+body {font-family:'Roboto', 'Nanum Gothic', sans-serif; font-size:16px; color:#696969;}
+
+/* layout */
+.wrapper {min-height:100%;}
+#content {width:100%; overflow:hidden; height:auto;}
+#content .inner01 {padding:8px;}
+
+.modalLyr {position:fixed; width:100%; height:100%; left:0; top:0; right:0; bottom:0; background-color:rgba(0,0,0,.65);}
+
+/* width */
+.col2 {width:50%;}
+.col3 {width:33.33333%;}
+
+
+/* box model type */
+.boxMdl, .boxMdl * {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+
+
+/* background color */
+.gry01 {background-color:#f5f6f8;}
+
+
+/* etc */
+.ct {text-align:center;}
+.ftLt {float:left;}
+.ftRt {float:right;}
+
+.tPad30 {padding-top:30px;}
+
+@media all and (max-width:480px){
+	#content .inner01 {padding:6px;}
+}

@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* 2015 diary story common */
+.hide {visibility:hidden;overflow:hidden; position:absolute; top:-1000%; width:0; height:0; line-height:0;}
+
+.plus {display:block; width:36px; height:36px; border-radius:25px; background-color:#d60000; color:#fff; font-size:15px; line-height:36px; text-align:center;}
+.countdown {display:block; text-align:center;}
+.countdown span {display:inline-block; height:18px; padding:3px 6px 2px; background-color:rgba(0,0,0,.75); color:#fff; font-size:11px; line-height:1.125em;}
+.more a {padding-right:6px; background:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/blt_arrow_grey.gif) no-repeat 100% 50%; background-size:4px auto; color:#676767; font-size:12px;}
+
+/* main */
+.diaryTopic {position:relative; padding:12px; background-repeat:no-repeat; background-position:50% 50%; background-size:100% 100%;}
+.diaryTopic .desc {position:relative; z-index:10; padding:12px 0 18px; background-color:#fff; box-shadow: 0 0 10px 5px rgba(0,0,0,.1); text-align:center;}
+.diaryTopic h1 img {width:52%;}
+.diaryTopic h1 a {width:auto; margin:0;}
+.diaryTopic a {display:block; position:relative; width:194px; margin:12px auto 0;}
+.diaryTopic .pPhoto {padding:6px; border:1px solid #e1e1e1;}
+.diaryTopic .pdtCont {min-height:0;}
+.diaryTopic .plus {position:absolute; top:-18px; right:-18px;}
+.diaryTopic .countdown {position:absolute; left:0; width:100%; margin-top:-26px;}
+.diaryTopic .mask {position:absolute; top:0; left:0; z-index:5; width:100%; height:100%; background-color:rgba(0,0,0,.2);}
+
+.diaryGift {margin-top:15px;}
+
+.diaryFinder {margin:27px 7px 0; padding-top:15px; background:url(http://fiximage.10x10.co.kr/m/2014/common/double_line.png) repeat-x 0 0; background-size:1px 1px;}
+.diaryTopic + .diaryFinder {background:none;}
+.diaryFinder ul {overflow:hidden; margin:0 -3px; padding-bottom:1px;}
+.diaryFinder ul li {float:left; width:25%; text-align:center;}
+.diaryFinder ul li a {display:block; margin:0 3px; padding:8px 5px; color:#676767; font-size:12px; line-height:1.375em;}
+.diaryFinder ul li a strong {display:block;}
+.diaryFinder ul li a span {display:block;}
+.diaryFinder .btnwrap {margin-top:9px; padding-bottom:18px; background:url(http://fiximage.10x10.co.kr/m/2014/common/double_line.png) repeat-x 0 100%; background-size:1px 1px;}
+.diaryFinder .button {-webkit-box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.15); -moz-box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.15); box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.15);}
+.diaryFinder .button a em {padding-right:15px; background:transparent url(http://fiximage.10x10.co.kr/m/2014/common/blt_arrow_rt5.png) right 50% no-repeat; background-size:7px 12px;}
+
+.diaryList {position:relative; margin-top:20px;}
+.diaryList .tab-nav:after {content:' '; display:block; clear:both;}
+.diaryList .tab-nav li {float:left; margin-right:15px;}
+.diaryList .tab-nav li a {display:block; position:relative; padding:20px 10px 6px; color:#999; font-size:12px; line-height:1.125em; text-align:center;}
+.diaryList .tab-nav li a.on {padding:15px 10px 3px; color:#000; font-size:15px; line-height:1.438em;}
+.diaryList .tab-nav li a.on:after {content:' '; display:block; position:absolute; left:0; bottom:-1px; border-bottom:2px solid #d60000;}
+.diaryList .tab-nav li:nth-child(1) a.on:after {width:54px;}
+.diaryList .tab-nav li:nth-child(2) a.on:after {width:58px;}
+.diaryList .tab-nav li:last-child {margin-right:0;}
+.diaryList .tab-nav li:last-child a.on:after {width:53px;}
+.diaryList .pdtListWrap {border-top:1px solid #d2d2d2; background:none;}
+.diaryList .pdtList {background:none;}
+.diaryList .pdtList li {text-align:center;}
+.diaryList .pdtList li:nth-child(5), .diaryList .pdtList li:nth-child(6) {background:none;}
+.diaryList .more {position:absolute; top:22px; right:8px;}
+
+.diaryEvt {position:relative;}
+.diaryEvt h2 {position:relative; padding-bottom:6px; padding-left:6px; border-bottom:1px solid #d2d2d2; color:#000; font-size:15px; font-weight:bold; line-height:1.438em;}
+.diaryEvt h2:after {content:' '; display:block; position:absolute; left:0; bottom:-1px; width:111px; border-bottom:2px solid #d60000;}
+.diaryEvt .evtList li {}
+.diaryEvt .more {position:absolute; top:9px; right:8px;}
+.diaryEvt .sorting {margin-bottom:-20px; padding:18px 10px;}
+.diaryEvt .sorting p {padding:0 12px;}
+.diaryEvt .noData {text-align:center;}
+
+.diary-etc-item {margin:13px 5px 0; padding-top:13px; background:url(http://fiximage.10x10.co.kr/m/2014/common/double_line.png) repeat-x 0 0; background-size:1px 1px;}
+.diary-etc-item ul {overflow:hidden; margin:0 -5px;}
+.diary-etc-item ul li {float:left; width:50%;}
+.diary-etc-item ul li a {display:block; margin:5px;}
+
+/* today diary */
+.todayDiary {padding:15px 10px 0;}
+.todayDiary h1 {margin-bottom:8px;}
+.todayDiary h1 img {width:52%;}
+.todayDiary .desc a {position:relative; display:block; padding:6px 6px 12px; border:1px solid #e1e1e1; background-color:#fff; text-align:center;}
+.todayDiary .desc .plus {position:absolute; top:12px; right:12px;}
+.todayDiary .countdown {position:absolute; left:0; width:100%; margin-top:-19px;}
+.todayDiary .pdtCont {min-height:0;}
+
+.plus-slae .hgroup {position:relative; min-height:63px; border-top:1px solid #d2d2d2;}
+.plus-slae .hgroup:before {content:' '; display:block; padding-top:14px; border-top:1px solid #fff;}
+.plus-slae .hgroup h2 {position:absolute; top:50%; left:0; width:63px; height:63px; margin-top:-21px; padding-top:19px; border-radius:50px; background-color:#d60000; color:#fff; font-size:15px; font-weight:bold; line-height:1.125em; text-align:center;}
+.plus-slae .hgroup h2:after, .plus-slae .hgroup h2:before {content:' '; display:block; position:absolute; top:10px; left:50%; width:12px; height:3px; margin-left:-6px; background-color:#fff;}
+.plus-slae .hgroup h2:before {transform:rotate(-90deg); -webkit-transform:rotate(-90deg);}
+.plus-slae .hgroup p {margin-top:10px; padding-right:15px; padding-left:82px; color:#676767; font-size:12px; line-height:1.25em;}
+.plus-slae .hgroup p em {color:#000; text-decoration:underline;}
+.plus-slae .pdtListWrap {border-top:0;}
+
+.holiday {margin:20px 20% 0;}
+#diaryBest h2 {position:relative; padding:5px 7px 5px; color:#000; font-size:15px; line-height:1.438em;}
+#diaryBest h2:after {content:' '; display:block; position:absolute; left:0; bottom:-1px; width:51px; border-bottom:2px solid #d60000;}
+
+/* seaerch */
+.sorting + .diaryList {margin-top:0;}
+.sorting + .diaryList .pdtListWrap {border-top:0; background:url(http://fiximage.10x10.co.kr/m/2014/common/double_line.png) left bottom repeat-x; background-size:1px 1px;}
+.sorting + .diaryList .pdtList {background:url(http://fiximage.10x10.co.kr/m/2014/common/double_line.png) left top repeat-x; background-size:1px 1px;}
+
+.filterListup h3 {margin-bottom:10px; background:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/bg_pattern.gif) repeat-x 0 0; background-size:18px auto; text-align:left;}
+.filterListup h3 span {display:block; position:relative; height:18px; margin-left:10px; padding:2px 0 1px 10px; color:#000; font-size:12px; font-weight:bold; line-height:1.313em;}
+.filterListup h3 span:after, .filterListup h3 span:before {content:' '; display:block; position:absolute; top:50%; left:0; width:6px; height:2px; margin-top:-1px; background-color:#000;}
+.filterListup h3 span:before {transform:rotate(-90deg); -webkit-transform:rotate(-90deg);}
+
+.checkType ul {overflow:hidden; padding:0 5px;}
+.checkType li {float:left; width:50%; padding:8px 0; text-align:left; color:#686868; font-size:13px;}
+.checkType li label {vertical-align:middle; padding-left:2px;}
+.col-three ul li {width:33.3333%;}
+
+.filterListup .colorType {margin-top:18px;}
+
+/* gift */
+.diary-gift img {vertical-align:top;}
+.gift-intro {margin-top:30px;}
+.gift-intro h2 {position:relative; padding-left:8px; color:#888; font-size:11px;}
+.gift-intro h2:after {content:' '; display:block; position:absolute; top:50%; left:0; width:3px; height:33px; margin-top:-16px; background-color:#d60000;}
+.gift-intro h2 strong {display:block; margin-bottom:5px; color:#d60000; font-size:18px;}
+.gift-swipe {margin-top:9px;}
+.gift-swipe .swiper {position:relative;}
+.gift-swipe .soldout {position:absolute; top:0; left:0; z-index:20; width:100%;}
+.gift-swipe button {position:absolute; top:50%; width:33px; height:33px; margin-top:-17px; background-color:transparent; background-repeat:no-repeat; background-position:50% 50%; background-size:33px auto; text-indent:-999em;}
+.gift-swipe .arrow-left {left:0; background-image:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/btn_nav_prev.png);}
+.gift-swipe .arrow-right {right:0; background-image:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/btn_nav_next.png);}
+.gift-intro .desc {position:relative; padding:10px 5px; border-bottom:1px solid #000;}
+.gift-intro .desc p {font-size:12px;}
+.gift-intro .desc .button {position:absolute; top:7px; right:0; background-color:#000; color:#fff;}
+.gift-intro .button a em {padding-right:10px; background:transparent url(http://fiximage.10x10.co.kr/m/2014/common/blt_arrow_rt5.png) right 50% no-repeat; background-size:4px auto;}
+
+.gift-condition {margin-top:40px; padding-top:24px; border-top:3px solid #d60000; background-color:#e3e7e7;}
+.gift-condition h2 {color:#000; font-size:12px; line-height:1.375em;}
+.gift-condition h2 strong {display:block; margin-bottom:2px; padding-left:20px; background:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/blt_exclamation_mark.png) 0 0 no-repeat; background-size:15px auto; color:#d60000; font-size:15px;}
+.gift-condition p {margin-top:8px; color:#898989; font-size:11px; line-height:1.375em;}
+.gift-condition h3 {margin-top:15px; font-size:12px;}
+.gift-condition ul {margin-top:8px; padding-bottom:25px; border-bottom:1px solid #999;}
+.gift-condition ul li {margin-top:7px; padding-left:10px; color:#898989; font-size:11px; line-height:1.375em; text-indent:-8px;}
+.gift-condition .example {margin-top:15px;}
+
+.noti {padding-top:22px; padding-bottom:22px; background-color:#e3e7e7;}
+.noti h2 {padding-left:20px; background:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/blt_exclamation_mark.png) 0 0 no-repeat; background-size:15px auto; color:#d60000; font-size:15px; font-weight:bold;}
+.noti ul {margin-top:13px; padding:0 13px;}
+.noti ul li {margin-top:7px; padding-left:10px; background:url(http://fiximage.10x10.co.kr/m/2014/diarystory2015/blt_arrow_red.png) 0 3px no-repeat; background-size:5px auto; color:#898989; font-size:11px; line-height:1.375em;}
+
+@media all and (min-width:480px){
+	.plus {width:48px; height:48px; font-size:23px; line-height:48px;}
+	.countdown span {height:24px; padding:3px 9px 2px; font-size:17px;}
+	.more a {padding-right:12px; background-size:8px auto; font-size:18px;}
+
+	.diaryTopic {padding:18px;}
+	.diaryTopic .desc {padding:18px 0 27px;}
+	.diaryTopic .countdown {margin-top:-34px;}
+	.diaryTopic a {width:360px;}
+	.diaryTopic .pPhoto {padding:9px;}
+
+	.diaryFinder {margin-top:40px; padding-top:22px;}
+	.diaryFinder ul:after {padding-bottom:18px;}
+	.diaryFinder ul li a {font-size:18px;}
+	.diaryFinder .btnwrap {margin-top:13px; padding-bottom:18px;}
+	.diaryFinder .button a em {padding-right:22px; background-size:8px 18px;}
+	
+	.diaryGift {margin-top:23px;}
+
+	.diaryList {margin-top:30px;}
+	.diaryList .tab-nav li a {padding:22px 15px 6px; font-size:18px;}
+	.diaryList .tab-nav li a.on {font-size:25px;}
+	.diaryList .tab-nav li:nth-child(1) a.on:after {width:76px;}
+	.diaryList .tab-nav li:nth-child(2) a.on:after {width:86px;}
+	.diaryList .tab-nav li:last-child a.on:after {width:78px;}
+	.diaryList .more {top:30px;}
+	
+	.diaryEvt .more {top:17px;}
+	.diaryEvt h2 {padding-left:10px; font-size:23px;}
+	.diaryEvt h2:after {width:166px;}
+	.diaryEvt .sorting {margin-bottom:-22px; padding:25px 10px;}
+
+	.diary-etc-item {margin:19px 7px 0; padding-top:19px;}
+	.diary-etc-item ul {margin:0 -7px;}
+	.diary-etc-item ul li a {margin:7px;}
+	
+	.todayDiary .countdown {margin-top:-24px;}
+	
+	.plus-slae .hgroup h2 {width:94px; height:94px; margin-top:-31px; padding-top:30px; font-size:23px;}
+	.plus-slae .hgroup h2:after, .plus-slae .hgroup h2:before {top:15px; width:18px; height:4px; margin-left:-9px;}
+	.plus-slae .hgroup p {padding-left:123px; font-size:18px;}
+	
+	#diaryBest h2 {padding:0 15px 7px; font-size:25px;}
+	#diaryBest h2:after {width:103px;}
+
+	.filterListup h3 {margin-bottom:15px; background-size:36px auto;}
+	.filterListup h3 span {height:36px; padding:8px 0 5px 15px; font-size:18px;}
+	.filterListup h3 span:after, .filterListup h3 span:before {width:10px; height:3px;}
+
+	.checkType ul {padding:0 10px;}
+	.checkType li {padding:12px 0; font-size:20px;}
+	.filterListup .colorType {margin-top:27px;}
+
+	.gift-intro {margin-top:45px;}
+	.gift-intro .button a em {background-size:7px 12px;}
+
+	.gift-intro h2 {font-size:17px;}
+	.gift-intro h2:after {height:50px; margin-top:-25px;}
+	.gift-intro h2 strong {font-size:27px;}
+	.gift-swipe {margin-top:15px;}
+	.gift-swipe button {width:56px; height:56px; margin-top:-28px; background-size:56px auto;}
+	.gift-intro .desc {padding:20px 1px;}
+	.gift-intro .desc p {font-size:18px;}
+	.gift-intro .desc .button {top:14px;}
+
+	.gift-condition h2 {font-size:18px;}
+	.gift-condition h2 strong {padding-left:25px; background-size:22px auto; font-size:23px;}
+	.gift-condition p {font-size:17px;}
+	.gift-condition h3 {font-size:18px;}
+	.gift-condition ul li {font-size:17px;}
+
+	.noti h2 {padding-left:25px; background-size:22px auto; font-size:23px;}
+	.noti ul {padding:0 20px;}
+	.noti ul li {font-size:17px;}
+}

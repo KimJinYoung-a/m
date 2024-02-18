@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* */
+.pdtList {overflow:hidden;}
+.pdtList li {float:left;}
+
+ul.bigView li {float:none; width:100%; padding:24px 52px;}
+
+.pdtList li {width:50%; padding:8px;}
+.pdtList li a {display:block; text-decoration:none;}
+.pdtList li > div {display:block; position:relative; background-color:#fff; width:100%;}
+.pdtList li > div img {width:100%;}
+
+.todayMList .pdtList li div.listHeadBox {background-color:#fb5656; position:relative; height:80px; display:table; width:100%;}
+.todayMList .pdtList li div.listHeadBox:after {background-color:#fb5656; position:absolute; width:10px; height:10px; left:10%; bottom:-5px; transform:rotate(45deg); -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); content:'';}
+.listHeadBox > div {display:table-cell; vertical-align:middle; overflow:hidden; padding:0 15px;}
+.listHeadBox .headTit {color:#fff; font-size:14px; line-height:1.2; font-family:'Nanum Gothic', sans-serif !important; position:relative; background-color:#fb5656; z-index:2;}
+.listHeadBox .headTit:after {background-color:#fff; position:absolute; height:1px; right:0; width:85%; bottom:4px; content:''; z-index:1; font-size:0; line-height:0;}
+.listHeadBox .headSale {color:#fff; position:absolute; top:50%; right:15px; margin-top:-16px; padding-left:10px; background-color:#fb5656; text-align:right; font-size:32px; font-family:'Roboto', sans-serif !important; font-weight:400; z-index:3;}
+.listHeadBox .headSale span {font-weight:300;}
+
+.todayMList .pdtList li div.listMoreBox {height:80px; display:table; width:100%; position:relative;}
+.todayMList .pdtList li div.listMoreBox a {display:table-cell; vertical-align:middle; width:100%; text-decoration:none;}
+.todayMList .pdtList li div.listMoreBox div {overflow:hidden; padding:0 12px;}
+.todayMList .pdtList li div.listMoreBox div p {color:#fff; font-size:14px; font-family:'Nanum Gothic', sans-serif !important; line-height:1.2; background:url(http://fiximage.10x10.co.kr/m/webview/cal/common/arrow.png) right 50% no-repeat; background-size:18px;}
+
+.markWish {display:block; position:absolute; top:8px; right:8px; width:32px; height:28px; background-size:32px 56px; background-image:url(http://fiximage.10x10.co.kr/m/webview/cal/common/heart.png); background-position:center bottom; background-repeat:no-repeat; text-indent:-9999em; overflow:hidden; cursor:pointer;}
+span.myWishPdt {background-position:center top;}
+
+.sortWrap {overflow:hidden; padding:8px;}
+.sortWrap p {width:auto; clear:left; overflow:hidden; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.sortWrap p > span {float:left; width:50%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; padding-right:12px;}
+.sortWrap select {width:100%; height:40px; -webkit-appearance:none; -webkit-border-radius:0; border:1px solid #ddd; color:#888; font-size:13px; padding:10px 30px 10px 10px; background:#fff url(http://fiximage.10x10.co.kr/m/webview/cal/common/drop_arrow.png) right 50% no-repeat; background-size:21px 9px;}
+.viewOpt {float:right; clear:right; display:block; width:40px; height:40px; background:url(http://fiximage.10x10.co.kr/m/webview/cal/common/btn_view.png) center top no-repeat; background-size:40px; text-indent:-9999em; overflow:hidden; cursor:pointer;}
+span.bigView {background-position:center bottom;}
+
+.wishSltPop {position:absolute; left:60px; top:60px; right:60px; bottom:60px; overflow:auto; background-color:#fff;}
+.popHead {background-color:#d50000; overflow:hidden; _zoom:1; color:#fff; font-family:'Nanum Gothic', sans-serif !important; height:77px; padding-left:30px; display:table; width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.popHead h1 {height:77px; display:table-cell; vertical-align:middle; font-size:20px; line-height:1;}
+.popHead a {width:75px; height:77px; text-align:center; color:#fff; background-color:#ba0000; display:table-cell; vertical-align:middle; font-size:50px; text-decoration:none; line-height:1;}
+.popCont {padding-bottom:30px;}
+.wishFoldList li {border-bottom:1px solid #ddd;}
+.wishFoldList li label {display:table; width:100%; height:75px; overflow:hidden; position:relative;}
+.wishFoldList li p {width:100%; height:75px; font-size:16px; font-family:'Nanum Gothic', sans-serif !important; line-height:1.6; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; display:table-cell; vertical-align:middle; margin:0; padding:0 70px 0 80px; color:#000; background-image:url(http://fiximage.10x10.co.kr/m/webview/cal/common/blt_wish.png); background-repeat:no-repeat; background-position:30px -100px; background-size:36px auto;}
+.wishFoldList li input {-webkit-appearance:none;}
+.wishFoldList li input[type=radio] {margin:0; -webkit-border-radius:100px; width:36px; height:36px; border:none; vertical-align:middle; background:#fff url(http://fiximage.10x10.co.kr/m/webview/cal/common/radio.png) no-repeat center bottom; background-size:36px auto;}
+.wishFoldList li input[type=radio]:checked {background-position:center top;}
+.wishFoldList li label input[type=radio] {position:absolute; top:50%; right:20px; margin:-18px 0 0 0;}
+.wishFoldList li label input[type=text] {-webkit-border-radius:0; font-size:16px; font-family:'Nanum Gothic', sans-serif !important; line-height:1.6; border:none; padding:0; color:#000; width:100%; height:75px;}
+.wishFoldList li label input[type=button] {cursor:pointer;}
+.wishFoldList li.locked p {background-position:30px 20px;}
+.wishFoldList li.added span {display:block; width:100%; height:75px; cursor:pointer;}
+.wishFoldList li.added p {background-position:30px -216px; color:#d50000;}
+.wishFoldList li.added ul {}
+.wishFoldList li.added ul li.noti {height:60px; background-color:#e5e5e5; border-bottom:none;}
+.wishFoldList li.added ul li.noti p {background:none; color:#888; height:60px; padding:0 30px; font-size:15px;}
+.wishFoldList li.added ul li .formArea {display:table;}
+.wishFoldList li.added ul li label {display:inline;}
+.wishFoldList li.added ul li:last-child {border-bottom:none;}
+.actBtn {-webkit-appearance:none; -webkit-border-radius:0; border:1px solid #d50000; background-color:#fff; color:#d50000; width:95px; height:38px; font-size:16px; font-family:'Nanum Gothic', sans-serif !important;}
+.folderOpt {overflow:hidden; display:table; height:75px; width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.folderOpt div {display:table-cell; vertical-align:middle; height:75px; padding:0 30px; font-size:16px;}
+.folderOpt div label {padding:0 30px 0 10px;}
+.actBtn2 {-webkit-appearance:none; -webkit-border-radius:0; border:1px solid #d50000; background-color:#d50000; color:#fff; width:195px; height:42px; font-size:16px; font-family:'Nanum Gothic', sans-serif !important; font-weight:bold;}
+
+@media all and (max-width:480px){
+	.pdtList li {padding:6px;}
+	ul.bigView li {padding:12px 26px;}
+	.todayMList .pdtList li div.listHeadBox {height:60px;}
+	.todayMList .pdtList li div.listHeadBox:after {width:8px; height:8px; left:10%; bottom:-4px;}
+	.listHeadBox > div {padding:0 10px;}
+	.listHeadBox .headTit {color:#fff; font-size:10px;}
+	.listHeadBox .headTit:after {width:75%;}
+	.listHeadBox .headSale {right:10px; font-size:24px; margin-top:-12px; padding-left:5px;}
+	.todayMList .pdtList li div.listMoreBox {height:60px;}
+	.todayMList .pdtList li div.listMoreBox div {overflow:hidden; padding:0 9px;}
+	.todayMList .pdtList li div.listMoreBox div p {font-size:10px; background-size:13px;}
+	.markWish {top:6px; right:6px; width:24px; height:21px; background-size:24px 42px;}
+	.sortWrap {padding:6px;}
+	.wishSltPop {left:15px; top:15px; right:15px; bottom:15px;}
+	.popHead {height:51px; padding-left:20px;}
+	.popHead h1 {height:51px; font-size:16px;}
+	.popHead a {width:50px; height:51px; font-size:44px;}
+	.popCont {padding-bottom:20px;}
+	.wishFoldList li label {height:50px;}
+	.wishFoldList li p {height:50px; font-size:12px; padding:0 50px 0 55px; background-position:20px -78px; background-size:27px auto;}
+	.wishFoldList li input[type=radio] {width:27px; height:27px; background-size:27px auto;}
+	.wishFoldList li label input[type=radio] {right:12px; margin:-13px 0 0 0;}
+	.wishFoldList li label input[type=text] {font-size:12px; height:50px;}
+	.wishFoldList li.locked p {background-position:20px 12px;}
+	.wishFoldList li.added span {height:50px;}
+	.wishFoldList li.added p {background-position:20px -166px;}
+	.wishFoldList li.added ul li.noti {height:40px;}
+	.wishFoldList li.added ul li.noti p {height:40px; padding:0 20px; font-size:11px;}
+	.actBtn {width:70px; height:32px; font-size:12px;}
+	.folderOpt {height:50px; width:100%;}
+	.folderOpt div {height:50px; padding:0 20px; font-size:12px;}
+	.folderOpt div label {padding:0 20px 0 5px;}
+	.actBtn2 {width:130px; height:32px; font-size:12px;}
+}

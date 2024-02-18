@@ -1,0 +1,102 @@
+/*c10707 to d6000*/
+/*from common.css*/
+#header { background-color:#d60000;  }
+#header .process li.active .label { color: #d60000;}
+.tabs.type-a li.active a{ background-color: #d60000; }
+#header .tabs.type-c { background-color: #d60000; }
+.qna-box .qna-type .label {  color: #d60000;}
+.modal .box .modal-header { background-color: #d60000;}
+/*from form.css*/
+select.form.red {background-color: #d60000; }
+/*from member.css*/
+.join .process li.active .label {color: #d60000;}
+.mypage .profile .my-profile { background-color: #d60000; }
+.mypage .myinfo #header .toggle {  background-color: #d60000;}
+/*from mypage.css*/
+.mypage .profile .my-profile { background-color: #c10707;}
+.coupon-box p.amount {color: #c10707;}
+.coupon-box p.amount strong  {color: #c10707;}
+
+
+/*ff6969 to ff9999*/
+/*from common.css*/
+.breadcrumb li:last-child a {  color: #ff9999; }
+#header .process li .label {color:#ff9999;border:1px solid #ff9999;}
+#header .process li .label:before { border-top:1px solid #ff9999; }
+#header .process li .label:after {border-top:1px solid #ff9999;}
+#header .tabs.type-c a {  color: #ff9999; }
+/*from member.css*/
+.join .process li .label {color:#ff9999;border:1px solid #ff9999; }
+.join .process li .label:before {border-top:1px solid #ff9999;}
+.join .process li .label:after {border-top:1px solid #ff9999;}
+.mypage .myinfo #header .toggle a {  color: #ff9999; }
+
+
+/*dc0d0d to ee1010*/
+/*from btn.css*/
+.btn.type-b {background-color: #ee1010;}
+.btn.type-f.red { border-color: #ee1010 !important; color:#ee1010;}
+/*from common.css*/
+.tabs.type-c .active {background:#ee1010;}
+/*from form.css*/
+.form.toggle.type-c .active {background:#ee1010;}
+/*from member.css*/
+.mypage .profile .my-profile-meta li strong {color: #ee1010;}
+/*from mypage.css*/
+.mypage .profile .my-profile-meta li strong {color: #ee1010;}
+.rating .stars a.active { color: #ee1010;}
+/*from shop.css*/
+.review .review-list li .rating .selected {color: #ee1010;}
+
+
+/*images*/
+.modal .box .modal-header .btn-close { background-image:url(../img/ios-btn-close.png) ; }
+
+input[type=checkbox].form {background-image:url(../img/ios-icon-radio-check.png) ;}
+input[type=radio].form.type-b {background-image:url(../img/ios-icon-radio-check.png) ;}
+
+
+#footer .btn-filter {left:52px;}
+
+.bordered-title { font-size: 11px;}
+
+
+/*form mod*/
+.form { font-size: 11px; }
+.input-block .input-label { width: 80px; font-size: 11px; letter-spacing: -1px;}
+.input-block .input-controls { margin-left: 80px;}
+select.form,
+dl.form dd select { background-size: 26px auto; height: 36px; }
+.input-block .input-controls select { background-size: 26px auto; }
+.input-block.no-border .input-controls select { padding-right: 26px;}
+input[type=checkbox].form { width:20px; height: 20px; background-size: auto 20px; -webkit-background-size: auto 20px;}
+input[type=checkbox].form:checked { background-position: -20px 0;}
+input[type=checkbox].form.type-b { width:20px; height: 20px; background-size: auto 20px; -webkit-background-size: auto 20px;}
+input[type=checkbox].form.type-b:checked { background-position: -20px 0;}
+
+input[type=radio].form.type-a { width:20px; height: 20px; background-size: auto 20px; -webkit-background-size: auto 20px;}
+input[type=radio].form.type-a:checked { background-position: -20px 0;}
+
+input[type=radio].form.type-b { width:20px; height: 20px; background-size: auto 20px; -webkit-background-size: auto 20px;}
+input[type=radio].form.type-b:checked { background-position: -20px 0;}
+input[type=radio].form.type-c { width:20px; height: 20px; background-size: auto 20px; -webkit-background-size: auto 20px;}
+input[type=radio].form.type-c:checked { background-position: -20px 0;}
+textarea.form.bordered { font-size: 11px;}
+.bonus-list li { width: 50%; height: 260px;}
+
+
+/*form actions*/
+.form-actions .two-btns { margin-left: 45px;}
+.form-actions.highlight > .btn.full-size { margin-left: 45px; width: 255px;}
+.product-detail .btn-actions .three-btns { margin-left: 45px;}
+
+.modal .box .modal-footer .two-btns { margin-left: 45px;}
+.modal .box .modal-footer > .btn.full-size { margin-left: 45px; width: 255px;}
+
+.address-list .bordered-box .address-info .actions .btn { width: 80px;}
+
+.product-list li .product .product-spec .product-meta .comment {float:left; max-width:50%; text-align:left; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -o-box-sizing:border-box;}
+.product-list li .product .product-spec .product-meta .comment {margin-right:0;}
+
+/* 20140626 SYS JYM ¿ì¼öÈ¸¿ø¼¥ */
+.btn-vip-shop.left-cursor:after {background-color:#ee1010;}

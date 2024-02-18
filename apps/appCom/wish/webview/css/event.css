@@ -1,0 +1,50 @@
+.event-list { margin: -2px;}
+.event-list li { margin-bottom: 10px; float:left; width: 100%;  }
+.event-list li .event { margin: 0 5px; border-radius: 12px; -moz-border-radius: 12px; -webkit-border-radius: 12px; border:1px solid #e8e8e8; overflow: hidden;position: static;}
+.event-list li .event-img img { width: 100%; height: auto; display: block;}
+.event-list li .event-spec { padding: 10px;  padding-bottom:50px; position: relative;}
+.event-list li .featured { margin-bottom:10px;}
+.event-list li .event-name { font-size: 12px; color: #222; margin-bottom: 2px;}
+.event-list li .event-desc { font-size: 12px; color: #696969;}
+.event-list li .event-meta { border-top:1px solid #e8e8e8; padding: 10px 0; font-size: 12px;  position: absolute; bottom:0; left:10px; right: 10px;}
+
+.event-list li.big .event-img img,
+.event-list li.small .event-img img {border-top-left-radius:12px; border-top-right-radius:12px;}
+
+.event-list li.medium .event-img { width: 50%; float:left; margin-right: 10px;}
+.event-list li.medium .event-img img {border-top-left-radius:12px; border-bottom-left-radius:12px;}
+.event-list li.medium .event-meta { margin-left:50%; left:10px; }
+
+.event-list li.small {width: 50%;}
+
+.event #header .event-title { color: #fff; font-size: 15px; line-height: 20px; padding: 10px 10px 0 10px; }
+.event #header .event-date { color: #fff; font-size: 13px; line-height: 13px; padding: 0 10px 10px 10px; display: block; }
+
+
+.comment-info { margin-bottom: 10px !important;}
+
+.comment-title { font-size: 10px; line-height: 10px; color: #696969; padding: 10px; margin: 0; background: #f6f6f6; border-bottom: 1px solid #f0f0f0; margin-bottom: 10px;}
+.comment-header  {border-bottom: 1px solid #e8e8e8; padding:5px 10px; line-height: 30px; }
+.comment-header .total { font-size: 14px; color: #696969; font-weight: bolder;}
+.comment-header .btn-write {width: 120px;}
+
+.comment-list { margin: 0; padding: 0; list-style: none; margin-bottom: 10px;}
+.comment-list li { border-bottom: 1px solid #e8e8e8; padding: 10px; }
+
+.comment-list .comment {font-size: 11px; line-height: 14px; color: #696969; padding: 5px;}
+.comment-list .comment .comment-content { margin-bottom: 6px; }
+.comment-list .comment .comment-meta { color: #a6a9ac; font-size: 12px; line-height: 12px; }
+
+.comment-write .textarea-container { padding: 0 10px 10px 10px;}
+
+.event-pop img { width: 100%; height: auto;}
+.event-pop .bx-wrapper .bx-pager, 
+.event-pop .bx-wrapper .bx-controls-auto { bottom: 10px;}
+
+
+.event-list li .featured { height: 20px; overflow: hidden;}
+.featured span { padding: 4px 8px;}
+
+/* 20140624 SYS JYM Coupon Book */
+.cp-count {padding:2px 10px 5px; color:#888787; font-size:11px;}
+.cp-count strong {color:#ba1710;}
